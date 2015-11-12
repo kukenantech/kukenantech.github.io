@@ -60,11 +60,15 @@ body{
 						text-decoration: none;
 						border-radius: 9px;
 						margin-top: 10px;
+						transition: background-color 0.1s ease-out, 
+									color 0.1s ease-out;
 
-						&:hover{
+						&:hover, &:active{
 							color: $white;
 							background-color: $darkGreen;
 							border: 2px solid $darkGreen;
+							transition: background-color 0.2s ease-in,
+              							color 0.2s ease-in;
 						}
 		    		}
 		    	}

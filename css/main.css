@@ -42,10 +42,12 @@ body {
             outline: none;
             text-decoration: none;
             border-radius: 9px;
-            margin-top: 10px; }
-            body .under-construction .comming-soon span a.ghost-button:hover {
+            margin-top: 10px;
+            transition: background-color 0.1s ease-out,  color 0.1s ease-out; }
+            body .under-construction .comming-soon span a.ghost-button:hover, body .under-construction .comming-soon span a.ghost-button:active {
               color: #ffffff;
               background-color: #457d5f;
-              border: 2px solid #457d5f; }
+              border: 2px solid #457d5f;
+              transition: background-color 0.2s ease-in, color 0.2s ease-in; }
 
 /*# sourceMappingURL=main.css.map */
