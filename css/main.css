@@ -17,10 +17,11 @@ body {
     height: 100vh;
     width: 100%; }
     body .under-construction .comming-soon {
-      left: 40%;
-      position: absolute;
+      margin: 0 auto;
+      position: relative;
       text-align: center;
-      top: 85%; }
+      top: 84%;
+      width: 25%; }
       body .under-construction .comming-soon span {
         color: #333132;
         display: block;
