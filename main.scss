@@ -1,0 +1,17 @@
+
+$gray: #333132;
+
+body{
+	background-color: $gray;
+	h1{
+		display: none;
+	}
+	.under-construction{
+		background-image: url("kukenan-under-construction.png");
+		background-position: center;
+		background-size: auto 100vh;
+		background-repeat: no-repeat;
+		height:95vh;
+		width: 100%;
+	}	
+}
