@@ -1,7 +1,8 @@
 
 $gray: #333132;
 $darkRed: #6f2824;
-$darkOrange: #954629;
+$darkOrange: #407762;
+$darkGreen: #457d5f;
 $white: #ffffff;
 
 @font-face {
@@ -53,7 +54,7 @@ body{
 						width: 250px;
 						padding: 8px;
 						color: $gray;
-						border: 3px solid $gray;
+						border: 2px solid $gray;
 						text-align: center;
 						outline: none;
 						text-decoration: none;
@@ -61,8 +62,9 @@ body{
 						margin-top: 10px;
 
 						&:hover{
-							color: $darkOrange;
-							border: 3px solid $darkOrange;
+							color: $white;
+							background-color: $darkGreen;
+							border: 2px solid $darkGreen;
 						}
 		    		}
 		    	}
