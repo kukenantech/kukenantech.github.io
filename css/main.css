@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'abeezeeregular';
   src: url("../fonts/abeezee/abeezee-regular-webfont.eot");
-  src: url("../fonts/abeezee/abeezee-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/abeezee/abeezee-regular-webfont.woff2") format("woff2"), url("../fonts/abeezee/abeezee-regular-webfont.woff") format("woff"), url("../fonts/abeezee/abeezee-regular-webfont.ttf") format("truetype"), url("../fonts/abeezee/abeezee-regular-webfont.svg#abeezeeregular") format("svg");
+  src: url("../fonts/abeezee/abeezee-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/abeezee/abeezee-regular-webfont.woff2") format("woff2"), url("../fonts/abeezee/abeezee-regular-webfont.woff") format("woff"), url("../fonts/abeezee/abeezeeno-regular-webfont.ttf") format("truetype"), url("../fonts/abeezee/abeezee-regular-webfont.svg#abeezeeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 body {
@@ -31,5 +31,19 @@ body {
           text-decoration: none; }
           body .under-construction .comming-soon span a:hover {
             text-decoration: underline; }
+          body .under-construction .comming-soon span a.ghost-button {
+            display: inline-block;
+            width: 250px;
+            padding: 8px;
+            color: #333132;
+            border: 3px solid #333132;
+            text-align: center;
+            outline: none;
+            text-decoration: none;
+            border-radius: 9px;
+            margin-top: 10px; }
+            body .under-construction .comming-soon span a.ghost-button:hover {
+              color: #954629;
+              border: 3px solid #954629; }
 
 /*# sourceMappingURL=main.css.map */

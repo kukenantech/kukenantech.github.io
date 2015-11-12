@@ -1,5 +1,7 @@
 
 $gray: #333132;
+$darkRed: #6f2824;
+$darkOrange: #954629;
 $white: #ffffff;
 
 @font-face {
@@ -8,7 +10,7 @@ $white: #ffffff;
     src: url('../fonts/abeezee/abeezee-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/abeezee/abeezee-regular-webfont.woff2') format('woff2'),
          url('../fonts/abeezee/abeezee-regular-webfont.woff') format('woff'),
-         url('../fonts/abeezee/abeezee-regular-webfont.ttf') format('truetype'),
+         url('../fonts/abeezee/abeezeeno-regular-webfont.ttf') format('truetype'),
          url('../fonts/abeezee/abeezee-regular-webfont.svg#abeezeeregular') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -30,9 +32,9 @@ body{
 
 		.comming-soon{
 			left: 75%;
-		    position: absolute;
-		    text-align: center;
-		    top: 10%;	    
+			position: absolute;
+			text-align: center;
+			top: 10%;	    
 
 		    span{
 		    	color: $gray;
@@ -44,6 +46,23 @@ body{
 		    		text-decoration: none;
 		    		&:hover{
 		    			text-decoration: underline;
+		    		}
+		    		&.ghost-button {
+						display: inline-block;
+						width: 250px;
+						padding: 8px;
+						color: $gray;
+						border: 3px solid $gray;
+						text-align: center;
+						outline: none;
+						text-decoration: none;
+						border-radius: 9px;
+						margin-top: 10px;
+
+						&:hover{
+							color: $darkOrange;
+							border: 3px solid $darkOrange;
+						}
 		    		}
 		    	}
 		    }
