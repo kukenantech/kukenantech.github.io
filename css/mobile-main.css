@@ -1,5 +1,8 @@
 @media only screen and (max-width: 40em) {
-  body .under-construction {
-    background-size: 100% auto; } }
+  body .under-construction .comming-soon {
+    left: 13%;
+    position: absolute;
+    text-align: center;
+    top: 75%; } }
 
 /*# sourceMappingURL=mobile-main.css.map */
