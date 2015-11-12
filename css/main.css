@@ -1,14 +1,35 @@
+@font-face {
+  font-family: 'abeezeeregular';
+  src: url("../fonts/abeezee/abeezee-regular-webfont.eot");
+  src: url("../fonts/abeezee/abeezee-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/abeezee/abeezee-regular-webfont.woff2") format("woff2"), url("../fonts/abeezee/abeezee-regular-webfont.woff") format("woff"), url("../fonts/abeezee/abeezee-regular-webfont.ttf") format("truetype"), url("../fonts/abeezee/abeezee-regular-webfont.svg#abeezeeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 body {
   background-color: #ffffff; }
   body h1 {
     display: none; }
   body .under-construction {
-    background: url("../images/kukenan_bg2.jpg") no-repeat center center fixed;
+    background: url("../images/kukenan_bg2.jpg") no-repeat center 40% fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
     width: 100%; }
+    body .under-construction .comming-soon {
+      left: 75%;
+      position: absolute;
+      text-align: center;
+      top: 10%; }
+      body .under-construction .comming-soon span {
+        color: #333132;
+        display: block;
+        font-family: 'Lato';
+        font-size: 45px; }
+        body .under-construction .comming-soon span a {
+          font-size: 35px;
+          text-decoration: none; }
+          body .under-construction .comming-soon span a:hover {
+            text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */
