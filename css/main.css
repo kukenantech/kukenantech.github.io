@@ -3,7 +3,7 @@ body {
   body h1 {
     display: none; }
   body .under-construction {
-    background: url("../images/17.jpg") no-repeat center center fixed;
+    background: url("../images/kukenan_bg2.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
