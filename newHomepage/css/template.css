@@ -1,0 +1,9 @@
+body .row {
+  max-width: 100%; }
+  body .row .columns {
+    padding-left: 0;
+    padding-right: 0; }
+  body .row .top-bar {
+    max-width: 100%; }
+
+/*# sourceMappingURL=template.css.map */
