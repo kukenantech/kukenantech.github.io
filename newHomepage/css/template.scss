@@ -1,13 +1,127 @@
 
+$palleteBlack: #2f3138;
+$palleteRed: #b2112f;
+$palleteLightBlue: #007EA7;
+
+@font-face {
+    font-family: 'abeezeeregular';
+    src: url('../fonts/abeezee/abeezee-regular-webfont.eot');
+    src: url('../fonts/abeezee/abeezee-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/abeezee/abeezee-regular-webfont.woff2') format('woff2'),
+         url('../fonts/abeezee/abeezee-regular-webfont.woff') format('woff'),
+         url('../fonts/abeezee/abeezeeno-regular-webfont.ttf') format('truetype'),
+         url('../fonts/abeezee/abeezee-regular-webfont.svg#abeezeeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
+	.top-bar{
+		.name{
+			h1{		
+				background: url("../img/Kukenan-Logo-White-Letters.png") no-repeat;
+				background-size: auto 65px;
+				height: 100%;
+				margin-top: 5%;
+				text-indent: -9999px;
+				width: 350px; 
+			}
+		}
+		.top-bar-section{
+			ul{
+				&.right{
+					width: 50%;
+
+					li{
+						background-color: $palleteBlack;					
+						min-height: auto;
+						margin-top: 6%;
+						position: relative;
+						text-align: center;
+						width: 33%;
+
+						a{
+							font-family: 'Lato', sans-serif;
+							font-size: 18px;
+						}
+
+						&:not(.has-form){
+							&.active{
+								a{
+									background-color: $palleteBlack;
+									color: $palleteRed;
+									transition: background-color 0.2s ease-out, 
+												color 0.2s ease-out;
+
+									&:after{
+										border-left: solid transparent 5px;
+									    border-right: solid transparent 5px;
+									    border-bottom: solid $palleteRed 5px;
+									    bottom: -22px;
+									    content: " ";
+									    height: 0;
+									    left: 50%;
+									    margin-left: -5px;
+									    margin-bottom: -3px;
+									    position: absolute;
+									    width: 0;
+									    transition: content 0.2s ease-out;
+									}
+								}
+							}
+							a:not(.button){
+								background-color: $palleteBlack;
+								transition: background-color 0.2s ease-out, 
+											color 0.2s ease-out;
+								&:hover{
+									background-color: $palleteBlack;
+									color: $palleteRed;
+									transition: background-color 0.2s ease-out, 
+												color 0.2s ease-out;
+								}
+								&:hover:after{
+									border-left: solid transparent 5px;
+								    border-right: solid transparent 5px;
+								    border-bottom: solid $palleteRed 5px;
+								    bottom: -22px;
+								    content: " ";
+								    height: 0;
+								    left: 50%;
+								    margin-left: -5px;
+								    margin-bottom: -3px;
+								    position: absolute;
+								    width: 0;
+								    transition: content 0.2s ease-out;
+								}								
+							}
+						}
+					}
+				}				
+			}
+		}
+	}	
 	.row{
 		max-width: 100%;
 		.columns{
 			padding-left: 0;
 			padding-right: 0;
 		}
+		.page-sizer{
+			margin: 0 auto;
+			width: 62.5rem;
+		}
 		.top-bar{
-			max-width: 100%;
+			background-color: $palleteBlack;
+			min-height: 100px;
+		}
+		.sticky{
+			background-color: $palleteBlack;
+			border-bottom: 3px solid $palleteRed;
+		}
+		nav{
+			li{
+				min-height: 100px;
+			}
 		}
 	}
 }
