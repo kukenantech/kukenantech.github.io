@@ -2,6 +2,9 @@
 $palleteBlack: #2f3138;
 $palleteRed: #b2112f;
 $palleteLightBlue: #007EA7;
+$palleteDarkBlue: #003459;
+$palleteLightGray: #EDF2F4;
+$white: #FFFFFF; 
 
 @font-face {
     font-family: 'abeezeeregular';
@@ -15,7 +18,35 @@ $palleteLightBlue: #007EA7;
     font-style: normal;
 }
 
+@mixin ghost-button($color-hover, $background-hover, $color-border){
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-size: 27px;
+	width: 250px;
+	padding: 8px;
+	color: $color-border;
+	border: 3px solid $color-border;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	border-radius: 9px;
+	margin-top: 10px;
+	transition: background-color 0.1s ease-out, 
+				color 0.1s ease-out;
+
+	&:hover, &:active{
+		color: $color-hover;
+		background-color: $background-hover;
+		border: 3px solid $background-hover;
+		transition: background-color 0.2s ease-in,
+						color 0.2s ease-in;
+	}
+}
+
 body{
+	font-family: 'abeezeeregular';
+	font-size: 14px;
+
 	.top-bar{
 		.name{
 			h1{		
@@ -102,14 +133,14 @@ body{
 	}	
 	.row{
 		max-width: 100%;
-		.columns{
-			padding-left: 0;
-			padding-right: 0;
-		}
 		.page-sizer{
 			margin: 0 auto;
 			width: 62.5rem;
 		}
+		.columns{
+			padding-left: 0;
+			padding-right: 0;
+		}		
 		.top-bar{
 			background-color: $palleteBlack;
 			min-height: 100px;
@@ -122,6 +153,61 @@ body{
 			li{
 				min-height: 100px;
 			}
+		}
+		&.first-section{
+			height: 100px;
+		}
+		&.second-section{
+			background: url('../img/coffee-shop-table.jpg') no-repeat center bottom fixed;
+			-webkit-background-size: cover;
+	        -moz-background-size: cover;
+	        -o-background-size: cover;
+	        background-size: cover;
+			height: 500px;
+
+			.content{
+				position: relative;
+				min-height: 350px;
+
+				p{
+					text-align: center;
+
+					&.slogan{
+						color: $palleteDarkBlue;
+						font-family: 'Lato', sans-serif;
+						font-style: normal;
+						font-weight: 700;
+						font-size: 56px;
+						margin-top: 6%;
+					}
+
+					&.brief{
+						color: $palleteLightBlue;
+						font-family: 'abeezeeregular';
+						font-size: 30px;
+
+						span{
+							display: block;
+						}
+
+						.question{
+							color: $palleteRed;
+							font-size: 33px;
+						}
+					}
+
+					&.contact{
+						bottom: 0;
+						position: absolute;
+						text-align: center;
+						width: 100%;
+
+						.ghost-button{
+							@include ghost-button($palleteLightGray, $palleteRed, $palleteLightGray);
+						}
+					}				
+				}
+			}						
 		}
 	}
 }

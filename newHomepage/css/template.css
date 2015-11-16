@@ -4,77 +4,134 @@
   src: url("../fonts/abeezee/abeezee-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/abeezee/abeezee-regular-webfont.woff2") format("woff2"), url("../fonts/abeezee/abeezee-regular-webfont.woff") format("woff"), url("../fonts/abeezee/abeezeeno-regular-webfont.ttf") format("truetype"), url("../fonts/abeezee/abeezee-regular-webfont.svg#abeezeeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-body .top-bar .name h1 {
-  background: url("../img/Kukenan-Logo-White-Letters.png") no-repeat;
-  background-size: auto 65px;
-  height: 100%;
-  margin-top: 5%;
-  text-indent: -9999px;
-  width: 350px; }
-body .top-bar .top-bar-section ul.right {
-  width: 50%; }
-  body .top-bar .top-bar-section ul.right li {
-    background-color: #2f3138;
-    min-height: auto;
-    margin-top: 6%;
-    position: relative;
-    text-align: center;
-    width: 33%; }
-    body .top-bar .top-bar-section ul.right li a {
-      font-family: 'Lato', sans-serif;
-      font-size: 18px; }
-    body .top-bar .top-bar-section ul.right li:not(.has-form).active a {
+body {
+  font-family: 'abeezeeregular';
+  font-size: 14px; }
+  body .top-bar .name h1 {
+    background: url("../img/Kukenan-Logo-White-Letters.png") no-repeat;
+    background-size: auto 65px;
+    height: 100%;
+    margin-top: 5%;
+    text-indent: -9999px;
+    width: 350px; }
+  body .top-bar .top-bar-section ul.right {
+    width: 50%; }
+    body .top-bar .top-bar-section ul.right li {
       background-color: #2f3138;
-      color: #b2112f;
-      transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
-      body .top-bar .top-bar-section ul.right li:not(.has-form).active a:after {
-        border-left: solid transparent 5px;
-        border-right: solid transparent 5px;
-        border-bottom: solid #b2112f 5px;
-        bottom: -22px;
-        content: " ";
-        height: 0;
-        left: 50%;
-        margin-left: -5px;
-        margin-bottom: -3px;
-        position: absolute;
-        width: 0;
-        transition: content 0.2s ease-out; }
-    body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button) {
-      background-color: #2f3138;
-      transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
-      body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover {
+      min-height: auto;
+      margin-top: 6%;
+      position: relative;
+      text-align: center;
+      width: 33%; }
+      body .top-bar .top-bar-section ul.right li a {
+        font-family: 'Lato', sans-serif;
+        font-size: 18px; }
+      body .top-bar .top-bar-section ul.right li:not(.has-form).active a {
         background-color: #2f3138;
         color: #b2112f;
         transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
-      body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover:after {
-        border-left: solid transparent 5px;
-        border-right: solid transparent 5px;
-        border-bottom: solid #b2112f 5px;
-        bottom: -22px;
-        content: " ";
-        height: 0;
-        left: 50%;
-        margin-left: -5px;
-        margin-bottom: -3px;
-        position: absolute;
-        width: 0;
-        transition: content 0.2s ease-out; }
-body .row {
-  max-width: 100%; }
-  body .row .columns {
-    padding-left: 0;
-    padding-right: 0; }
-  body .row .page-sizer {
-    margin: 0 auto;
-    width: 62.5rem; }
-  body .row .top-bar {
-    background-color: #2f3138;
-    min-height: 100px; }
-  body .row .sticky {
-    background-color: #2f3138;
-    border-bottom: 3px solid #b2112f; }
-  body .row nav li {
-    min-height: 100px; }
+        body .top-bar .top-bar-section ul.right li:not(.has-form).active a:after {
+          border-left: solid transparent 5px;
+          border-right: solid transparent 5px;
+          border-bottom: solid #b2112f 5px;
+          bottom: -22px;
+          content: " ";
+          height: 0;
+          left: 50%;
+          margin-left: -5px;
+          margin-bottom: -3px;
+          position: absolute;
+          width: 0;
+          transition: content 0.2s ease-out; }
+      body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button) {
+        background-color: #2f3138;
+        transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
+        body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover {
+          background-color: #2f3138;
+          color: #b2112f;
+          transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
+        body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover:after {
+          border-left: solid transparent 5px;
+          border-right: solid transparent 5px;
+          border-bottom: solid #b2112f 5px;
+          bottom: -22px;
+          content: " ";
+          height: 0;
+          left: 50%;
+          margin-left: -5px;
+          margin-bottom: -3px;
+          position: absolute;
+          width: 0;
+          transition: content 0.2s ease-out; }
+  body .row {
+    max-width: 100%; }
+    body .row .page-sizer {
+      margin: 0 auto;
+      width: 62.5rem; }
+    body .row .columns {
+      padding-left: 0;
+      padding-right: 0; }
+    body .row .top-bar {
+      background-color: #2f3138;
+      min-height: 100px; }
+    body .row .sticky {
+      background-color: #2f3138;
+      border-bottom: 3px solid #b2112f; }
+    body .row nav li {
+      min-height: 100px; }
+    body .row.first-section {
+      height: 100px; }
+    body .row.second-section {
+      background: url("../img/coffee-shop-table.jpg") no-repeat center bottom fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 500px; }
+      body .row.second-section .content {
+        position: relative;
+        min-height: 350px; }
+        body .row.second-section .content p {
+          text-align: center; }
+          body .row.second-section .content p.slogan {
+            color: #003459;
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 56px;
+            margin-top: 6%; }
+          body .row.second-section .content p.brief {
+            color: #007EA7;
+            font-family: 'abeezeeregular';
+            font-size: 30px; }
+            body .row.second-section .content p.brief span {
+              display: block; }
+            body .row.second-section .content p.brief .question {
+              color: #b2112f;
+              font-size: 33px; }
+          body .row.second-section .content p.contact {
+            bottom: 0;
+            position: absolute;
+            text-align: center;
+            width: 100%; }
+            body .row.second-section .content p.contact .ghost-button {
+              display: inline-block;
+              font-family: 'Lato', sans-serif;
+              font-size: 27px;
+              width: 250px;
+              padding: 8px;
+              color: #EDF2F4;
+              border: 3px solid #EDF2F4;
+              text-align: center;
+              outline: none;
+              text-decoration: none;
+              border-radius: 9px;
+              margin-top: 10px;
+              transition: background-color 0.1s ease-out,  color 0.1s ease-out; }
+              body .row.second-section .content p.contact .ghost-button:hover, body .row.second-section .content p.contact .ghost-button:active {
+                color: #EDF2F4;
+                background-color: #b2112f;
+                border: 3px solid #b2112f;
+                transition: background-color 0.2s ease-in, color 0.2s ease-in; }
 
 /*# sourceMappingURL=template.css.map */
