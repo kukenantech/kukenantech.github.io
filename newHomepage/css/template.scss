@@ -68,6 +68,53 @@ body{
 		font-size: 50px;
 	}
 
+	&.f-topbar-fixed{
+		padding-top: 75px;
+	
+		.row{
+			.sticky{
+				min-height: 75px;
+			}
+			.top-bar{
+				min-height: 72px;
+
+				.name{
+					h1{
+						height: 65px;
+						margin-top: 2%;
+						background: url("../img/Kukenan-Cube.png") no-repeat;
+						background-size: auto 65px;
+						transition: background 0.2s ease-out;
+					}
+				}
+				.top-bar-section{
+					ul{
+						&.right{
+							li{
+								margin-top: 3%;
+
+								&:not(.has-form){
+									&.active{
+										a{
+											&:after{
+												margin-bottom: 10px;
+											}
+										}
+									}
+									a:not(.button){
+										&:hover:after{
+											margin-bottom: 10px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}		
+	}
+
 	.top-bar{
 		.name{
 			h1{		
@@ -75,6 +122,7 @@ body{
 				background-size: auto 65px;
 				height: 75px;
 				margin-top: 5%;
+				transition: background 0.2s ease-in;
 				text-indent: -9999px;
 				width: 200px; 
 			}
@@ -290,15 +338,15 @@ body{
 				text-align: center;
 			}
 			.gallery{
-				line-height: 80px;				
+				line-height: 70px;				
 			    padding-left: 5%;
 			    padding-right: 5%;			    
 			    position: relative;
 			    text-align: center;
 
 				.right{					
-				    height: 80px;
-				    line-height: 80px;
+				    height: 70px;
+				    line-height: 70px;
 				    position: absolute;
 				    right: 0;
 				    top: 0;				    
@@ -313,8 +361,8 @@ body{
 					}
 				}
 				.left{
-					height: 80px;
-				    line-height: 80px;
+					height: 70px;
+				    line-height: 70px;
 				    position: absolute;
 				    left: 0;
 				    top: 0;				    

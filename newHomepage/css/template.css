@@ -18,11 +18,30 @@ body {
   body h2 {
     font-family: 'Lato', sans-serif;
     font-size: 50px; }
+  body.f-topbar-fixed {
+    padding-top: 75px; }
+    body.f-topbar-fixed .row .sticky {
+      min-height: 75px; }
+    body.f-topbar-fixed .row .top-bar {
+      min-height: 72px; }
+      body.f-topbar-fixed .row .top-bar .name h1 {
+        height: 65px;
+        margin-top: 2%;
+        background: url("../img/Kukenan-Cube.png") no-repeat;
+        background-size: auto 65px;
+        transition: background 0.2s ease-out; }
+      body.f-topbar-fixed .row .top-bar .top-bar-section ul.right li {
+        margin-top: 3%; }
+        body.f-topbar-fixed .row .top-bar .top-bar-section ul.right li:not(.has-form).active a:after {
+          margin-bottom: 10px; }
+        body.f-topbar-fixed .row .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover:after {
+          margin-bottom: 10px; }
   body .top-bar .name h1 {
     background: url("../img/Kukenan-Logo-White-Letters.png") no-repeat;
     background-size: auto 65px;
     height: 75px;
     margin-top: 5%;
+    transition: background 0.2s ease-in;
     text-indent: -9999px;
     width: 200px; }
   body .top-bar .top-bar-section ul.right {
@@ -192,14 +211,14 @@ body {
         margin-bottom: 0px;
         text-align: center; }
       body .row.third-section .gallery {
-        line-height: 80px;
+        line-height: 70px;
         padding-left: 5%;
         padding-right: 5%;
         position: relative;
         text-align: center; }
         body .row.third-section .gallery .right {
-          height: 80px;
-          line-height: 80px;
+          height: 70px;
+          line-height: 70px;
           position: absolute;
           right: 0;
           top: 0;
@@ -211,8 +230,8 @@ body {
             font-size: 60px;
             vertical-align: middle; }
         body .row.third-section .gallery .left {
-          height: 80px;
-          line-height: 80px;
+          height: 70px;
+          line-height: 70px;
           position: absolute;
           left: 0;
           top: 0;
