@@ -274,8 +274,8 @@ body{
 			}			
 		}
 		&.third-section{
-			background-color: $lightBlue;
-			height: 140px;
+			background-color: $white;
+			height: 130px;
 			position: relative;
 
 			h2{
@@ -286,7 +286,7 @@ body{
 				text-align: center;
 			}
 			.gallery{
-				line-height: 110px;				
+				line-height: 100px;				
 			    padding-left: 5%;
 			    padding-right: 5%;			    
 			    position: relative;
@@ -330,11 +330,12 @@ body{
 					padding-left: 10px;
    					padding-right: 10px;
 					text-align: center;
-					width: 19%;
+					width: 15%;
 
 					img{
-						max-height: 90px;
-						width: auto;
+						height: auto;
+					    width: 85px;
+					    max-height: 110px;
 					}
 				}
 			}			

@@ -179,8 +179,8 @@ body {
           vertical-align: middle;
           width: auto; }
     body .row.third-section {
-      background-color: #effafe;
-      height: 140px;
+      background-color: #FFFFFF;
+      height: 130px;
       position: relative; }
       body .row.third-section h2 {
         color: #afcad4;
@@ -189,7 +189,7 @@ body {
         margin-bottom: 0px;
         text-align: center; }
       body .row.third-section .gallery {
-        line-height: 110px;
+        line-height: 100px;
         padding-left: 5%;
         padding-right: 5%;
         position: relative;
@@ -225,9 +225,10 @@ body {
           padding-left: 10px;
           padding-right: 10px;
           text-align: center;
-          width: 19%; }
+          width: 15%; }
           body .row.third-section .gallery .item img {
-            max-height: 90px;
-            width: auto; }
+            height: auto;
+            width: 85px;
+            max-height: 110px; }
 
 /*# sourceMappingURL=template.css.map */
