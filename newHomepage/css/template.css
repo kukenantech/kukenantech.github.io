@@ -4,11 +4,20 @@
   src: url("../fonts/abeezee/abeezee-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/abeezee/abeezee-regular-webfont.woff2") format("woff2"), url("../fonts/abeezee/abeezee-regular-webfont.woff") format("woff"), url("../fonts/abeezee/abeezeeno-regular-webfont.ttf") format("truetype"), url("../fonts/abeezee/abeezee-regular-webfont.svg#abeezeeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fonts-awesome/fontawesome-webfont.eot?v=4.4.0");
+  src: url("../fonts/fonts-awesome/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fonts-awesome/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fonts-awesome/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../fonts/fonts-awesome/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fonts-awesome/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 body {
   color: #2f3138;
   font-family: 'abeezeeregular';
-  font-size: 14px;
+  font-size: 16px;
   min-height: 1000px; }
+  body h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px; }
   body .top-bar .name h1 {
     background: url("../img/Kukenan-Logo-White-Letters.png") no-repeat;
     background-size: auto 65px;
@@ -33,9 +42,9 @@ body {
         color: #b2112f;
         transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
         body .top-bar .top-bar-section ul.right li:not(.has-form).active a:after {
-          border-left: solid transparent 5px;
-          border-right: solid transparent 5px;
-          border-bottom: solid #b2112f 5px;
+          border-left: solid transparent 8px;
+          border-right: solid transparent 8px;
+          border-bottom: solid #b2112f 8px;
           bottom: -22px;
           content: " ";
           height: 0;
@@ -53,9 +62,9 @@ body {
           color: #b2112f;
           transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
         body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover:after {
-          border-left: solid transparent 5px;
-          border-right: solid transparent 5px;
-          border-bottom: solid #b2112f 5px;
+          border-left: solid transparent 8px;
+          border-right: solid transparent 8px;
+          border-bottom: solid #b2112f 8px;
           bottom: -22px;
           content: " ";
           height: 0;
@@ -79,12 +88,13 @@ body {
     body .row .sticky {
       background-color: #2f3138;
       border-bottom: 3px solid #b2112f;
-      height: 100px; }
-    body .row.second-section {
+      min-height: 100px;
+      height: auto; }
+    body .row.first-section {
       background-color: #007EA7;
       height: 500px;
       position: relative; }
-      body .row.second-section .columns {
+      body .row.first-section .columns {
         background: url("../img/fondo-section1.png") no-repeat;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -92,7 +102,7 @@ body {
         background-size: cover;
         position: absolute;
         height: 500px; }
-        body .row.second-section .columns .left {
+        body .row.first-section .columns .left {
           background: url("../img/section1-1.png") left bottom no-repeat;
           background-size: 100% auto;
           height: 100%;
@@ -100,7 +110,7 @@ body {
           top: 0;
           width: 25%;
           position: absolute; }
-        body .row.second-section .columns .right {
+        body .row.first-section .columns .right {
           background: url("../img/section1-2.png") right bottom no-repeat;
           background-size: 100% auto;
           height: 100%;
@@ -108,50 +118,115 @@ body {
           top: 0;
           width: 25%;
           position: absolute; }
-      body .row.second-section .content {
+      body .row.first-section .content {
         position: relative;
         min-height: 350px; }
-        body .row.second-section .content p {
+        body .row.first-section .content p {
           text-align: center; }
-          body .row.second-section .content p.slogan {
+          body .row.first-section .content p.slogan {
             color: #EDF2F4;
             font-family: 'Lato', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 56px;
             margin-top: 6%; }
-          body .row.second-section .content p.brief {
+          body .row.first-section .content p.brief {
             color: #2f3138;
             font-family: 'abeezeeregular';
             font-size: 30px;
             line-height: 50px; }
-            body .row.second-section .content p.brief span {
+            body .row.first-section .content p.brief span {
               display: block; }
-            body .row.second-section .content p.brief .question {
+            body .row.first-section .content p.brief .question {
               font-size: 40px; }
-          body .row.second-section .content p.contact {
+          body .row.first-section .content p.contact {
             bottom: 0;
             position: absolute;
             text-align: center;
             width: 100%; }
-            body .row.second-section .content p.contact .ghost-button {
+            body .row.first-section .content p.contact .ghost-button {
               display: inline-block;
               font-family: 'Lato', sans-serif;
               font-size: 30px;
               width: 250px;
               padding: 5px;
               color: #EDF2F4;
-              border: 3px solid #EDF2F4;
+              border: 2px solid #EDF2F4;
               text-align: center;
               outline: none;
               text-decoration: none;
               border-radius: 9px;
               margin-top: 10px;
               transition: background-color 0.1s ease-out,  color 0.1s ease-out; }
-              body .row.second-section .content p.contact .ghost-button:hover, body .row.second-section .content p.contact .ghost-button:active {
-                color: #EDF2F4;
-                background-color: #b2112f;
-                border: 3px solid #b2112f;
+              body .row.first-section .content p.contact .ghost-button:hover, body .row.first-section .content p.contact .ghost-button:active {
+                color: #007EA7;
+                background-color: #EDF2F4;
+                border: 2px solid #EDF2F4;
                 transition: background-color 0.2s ease-in, color 0.2s ease-in; }
+    body .row.second-section {
+      background-color: #EDF2F4;
+      height: 500px;
+      position: relative; }
+      body .row.second-section .text {
+        margin-top: 5%; }
+        body .row.second-section .text h2 {
+          margin-bottom: 5%; }
+      body .row.second-section .image {
+        line-height: 497px;
+        text-align: center; }
+        body .row.second-section .image img {
+          height: 400px;
+          vertical-align: middle;
+          width: auto; }
+    body .row.third-section {
+      background-color: #effafe;
+      height: 160px;
+      position: relative; }
+      body .row.third-section h2 {
+        color: #afcad4;
+        font-size: 16px;
+        margin-top: 1%;
+        text-align: center; }
+      body .row.third-section .gallery {
+        line-height: 110px;
+        padding-left: 5%;
+        padding-right: 5%;
+        position: relative;
+        text-align: center; }
+        body .row.third-section .gallery .right {
+          height: 50px;
+          line-height: 50px;
+          position: absolute;
+          right: 0;
+          top: 25%;
+          width: 5%; }
+          body .row.third-section .gallery .right:after {
+            color: #003459;
+            content: '\f105';
+            font-family: 'FontAwesome';
+            font-size: 60px;
+            vertical-align: middle; }
+        body .row.third-section .gallery .left {
+          height: 50px;
+          line-height: 50px;
+          position: absolute;
+          left: 0;
+          top: 25%;
+          width: 5%; }
+          body .row.third-section .gallery .left:after {
+            color: #003459;
+            content: '\f104';
+            font-family: 'FontAwesome';
+            font-size: 60px;
+            vertical-align: middle; }
+        body .row.third-section .gallery .item {
+          display: inline-block;
+          padding-left: 10px;
+          padding-right: 10px;
+          text-align: center;
+          width: 19%; }
+          body .row.third-section .gallery .item img {
+            max-height: 90px;
+            width: auto; }
 
 /*# sourceMappingURL=template.css.map */
