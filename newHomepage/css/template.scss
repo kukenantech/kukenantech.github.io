@@ -74,7 +74,7 @@ body{
 				background: url("../img/Kukenan-Logo-White-Letters.png") no-repeat;
 				background-size: auto 65px;
 				height: 75px;
-				margin-top: 7%;
+				margin-top: 5%;
 				text-indent: -9999px;
 				width: 200px; 
 			}
@@ -87,7 +87,7 @@ body{
 					li{
 						background-color: $palleteBlack;					
 						min-height: auto;
-						margin-top: 6%;
+						margin-top: 4%;
 						position: relative;
 						text-align: center;
 						width: 33%;
@@ -158,18 +158,22 @@ body{
 			margin: 0 auto;
 			width: 62.5rem;
 		}
+		.page-sizer-section{
+			margin: 0 auto;
+			width: 64rem;
+		}
 		.columns{
 			padding-left: 0;
 			padding-right: 0;
 		}		
 		.top-bar{
 			background-color: $palleteBlack;
-			min-height: 97px;
+			min-height: 85px;
 		}
 		.sticky{
 			background-color: $palleteBlack;
 			border-bottom: 3px solid $palleteRed;
-			min-height: 100px;
+			min-height: 90px;
    			height: auto;
 		}
 		&.first-section{
@@ -184,7 +188,7 @@ body{
 		        -o-background-size: cover;
 		        background-size: cover;
 		        position: absolute;
-    			height: 500px;
+    			height: 100%;
 
     			.left{
     				background: url('../img/section1-1.png') left bottom no-repeat;
@@ -275,29 +279,29 @@ body{
 		}
 		&.third-section{
 			background-color: $white;
-			height: 130px;
+			height: 110px;
 			position: relative;
 
 			h2{
 				color: $lightBlue2;
 				font-size: 16px;
-				margin-top: 2px;
+				margin-top: 8px;
 				margin-bottom: 0px;
 				text-align: center;
 			}
 			.gallery{
-				line-height: 100px;				
+				line-height: 80px;				
 			    padding-left: 5%;
 			    padding-right: 5%;			    
 			    position: relative;
 			    text-align: center;
 
 				.right{					
-				    height: 50px;
-				    line-height: 50px;
+				    height: 80px;
+				    line-height: 80px;
 				    position: absolute;
 				    right: 0;
-				    top: 25%;				    
+				    top: 0;				    
 				    width: 5%;
 
 					&:after{
@@ -309,11 +313,11 @@ body{
 					}
 				}
 				.left{
-					height: 50px;
-				    line-height: 50px;
+					height: 80px;
+				    line-height: 80px;
 				    position: absolute;
 				    left: 0;
-				    top: 25%;				    
+				    top: 0;				    
 				    width: 5%;
 
 					&:after{
@@ -330,12 +334,12 @@ body{
 					padding-left: 10px;
    					padding-right: 10px;
 					text-align: center;
-					width: 15%;
+					width: 13%;
 
 					img{
 						height: auto;
-					    width: 85px;
-					    max-height: 110px;
+					    width: 60px;
+					    max-height: 70px;
 					}
 				}
 			}			

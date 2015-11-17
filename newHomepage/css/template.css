@@ -22,7 +22,7 @@ body {
     background: url("../img/Kukenan-Logo-White-Letters.png") no-repeat;
     background-size: auto 65px;
     height: 75px;
-    margin-top: 7%;
+    margin-top: 5%;
     text-indent: -9999px;
     width: 200px; }
   body .top-bar .top-bar-section ul.right {
@@ -30,7 +30,7 @@ body {
     body .top-bar .top-bar-section ul.right li {
       background-color: #2f3138;
       min-height: auto;
-      margin-top: 6%;
+      margin-top: 4%;
       position: relative;
       text-align: center;
       width: 33%; }
@@ -79,16 +79,19 @@ body {
     body .row .page-sizer {
       margin: 0 auto;
       width: 62.5rem; }
+    body .row .page-sizer-section {
+      margin: 0 auto;
+      width: 64rem; }
     body .row .columns {
       padding-left: 0;
       padding-right: 0; }
     body .row .top-bar {
       background-color: #2f3138;
-      min-height: 97px; }
+      min-height: 85px; }
     body .row .sticky {
       background-color: #2f3138;
       border-bottom: 3px solid #b2112f;
-      min-height: 100px;
+      min-height: 90px;
       height: auto; }
     body .row.first-section {
       background-color: #007EA7;
@@ -101,7 +104,7 @@ body {
         -o-background-size: cover;
         background-size: cover;
         position: absolute;
-        height: 500px; }
+        height: 100%; }
         body .row.first-section .columns .left {
           background: url("../img/section1-1.png") left bottom no-repeat;
           background-size: 100% auto;
@@ -180,26 +183,26 @@ body {
           width: auto; }
     body .row.third-section {
       background-color: #FFFFFF;
-      height: 130px;
+      height: 110px;
       position: relative; }
       body .row.third-section h2 {
         color: #afcad4;
         font-size: 16px;
-        margin-top: 2px;
+        margin-top: 8px;
         margin-bottom: 0px;
         text-align: center; }
       body .row.third-section .gallery {
-        line-height: 100px;
+        line-height: 80px;
         padding-left: 5%;
         padding-right: 5%;
         position: relative;
         text-align: center; }
         body .row.third-section .gallery .right {
-          height: 50px;
-          line-height: 50px;
+          height: 80px;
+          line-height: 80px;
           position: absolute;
           right: 0;
-          top: 25%;
+          top: 0;
           width: 5%; }
           body .row.third-section .gallery .right:after {
             color: #003459;
@@ -208,11 +211,11 @@ body {
             font-size: 60px;
             vertical-align: middle; }
         body .row.third-section .gallery .left {
-          height: 50px;
-          line-height: 50px;
+          height: 80px;
+          line-height: 80px;
           position: absolute;
           left: 0;
-          top: 25%;
+          top: 0;
           width: 5%; }
           body .row.third-section .gallery .left:after {
             color: #003459;
@@ -225,10 +228,10 @@ body {
           padding-left: 10px;
           padding-right: 10px;
           text-align: center;
-          width: 15%; }
+          width: 13%; }
           body .row.third-section .gallery .item img {
             height: auto;
-            width: 85px;
-            max-height: 110px; }
+            width: 60px;
+            max-height: 70px; }
 
 /*# sourceMappingURL=template.css.map */
