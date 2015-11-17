@@ -25,10 +25,11 @@ body {
     body.f-topbar-fixed .row .top-bar {
       min-height: 72px; }
       body.f-topbar-fixed .row .top-bar .name h1 {
-        height: 65px;
-        margin-top: 2%;
+        height: 55px;
+        margin-top: 4%;
+        margin-left: 2%;
         background: url("../img/Kukenan-Cube.png") no-repeat;
-        background-size: auto 65px;
+        background-size: auto 55px;
         transition: background 0.2s ease-out; }
       body.f-topbar-fixed .row .top-bar .top-bar-section ul.right li {
         margin-top: 3%; }
@@ -58,12 +59,12 @@ body {
         font-size: 18px; }
       body .top-bar .top-bar-section ul.right li:not(.has-form).active a {
         background-color: #2f3138;
-        color: #b2112f;
+        color: #d50b15;
         transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
         body .top-bar .top-bar-section ul.right li:not(.has-form).active a:after {
           border-left: solid transparent 8px;
           border-right: solid transparent 8px;
-          border-bottom: solid #b2112f 8px;
+          border-bottom: solid #d50b15 8px;
           bottom: -22px;
           content: " ";
           height: 0;
@@ -78,12 +79,12 @@ body {
         transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
         body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover {
           background-color: #2f3138;
-          color: #b2112f;
+          color: #d50b15;
           transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
         body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover:after {
           border-left: solid transparent 8px;
           border-right: solid transparent 8px;
-          border-bottom: solid #b2112f 8px;
+          border-bottom: solid #d50b15 8px;
           bottom: -22px;
           content: " ";
           height: 0;
@@ -214,11 +215,10 @@ body {
         line-height: 70px;
         padding-left: 5%;
         padding-right: 5%;
-        position: relative;
         text-align: center; }
         body .row.third-section .gallery .right {
-          height: 70px;
-          line-height: 70px;
+          height: 110px;
+          line-height: 110px;
           position: absolute;
           right: 0;
           top: 0;
@@ -227,11 +227,11 @@ body {
             color: #003459;
             content: '\f105';
             font-family: 'FontAwesome';
-            font-size: 60px;
+            font-size: 80px;
             vertical-align: middle; }
         body .row.third-section .gallery .left {
-          height: 70px;
-          line-height: 70px;
+          height: 110px;
+          line-height: 110px;
           position: absolute;
           left: 0;
           top: 0;
@@ -240,7 +240,7 @@ body {
             color: #003459;
             content: '\f104';
             font-family: 'FontAwesome';
-            font-size: 60px;
+            font-size: 80px;
             vertical-align: middle; }
         body .row.third-section .gallery .item {
           display: inline-block;

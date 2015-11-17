@@ -5,6 +5,7 @@ $palleteLightBlue: #007EA7;
 $palleteDarkBlue: #003459;
 $palleteLightGray: #EDF2F4;
 $white: #FFFFFF;
+$red: #d50b15;
 $lightBlue: #effafe;
 $lightBlue2: #afcad4;
 
@@ -80,10 +81,11 @@ body{
 
 				.name{
 					h1{
-						height: 65px;
-						margin-top: 2%;
+						height: 55px;
+						margin-top: 4%;
+						margin-left: 2%;
 						background: url("../img/Kukenan-Cube.png") no-repeat;
-						background-size: auto 65px;
+						background-size: auto 55px;
 						transition: background 0.2s ease-out;
 					}
 				}
@@ -149,14 +151,14 @@ body{
 							&.active{
 								a{
 									background-color: $palleteBlack;
-									color: $palleteRed;
+									color: $red;
 									transition: background-color 0.2s ease-out, 
 												color 0.2s ease-out;
 
 									&:after{
 										border-left: solid transparent 8px;
 									    border-right: solid transparent 8px;
-									    border-bottom: solid $palleteRed 8px;
+									    border-bottom: solid $red 8px;
 									    bottom: -22px;
 									    content: " ";
 									    height: 0;
@@ -175,14 +177,14 @@ body{
 											color 0.2s ease-out;
 								&:hover{
 									background-color: $palleteBlack;
-									color: $palleteRed;
+									color: $red;
 									transition: background-color 0.2s ease-out, 
 												color 0.2s ease-out;
 								}
 								&:hover:after{
 									border-left: solid transparent 8px;
 								    border-right: solid transparent 8px;
-								    border-bottom: solid $palleteRed 8px;
+								    border-bottom: solid $red 8px;
 								    bottom: -22px;
 								    content: " ";
 								    height: 0;
@@ -340,13 +342,12 @@ body{
 			.gallery{
 				line-height: 70px;				
 			    padding-left: 5%;
-			    padding-right: 5%;			    
-			    position: relative;
+			    padding-right: 5%;
 			    text-align: center;
 
 				.right{					
-				    height: 70px;
-				    line-height: 70px;
+				    height: 110px;
+				    line-height: 110px;
 				    position: absolute;
 				    right: 0;
 				    top: 0;				    
@@ -356,13 +357,13 @@ body{
 						color: $palleteDarkBlue;
 					    content: '\f105';
 					    font-family: 'FontAwesome';
-					    font-size: 60px;
+					    font-size: 80px;
 					    vertical-align: middle;
 					}
 				}
 				.left{
-					height: 70px;
-				    line-height: 70px;
+					height: 110px;
+				    line-height: 110px;
 				    position: absolute;
 				    left: 0;
 				    top: 0;				    
@@ -372,7 +373,7 @@ body{
 						color: $palleteDarkBlue;
 					    content: '\f104';
 					    font-family: 'FontAwesome';
-					    font-size: 60px;
+					    font-size: 80px;
 					    vertical-align: middle;
 					}
 				}

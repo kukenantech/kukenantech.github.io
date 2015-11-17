@@ -23,10 +23,10 @@ function auto_height_first_section(){
 			percentage = 6;
 		}
 		else if(auto_height > 500){
-			percentage = (Math.abs(500 - auto_height) / 25) + 6;
+			percentage = parseInt(Math.abs(500 - auto_height) / 25, 10) + 7;
 		}
 		else{
-			percentage = 6 - (Math.abs(500 - auto_height) / 25);
+			percentage = 6 - parseInt(Math.abs(500 - auto_height) / 25, 10);
 		}
 
 		//Assign values
