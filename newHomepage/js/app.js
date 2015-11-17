@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+	//Initialize third party services
 	$(document).foundation();
 
 	//Method to adjust height of first section to display first and second section on page load
@@ -7,6 +8,9 @@ $(document).ready(function(){
 
 	//Method to sticky menu effect
 	sticky_menu_effect_scroll();
+
+	//Parallax Effects
+	parallax_efect_first_section();
 });
 
 function auto_height_first_section(){
@@ -53,4 +57,38 @@ function sticky_menu_effect_scroll(){
 		}
 		
 	});
+}
+
+function parallax_efect_first_section(){
+
+	//Parallax Background
+	$('section[data-type="background"], div[data-type="background"]').each(function(){
+		var objParallax = $(this); // assigning the object
+
+		$(window).scroll(function(){
+	      	//Calculate yPosition
+	      	var yPos = -($(this).scrollTop() / objParallax.data('speed'));
+	      	// Put together our final background position
+       		var coords = '50% '+ yPos + 'px';
+
+       		// Move the background
+            objParallax.css({ backgroundPosition: coords });
+	    });		
+	});
+
+	//Parallax slogan and brief
+	$('span[data-type="slogan"]').each(function(){
+		var objParallax = $(this); // assigning the object
+
+		$(window).scroll(function(){
+	      	//Calculate Opacity
+	      	var opacityPercentage = 1 - (($(this).scrollTop() / objParallax.data('speed')) / 100);
+	      	// Put together our final background position
+       		var coords = opacityPercentage;
+
+       		// Move the background
+            objParallax.css({ zoom: 1, filter:"alpha(opacity="+opacityPercentage+")", opacity:opacityPercentage });
+	    });	
+	});
+
 }
