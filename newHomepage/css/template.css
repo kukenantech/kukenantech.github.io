@@ -5,15 +5,17 @@
   font-weight: normal;
   font-style: normal; }
 body {
+  color: #2f3138;
   font-family: 'abeezeeregular';
-  font-size: 14px; }
+  font-size: 14px;
+  min-height: 1000px; }
   body .top-bar .name h1 {
     background: url("../img/Kukenan-Logo-White-Letters.png") no-repeat;
     background-size: auto 65px;
-    height: 100%;
-    margin-top: 5%;
+    height: 75px;
+    margin-top: 7%;
     text-indent: -9999px;
-    width: 350px; }
+    width: 200px; }
   body .top-bar .top-bar-section ul.right {
     width: 50%; }
     body .top-bar .top-bar-section ul.right li {
@@ -39,7 +41,7 @@ body {
           height: 0;
           left: 50%;
           margin-left: -5px;
-          margin-bottom: -3px;
+          margin-bottom: 0px;
           position: absolute;
           width: 0;
           transition: content 0.2s ease-out; }
@@ -59,7 +61,7 @@ body {
           height: 0;
           left: 50%;
           margin-left: -5px;
-          margin-bottom: -3px;
+          margin-bottom: 0px;
           position: absolute;
           width: 0;
           transition: content 0.2s ease-out; }
@@ -73,42 +75,60 @@ body {
       padding-right: 0; }
     body .row .top-bar {
       background-color: #2f3138;
-      min-height: 100px; }
+      min-height: 97px; }
     body .row .sticky {
       background-color: #2f3138;
-      border-bottom: 3px solid #b2112f; }
-    body .row nav li {
-      min-height: 100px; }
-    body .row.first-section {
+      border-bottom: 3px solid #b2112f;
       height: 100px; }
     body .row.second-section {
-      background: url("../img/coffee-shop-table.jpg") no-repeat center bottom fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      height: 500px; }
+      background-color: #007EA7;
+      height: 500px;
+      position: relative; }
+      body .row.second-section .columns {
+        background: url("../img/fondo-section1.png") no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        height: 500px; }
+        body .row.second-section .columns .left {
+          background: url("../img/section1-1.png") left bottom no-repeat;
+          background-size: 100% auto;
+          height: 100%;
+          left: 0;
+          top: 0;
+          width: 25%;
+          position: absolute; }
+        body .row.second-section .columns .right {
+          background: url("../img/section1-2.png") right bottom no-repeat;
+          background-size: 100% auto;
+          height: 100%;
+          right: 0;
+          top: 0;
+          width: 25%;
+          position: absolute; }
       body .row.second-section .content {
         position: relative;
         min-height: 350px; }
         body .row.second-section .content p {
           text-align: center; }
           body .row.second-section .content p.slogan {
-            color: #003459;
+            color: #EDF2F4;
             font-family: 'Lato', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 56px;
             margin-top: 6%; }
           body .row.second-section .content p.brief {
-            color: #007EA7;
+            color: #2f3138;
             font-family: 'abeezeeregular';
-            font-size: 30px; }
+            font-size: 30px;
+            line-height: 45px; }
             body .row.second-section .content p.brief span {
               display: block; }
             body .row.second-section .content p.brief .question {
-              color: #b2112f;
-              font-size: 33px; }
+              font-size: 40px; }
           body .row.second-section .content p.contact {
             bottom: 0;
             position: absolute;
@@ -117,9 +137,9 @@ body {
             body .row.second-section .content p.contact .ghost-button {
               display: inline-block;
               font-family: 'Lato', sans-serif;
-              font-size: 27px;
+              font-size: 30px;
               width: 250px;
-              padding: 8px;
+              padding: 5px;
               color: #EDF2F4;
               border: 3px solid #EDF2F4;
               text-align: center;
