@@ -275,13 +275,14 @@ body{
 		}
 		&.third-section{
 			background-color: $lightBlue;
-			height: 160px;
+			height: 140px;
 			position: relative;
 
 			h2{
 				color: $lightBlue2;
 				font-size: 16px;
-				margin-top: 1%;
+				margin-top: 2px;
+				margin-bottom: 0px;
 				text-align: center;
 			}
 			.gallery{

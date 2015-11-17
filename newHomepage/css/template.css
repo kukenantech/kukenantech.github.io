@@ -180,12 +180,13 @@ body {
           width: auto; }
     body .row.third-section {
       background-color: #effafe;
-      height: 160px;
+      height: 140px;
       position: relative; }
       body .row.third-section h2 {
         color: #afcad4;
         font-size: 16px;
-        margin-top: 1%;
+        margin-top: 2px;
+        margin-bottom: 0px;
         text-align: center; }
       body .row.third-section .gallery {
         line-height: 110px;
