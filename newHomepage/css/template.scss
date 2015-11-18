@@ -83,12 +83,17 @@ body{
 
 				.name{
 					h1{
-						height: 55px;
-						margin-top: 4%;
+						height: 65px;
+						margin-top: 8%;
 						margin-left: 2%;
 						background: url("../img/Kukenan-Cube.png") no-repeat;
 						background-size: auto 55px;
 						transition: background 0.2s ease-out;
+						width: 100px;
+
+						a{
+							height: 100%;
+						}
 					}
 				}
 				.top-bar-section{
@@ -125,10 +130,14 @@ body{
 				background: url("../img/Kukenan-Logo-White-Letters.png") no-repeat;
 				background-size: auto 65px;
 				height: 75px;
-				margin-top: 5%;
+				margin-top: 6%;
 				transition: background 0.2s ease-in;
 				text-indent: -9999px;
 				width: 200px; 
+
+				a{
+					height: 100%;
+				}
 			}
 		}
 		.top-bar-section{

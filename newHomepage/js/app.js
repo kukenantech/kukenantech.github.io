@@ -41,6 +41,16 @@ function auto_height_first_section(){
 
 function sticky_menu_effect_scroll(){
 
+	//Initialize sticky menu by scrollTop
+	if($(this).scrollTop() == 0){
+		$("body").removeClass("f-topbar-fixed");
+		$("div.contain-to-grid.sticky").removeClass("fixed");
+	}
+	else{
+		$("body").addClass("f-topbar-fixed");
+		$("div.contain-to-grid.sticky").addClass("fixed");
+	}
+
 	$(window).scroll(function(){
 
 		if($("section.menu-section .sticky").hasClass("fixed")){
@@ -54,6 +64,10 @@ function sticky_menu_effect_scroll(){
 		if($(this).scrollTop() == 0){
 			$("body").removeClass("f-topbar-fixed");
 			$("div.contain-to-grid.sticky").removeClass("fixed");
+		}
+		else{
+			$("body").addClass("f-topbar-fixed");
+			$("div.contain-to-grid.sticky").addClass("fixed");
 		}
 		
 	});
