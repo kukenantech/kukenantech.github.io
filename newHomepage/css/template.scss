@@ -5,9 +5,12 @@ $palleteLightBlue: #007EA7;
 $palleteDarkBlue: #003459;
 $palleteLightGray: #EDF2F4;
 $white: #FFFFFF;
+$black: #000000;
 $red: #d50b15;
+$lightGray: #edf2f4;
 $lightBlue: #effafe;
 $lightBlue2: #afcad4;
+$lightGreen: #2eaba3;
 
 @font-face {
     font-family: 'abeezeeregular';
@@ -317,7 +320,7 @@ body{
 			}						
 		}
 		&.second-section{
-			background-color: $palleteLightGray;		
+			background-color: $lightGray;		
 			height: 500px;
 			position: relative;
 
@@ -404,6 +407,22 @@ body{
 					}
 				}
 			}			
+		}
+		&.fourth-section{
+			background-color: $white;
+			height: 700px;
+			position: relative;
+		}
+		&.five-section{
+			background-color: $lightGreen;
+			height: 500px;
+			position: relative;
+		}
+		&.six-section{
+			background-color: $black;
+			color: $white;
+			height: 300px;
+			position: relative;
 		}
 	}
 }

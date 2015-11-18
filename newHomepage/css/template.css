@@ -199,7 +199,7 @@ body {
                 border: 2px solid #EDF2F4;
                 transition: background-color 0.2s ease-in, color 0.2s ease-in; }
     body .row.second-section {
-      background-color: #EDF2F4;
+      background-color: #edf2f4;
       height: 500px;
       position: relative; }
       body .row.second-section .text {
@@ -264,5 +264,18 @@ body {
             height: auto;
             width: 60px;
             max-height: 70px; }
+    body .row.fourth-section {
+      background-color: #FFFFFF;
+      height: 700px;
+      position: relative; }
+    body .row.five-section {
+      background-color: #2eaba3;
+      height: 500px;
+      position: relative; }
+    body .row.six-section {
+      background-color: #000000;
+      color: #FFFFFF;
+      height: 300px;
+      position: relative; }
 
 /*# sourceMappingURL=template.css.map */
