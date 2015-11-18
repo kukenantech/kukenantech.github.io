@@ -41,16 +41,6 @@ function auto_height_first_section(){
 
 function sticky_menu_effect_scroll(){
 
-	//Initialize sticky menu by scrollTop
-	if($(this).scrollTop() == 0){
-		$("body").removeClass("f-topbar-fixed");
-		$("div.contain-to-grid.sticky").removeClass("fixed");
-	}
-	else{
-		$("body").addClass("f-topbar-fixed");
-		$("div.contain-to-grid.sticky").addClass("fixed");
-	}
-
 	$(window).scroll(function(){
 
 		if($("section.menu-section .sticky").hasClass("fixed")){
@@ -62,12 +52,16 @@ function sticky_menu_effect_scroll(){
 
 		//Assign class to body and topbar when page not load on top
 		if($(this).scrollTop() == 0){
-			$("body").removeClass("f-topbar-fixed");
-			$("div.contain-to-grid.sticky").removeClass("fixed");
+			$("body").removeClass("animated");
+			$("div.contain-to-grid.sticky-custom").removeClass("sticky-custom-animated");
+			$("div.contain-to-grid.sticky-custom .top-bar").removeClass("top-bar-animated");
 		}
 		else{
-			$("body").addClass("f-topbar-fixed");
-			$("div.contain-to-grid.sticky").addClass("fixed");
+			if($("body").hasClass("animated") == false){
+				$("body").addClass("animated");
+				$("div.contain-to-grid.sticky-custom").addClass("sticky-custom-animated", 100, "swing");
+				$("div.contain-to-grid.sticky-custom .top-bar").addClass("top-bar-animated", 100, "swing");
+			}
 		}
 		
 	});

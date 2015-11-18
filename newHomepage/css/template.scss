@@ -74,14 +74,13 @@ body{
 
 	&.f-topbar-fixed{
 		background-color: $palleteLightBlue;
-		padding-top: 75px;
 	
 		.row{
-			.sticky{
+			.sticky-custom-animated{
 				min-height: 75px;
 			}
-			.top-bar{
-				min-height: 72px;
+			.top-bar-animated{
+				min-height: 75px;
 				transition: min-height 0.1s ease-in-out;
 
 				.name{
@@ -234,7 +233,7 @@ body{
 			min-height: 85px;
 			transition: min-height 0.1s ease-in-out;
 		}
-		.sticky{
+		.sticky-custom{
 			background-color: rgba(47,49,56,0.9);
 			border-bottom: 3px solid $palleteRed;
 			min-height: 90px;
