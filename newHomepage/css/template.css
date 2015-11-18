@@ -11,6 +11,7 @@
   font-weight: normal;
   font-style: normal; }
 body {
+  background-color: #007EA7;
   color: #2f3138;
   font-family: 'abeezeeregular';
   font-size: 16px;
@@ -19,6 +20,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 50px; }
   body.f-topbar-fixed {
+    background-color: #007EA7;
     padding-top: 75px; }
     body.f-topbar-fixed .row .sticky {
       min-height: 75px; }
@@ -26,12 +28,11 @@ body {
       min-height: 72px; }
       body.f-topbar-fixed .row .top-bar .name h1 {
         height: 65px;
-        margin-top: 8%;
-        margin-left: 2%;
-        background: url("../img/Kukenan-Cube.png") no-repeat;
+        margin-top: 4%;
+        background: url("../img/Kukenan-Logo-sticky.png") no-repeat;
         background-size: auto 55px;
         transition: background 0.2s ease-out;
-        width: 100px; }
+        width: 200px; }
         body.f-topbar-fixed .row .top-bar .name h1 a {
           height: 100%; }
       body.f-topbar-fixed .row .top-bar .top-bar-section ul.right li {
@@ -53,7 +54,7 @@ body {
   body .top-bar .top-bar-section ul.right {
     width: 50%; }
     body .top-bar .top-bar-section ul.right li {
-      background-color: #2f3138;
+      background-color: transparent;
       min-height: auto;
       margin-top: 4%;
       position: relative;
@@ -63,7 +64,7 @@ body {
         font-family: 'Lato', sans-serif;
         font-size: 18px; }
       body .top-bar .top-bar-section ul.right li:not(.has-form).active a {
-        background-color: #2f3138;
+        background-color: transparent;
         color: #d50b15;
         transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
         body .top-bar .top-bar-section ul.right li:not(.has-form).active a:after {
@@ -80,10 +81,10 @@ body {
           width: 0;
           transition: content 0.2s ease-out; }
       body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button) {
-        background-color: #2f3138;
+        background-color: transparent;
         transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
         body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover {
-          background-color: #2f3138;
+          background-color: transparent;
           color: #d50b15;
           transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
         body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover:after {
@@ -111,10 +112,10 @@ body {
       padding-left: 0;
       padding-right: 0; }
     body .row .top-bar {
-      background-color: #2f3138;
+      background-color: transparent;
       min-height: 85px; }
     body .row .sticky {
-      background-color: #2f3138;
+      background-color: rgba(47, 49, 56, 0.9);
       border-bottom: 3px solid #b2112f;
       min-height: 90px;
       height: auto; }

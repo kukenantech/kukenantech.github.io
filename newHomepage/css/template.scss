@@ -61,6 +61,7 @@ $lightBlue2: #afcad4;
 }
 
 body{
+	background-color: $palleteLightBlue;
 	color: $palleteBlack;
 	font-family: 'abeezeeregular';
 	font-size: 16px;
@@ -72,6 +73,7 @@ body{
 	}
 
 	&.f-topbar-fixed{
+		background-color: $palleteLightBlue;
 		padding-top: 75px;
 	
 		.row{
@@ -84,12 +86,11 @@ body{
 				.name{
 					h1{
 						height: 65px;
-						margin-top: 8%;
-						margin-left: 2%;
-						background: url("../img/Kukenan-Cube.png") no-repeat;
+						margin-top: 4%;
+						background: url("../img/Kukenan-Logo-sticky.png") no-repeat;
 						background-size: auto 55px;
 						transition: background 0.2s ease-out;
-						width: 100px;
+						width: 200px;
 
 						a{
 							height: 100%;
@@ -146,7 +147,7 @@ body{
 					width: 50%;
 
 					li{
-						background-color: $palleteBlack;					
+						background-color: transparent;					
 						min-height: auto;
 						margin-top: 4%;
 						position: relative;
@@ -161,7 +162,7 @@ body{
 						&:not(.has-form){
 							&.active{
 								a{
-									background-color: $palleteBlack;
+									background-color: transparent;
 									color: $red;
 									transition: background-color 0.2s ease-out, 
 												color 0.2s ease-out;
@@ -183,11 +184,11 @@ body{
 								}
 							}
 							a:not(.button){
-								background-color: $palleteBlack;
+								background-color: transparent;
 								transition: background-color 0.2s ease-out, 
 											color 0.2s ease-out;
 								&:hover{
-									background-color: $palleteBlack;
+									background-color: transparent;
 									color: $red;
 									transition: background-color 0.2s ease-out, 
 												color 0.2s ease-out;
@@ -228,11 +229,11 @@ body{
 			padding-right: 0;
 		}		
 		.top-bar{
-			background-color: $palleteBlack;
+			background-color: transparent;
 			min-height: 85px;
 		}
 		.sticky{
-			background-color: $palleteBlack;
+			background-color: rgba(47,49,56,0.9);
 			border-bottom: 3px solid $palleteRed;
 			min-height: 90px;
    			height: auto;
