@@ -27,7 +27,8 @@ body {
       body.f-topbar-fixed .row .top-bar .name h1 {
         height: 55px;
         margin-top: 4%;
-        background: url("../img/Kukenan-Logo-White-Letters-Gray.png") no-repeat;
+        margin-left: 2%;
+        background: url("../img/Kukenan-Cube.png") no-repeat;
         background-size: auto 55px;
         transition: background 0.2s ease-out; }
       body.f-topbar-fixed .row .top-bar .top-bar-section ul.right li {
