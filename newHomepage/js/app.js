@@ -7,7 +7,7 @@ $(document).ready(function(){
 	sticky_menu_effect_scroll();
 
 	//Only apply effects to desktop version	
-	if($(window.top).width() > 640){
+	if($(window.top).width() > 1000){
 
 		//Method to adjust height of first section to display first and second section on page load
 		auto_height_first_section();		
