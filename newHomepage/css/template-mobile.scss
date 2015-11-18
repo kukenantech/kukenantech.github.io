@@ -1,0 +1,158 @@
+
+@media only screen and (max-width: 640px) {
+	body{
+		h2{
+			font-size: 40px;
+		}
+		&.f-topbar-fixed{
+			.row{
+				.top-bar-animated{
+					.title-area{
+						height: 75px;
+
+						li{
+							display: inline-block;
+							width: 49%;
+
+							&.toggle-topbar{
+								float: right;
+								height: 75px;
+								line-height: 75px;
+								margin-top: 0px;
+								position: relative;
+								text-align: right;
+								top: 0;
+								vertical-align: top;
+								width: 35%;		
+								a{
+									font-family: "Lato";
+									line-height: 75px;
+									height: 75px;
+								}						
+							}
+						}
+					}
+					.name{
+						h1{
+							background: url("../img/Kukenan-Logo-White-Letters.png") center no-repeat;
+							background-size: auto 55px;
+							margin-top: 0px;
+							height: 74px;
+						}
+					}
+				}
+			}
+		}
+		.top-bar{
+			&.expanded{
+				.title-area{
+					background-color: transparent;
+				}
+			}
+			.title-area{
+				height: 85px;
+
+				li{
+					display: inline-block;
+					width: 49%;
+
+					&.toggle-topbar{
+						float: right;
+						height: 85px;
+						line-height: 85px;
+						margin-top: 0px;
+						position: relative;
+						text-align: right;
+						top: 0;
+						vertical-align: top;
+						width: 35%;		
+						a{
+							font-family: "Lato";
+							line-height: 85px;
+							height: 85px;
+						}						
+					}
+				}
+			}
+			.top-bar-section{
+				ul{
+					&.right{
+						width: 100%;
+						li{
+							min-height: 20px;
+							text-align: left;
+							width: 99%;
+							&:not(.has-form){
+								&.active{
+									a{
+										line-height: 20px;
+										&:after{
+											border: none;
+										}
+									}
+								}
+								a:not(.button){
+									line-height: 20px;
+									&:hover:after{
+										border: none;
+									}
+								}
+							}
+						}
+					}
+				}				
+			}
+			.name{
+				h1{
+					background: url("../img/Kukenan-Logo-White-Letters.png") center no-repeat;
+					background-size: auto 65px;
+					height: 86px;
+					margin-top: 0px;
+				}
+			}
+		}
+		.row{
+			.page-sizer{
+				width: 320px;
+			}
+			.page-sizer-section{
+				width: 320px;
+			}
+			&.first-section{
+				.content{
+					min-height: 420px;
+
+					p{
+						&.slogan{
+							font-size: 40px;
+						}
+						&.brief{
+							font-size: 23px;
+							line-height: 30px;
+
+							.question{
+								font-size: 26px;
+							}
+						}
+					}
+				}
+			}
+			&.second-section{
+				height: 800px;
+				.text{
+					float: none;
+					margin-top: 0px;
+				}
+				.image{
+					line-height: 100px;
+					img{
+						height: 200px;
+					}
+				}
+			}
+			&.third-section{
+				height: 130px;
+			}
+		}
+	}
+}

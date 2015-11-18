@@ -24,8 +24,7 @@ body {
     body.f-topbar-fixed .row .sticky-custom-animated {
       min-height: 75px; }
     body.f-topbar-fixed .row .top-bar-animated {
-      min-height: 75px;
-      transition: min-height 0.1s ease-in-out; }
+      min-height: 75px; }
       body.f-topbar-fixed .row .top-bar-animated .name h1 {
         height: 65px;
         margin-top: 4%;
@@ -36,11 +35,13 @@ body {
         body.f-topbar-fixed .row .top-bar-animated .name h1 a {
           height: 100%; }
       body.f-topbar-fixed .row .top-bar-animated .top-bar-section ul.right li {
-        margin-top: 3%; }
-        body.f-topbar-fixed .row .top-bar-animated .top-bar-section ul.right li:not(.has-form).active a:after {
-          margin-bottom: 10px; }
-        body.f-topbar-fixed .row .top-bar-animated .top-bar-section ul.right li:not(.has-form) a:not(.button):hover:after {
-          margin-bottom: 10px; }
+        min-height: 75px; }
+        body.f-topbar-fixed .row .top-bar-animated .top-bar-section ul.right li:not(.has-form).active a {
+          line-height: 75px; }
+        body.f-topbar-fixed .row .top-bar-animated .top-bar-section ul.right li:not(.has-form) a:not(.button) {
+          line-height: 75px; }
+  body .top-bar .title-area {
+    margin-left: 2%; }
   body .top-bar .name h1 {
     background: url("../img/Kukenan-Logo-White-Letters.png") no-repeat;
     background-size: auto 65px;
@@ -55,8 +56,7 @@ body {
     width: 50%; }
     body .top-bar .top-bar-section ul.right li {
       background-color: transparent;
-      min-height: auto;
-      margin-top: 4%;
+      min-height: 88px;
       position: relative;
       text-align: center;
       width: 33%; }
@@ -66,22 +66,23 @@ body {
       body .top-bar .top-bar-section ul.right li:not(.has-form).active a {
         background-color: transparent;
         color: #d50b15;
+        line-height: 88px;
         transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
         body .top-bar .top-bar-section ul.right li:not(.has-form).active a:after {
           border-left: solid transparent 8px;
           border-right: solid transparent 8px;
           border-bottom: solid #d50b15 8px;
-          bottom: -22px;
+          bottom: 0px;
           content: " ";
           height: 0;
           left: 50%;
           margin-left: -5px;
-          margin-bottom: 0px;
           position: absolute;
           width: 0;
           transition: content 0.2s ease-out; }
       body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button) {
         background-color: transparent;
+        line-height: 88px;
         transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
         body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover {
           background-color: transparent;
@@ -91,12 +92,11 @@ body {
           border-left: solid transparent 8px;
           border-right: solid transparent 8px;
           border-bottom: solid #d50b15 8px;
-          bottom: -22px;
+          bottom: 0px;
           content: " ";
           height: 0;
           left: 50%;
           margin-left: -5px;
-          margin-bottom: 0px;
           position: absolute;
           width: 0;
           transition: content 0.2s ease-out; }
@@ -104,7 +104,7 @@ body {
     max-width: 100%; }
     body .row .page-sizer {
       margin: 0 auto;
-      width: 62.5rem; }
+      width: 980px; }
     body .row .page-sizer-section {
       margin: 0 auto;
       width: 64rem; }

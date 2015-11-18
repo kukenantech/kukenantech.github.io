@@ -1,0 +1,32 @@
+@media only screen and (min-width: 641px) and (max-width: 979px) {
+  body .top-bar .top-bar-section ul.right {
+    width: 66%; }
+  body .row.first-section .content {
+    min-height: 400px; }
+    body .row.first-section .content p.brief {
+      font-size: 25px; }
+      body .row.first-section .content p.brief .question {
+        font-size: 30px; }
+    body .row.first-section .content p.slogan {
+      font-size: 40px; }
+      body .row.first-section .content p.slogan span {
+        line-height: 55px; }
+  body .row.second-section .text {
+    margin-top: 2%;
+    padding-left: 2%; }
+  body .row.second-section .image {
+    padding-right: 2%; }
+    body .row.second-section .image img {
+      height: auto; }
+  body .row.third-section .gallery .right:after {
+    font-size: 70px; }
+  body .row.third-section .gallery .left:after {
+    font-size: 70px; }
+  body .row .page-sizer {
+    width: 640px; }
+  body .row .page-sizer-section {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 640px; } }
+
+/*# sourceMappingURL=template-tablet.css.map */
