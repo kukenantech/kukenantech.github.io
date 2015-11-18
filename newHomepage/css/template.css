@@ -104,7 +104,9 @@ body {
     max-width: 100%; }
     body .row .page-sizer {
       margin: 0 auto;
-      width: 980px; }
+      width: 980px;
+      padding-left: 2%;
+      padding-right: 2%; }
     body .row .page-sizer-section {
       margin: 0 auto;
       width: 64rem; }
