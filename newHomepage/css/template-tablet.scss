@@ -1,20 +1,5 @@
 
-@media only screen and (min-width: 979px) and (max-width: 1023px) {
-	body{
-		.row{
-			.page-sizer{
-				width: 980px;
-			}
-			.page-sizer-section{
-				padding-left: 1%;
-				padding-right: 1%;
-				width: 980px;
-			}
-		}		
-	}
-}
-
-@media only screen and (min-width: 641px) and (max-width: 979px) {
+@media only screen and (min-width: 641px) and (max-width: 1023px) {
 	body{
 		.top-bar{
 			.top-bar-section{
@@ -73,12 +58,12 @@
 				}
 			}
 			.page-sizer{
-				width: 640px;
+				width: 90%;
 			}
 			.page-sizer-section{
 				padding-left: 1%;
 				padding-right: 1%;
-				width: 640px;
+				width: 90%;
 			}
 		}
 	}

@@ -132,10 +132,10 @@
 		}
 		.row{
 			.page-sizer{
-				width: 320px;
+				width: 90%;
 			}
 			.page-sizer-section{
-				width: 320px;
+				width: 95%;
 			}
 			&.first-section{
 				.content{
@@ -171,6 +171,21 @@
 			}
 			&.third-section{
 				height: 130px;
+
+				.gallery{
+					.right{	
+						width: 10%;
+						&:after{
+							font-size: 60px;
+						}
+					}
+					.left{
+						width: 10%;
+						&:after{
+							font-size: 60px;
+						}
+					}
+				}
 			}
 		}
 	}

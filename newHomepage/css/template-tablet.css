@@ -1,11 +1,4 @@
-@media only screen and (min-width: 979px) and (max-width: 1023px) {
-  body .row .page-sizer {
-    width: 980px; }
-  body .row .page-sizer-section {
-    padding-left: 1%;
-    padding-right: 1%;
-    width: 980px; } }
-@media only screen and (min-width: 641px) and (max-width: 979px) {
+@media only screen and (min-width: 641px) and (max-width: 1023px) {
   body .top-bar .top-bar-section ul.right {
     width: 66%; }
   body .row.first-section .content {
@@ -30,10 +23,10 @@
   body .row.third-section .gallery .left:after {
     font-size: 70px; }
   body .row .page-sizer {
-    width: 640px; }
+    width: 90%; }
   body .row .page-sizer-section {
     padding-left: 1%;
     padding-right: 1%;
-    width: 640px; } }
+    width: 90%; } }
 
 /*# sourceMappingURL=template-tablet.css.map */

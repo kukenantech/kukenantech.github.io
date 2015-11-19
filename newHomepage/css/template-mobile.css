@@ -72,9 +72,9 @@
     height: 86px;
     margin-top: 0px; }
   body .row .page-sizer {
-    width: 320px; }
+    width: 90%; }
   body .row .page-sizer-section {
-    width: 320px; }
+    width: 95%; }
   body .row.first-section .content {
     min-height: 450px; }
     body .row.first-section .content p.slogan {
@@ -94,6 +94,14 @@
       body .row.second-section .image img {
         height: 200px; }
   body .row.third-section {
-    height: 130px; } }
+    height: 130px; }
+    body .row.third-section .gallery .right {
+      width: 10%; }
+      body .row.third-section .gallery .right:after {
+        font-size: 60px; }
+    body .row.third-section .gallery .left {
+      width: 10%; }
+      body .row.third-section .gallery .left:after {
+        font-size: 60px; } }
 
 /*# sourceMappingURL=template-mobile.css.map */
