@@ -15,7 +15,26 @@ $(document).ready(function(){
 		//Parallax Effects
 		parallax_efect_first_section();
 	}
+	else if($(window.top).width() < 640){
+
+		//Overwrite event to menu-icon
+		event_menu_icon();
+	}
 });
+
+function event_menu_icon(){
+
+	$(document).on("click", "section.menu-section nav.top-bar li.toggle-topbar.menu-icon a", function(){
+
+		if($("section.menu-section nav.top-bar").hasClass("expanded")){
+			$("section.menu-section nav.top-bar").removeClass("expanded");
+		}
+		else{
+			$("section.menu-section nav.top-bar").addClass("expanded");
+		}		
+		return false;
+	});
+}
 
 function auto_height_first_section(){
 	

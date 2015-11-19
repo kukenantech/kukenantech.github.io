@@ -32,6 +32,25 @@
 							}
 						}
 					}
+					.top-bar-section{
+						ul{
+							&.right{
+								li{
+									min-height: 20px;
+									&:not(.has-form){
+										&.active{
+											a{
+												line-height: 20px;
+											}
+										}
+										a:not(.button){
+											line-height: 20px;
+										}
+									}								
+								}
+							}
+						}
+					}
 					.name{
 						h1{
 							background: url("../img/Kukenan-Logo-White-Letters.png") center no-repeat;
