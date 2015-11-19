@@ -9,6 +9,9 @@ $(document).ready(function(){
 	//Method to initialize gallery
 	slick_gallery_technologies();
 
+	//Effect to menu links
+	effect_menu_link();
+
 	//Only apply effects to desktop version	
 	if($(window.top).width() > 1000){
 
@@ -24,6 +27,28 @@ $(document).ready(function(){
 		event_menu_icon();
 	}
 });
+
+function effect_menu_link(){
+	var ink, d, x, y;
+	$("nav.top-bar section.top-bar-section ul li a").click(function(e){
+		if($(this).find(".ink").length === 0){
+		    $(this).prepend("<span class='ink'></span>");
+		}
+		     
+		ink = $(this).find(".ink");
+		ink.removeClass("animate");
+		 
+		if(!ink.height() && !ink.width()){
+		    d = Math.max($(this).outerWidth(), $(this).outerHeight());
+		    ink.css({height: d, width: d});
+		}
+		 
+		x = e.pageX - $(this).offset().left - ink.width()/2;
+		y = e.pageY - $(this).offset().top - ink.height()/2;
+		 
+		ink.css({top: y+'px', left: x+'px'}).addClass("animate");
+	});
+}
 
 function slick_gallery_technologies(){
 	//Initialize the gallery
