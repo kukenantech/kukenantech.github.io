@@ -171,17 +171,19 @@
 				}
 			}
 			&.second-section{
-				height: 800px;
-				.text{
-					float: none;
-					margin-top: 0px;
-				}
-				.image{
-					line-height: 100px;
-					img{
-						height: 200px;
+				height: 720px;
+				.content{
+					.text{
+						float: none;
+						margin-top: 0px;
 					}
-				}
+					.image{
+						line-height: 100px;
+						img{
+							height: 200px;
+						}
+					}
+				}				
 			}
 			&.third-section{
 				height: 130px;

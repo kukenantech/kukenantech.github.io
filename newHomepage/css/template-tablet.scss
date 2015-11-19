@@ -43,16 +43,18 @@
 				}
 			}
 			&.second-section{
-				.text{
-					margin-top: 2%;
-					padding-left: 2%;
-				}
-				.image{
-					padding-right: 2%;
-					img{
-						height: auto;
+				.content{
+					.text{
+						margin-top: 2%;
+						padding-left: 2%;
 					}
-				}
+					.image{
+						padding-right: 2%;
+						img{
+							height: auto;
+						}
+					}
+				}				
 			}
 			&.third-section{
 			}

@@ -19,12 +19,12 @@
         font-size: 40px; }
       body .row.first-section .content p.slogan span {
         line-height: 55px; }
-  body .row.second-section .text {
+  body .row.second-section .content .text {
     margin-top: 2%;
     padding-left: 2%; }
-  body .row.second-section .image {
+  body .row.second-section .content .image {
     padding-right: 2%; }
-    body .row.second-section .image img {
+    body .row.second-section .content .image img {
       height: auto; }
   body .row .page-sizer {
     width: 90%; }
