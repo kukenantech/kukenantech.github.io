@@ -160,9 +160,10 @@ body {
             color: #EDF2F4;
             font-family: 'Lato', sans-serif;
             font-style: normal;
-            font-weight: 700;
             font-size: 56px;
             margin-top: 6%; }
+            body .row.first-section .content p.slogan .text-change {
+              font-weight: 700; }
           body .row.first-section .content p.brief {
             color: #2f3138;
             font-family: 'abeezeeregular';

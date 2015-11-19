@@ -286,9 +286,12 @@ body{
 						color: $palleteLightGray;
 						font-family: 'Lato', sans-serif;
 						font-style: normal;
-						font-weight: 700;
 						font-size: 56px;
 						margin-top: 6%;
+
+						.text-change{
+							font-weight: 700;
+						}
 					}
 
 					&.brief{
