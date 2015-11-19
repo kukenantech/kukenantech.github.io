@@ -171,10 +171,11 @@ body {
             body .row.first-section .content p.brief span {
               display: block; }
             body .row.first-section .content p.brief .question {
-              font-size: 37px; }
+              font-size: 37px;
+              font-weight: 700;
+              font-style: normal; }
           body .row.first-section .content p.contact {
             bottom: 0;
-            position: absolute;
             text-align: center;
             width: 100%; }
             body .row.first-section .content p.contact .ghost-button {
