@@ -47,6 +47,8 @@ function effect_menu_link(){
 		y = e.pageY - $(this).offset().top - ink.height()/2;
 		 
 		ink.css({top: y+'px', left: x+'px'}).addClass("animate");
+
+		return false;
 	});
 }
 
