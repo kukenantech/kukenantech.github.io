@@ -36,6 +36,8 @@ function slick_gallery_technologies(){
 	  		autoplaySpeed: 3000,
 	  		cssEase: 'linear'
 		});
+
+		$("#items-technologies").val("8");
 	}
 	else if($(window.top).width() > 640){
 		$(".gallery").slick({
@@ -46,6 +48,8 @@ function slick_gallery_technologies(){
 	  		autoplaySpeed: 3000,
 	  		cssEase: 'linear'
 		});
+
+		$("#items-technologies").val("5");
 	}
 	else{
 		$(".gallery").slick({
@@ -56,14 +60,16 @@ function slick_gallery_technologies(){
 	  		autoplaySpeed: 3000,
 	  		cssEase: 'linear'
 		});
+
+		$("#items-technologies").val("3");
 	}
 
 	//Event resize
 	$(window).resize(function(){
-		$('.gallery').slick('unslick');
 
 		//Create the gallery again
-		if($(window.top).width() > 1023){
+		if($(window.top).width() > 1023 && $("#items-technologies").val() != "8"){
+			$('.gallery').slick('unslick');
 			$(".gallery").slick({
 				infinite: true,
 				slidesToShow: 8,
@@ -72,8 +78,11 @@ function slick_gallery_technologies(){
 		  		autoplaySpeed: 3000,
 		  		cssEase: 'linear'
 			});
+
+			$("#items-technologies").val("8");
 		}
-		else if($(window.top).width() > 640){
+		else if($(window.top).width() > 640 && $("#items-technologies").val() != "5"){
+			$('.gallery').slick('unslick');
 			$(".gallery").slick({
 				infinite: true,
 				slidesToShow: 5,
@@ -82,8 +91,11 @@ function slick_gallery_technologies(){
 		  		autoplaySpeed: 3000,
 		  		cssEase: 'linear'
 			});
+
+			$("#items-technologies").val("5");
 		}
-		else{
+		else if($(window.top).width() <= 640 && $("#items-technologies").val() != "3"){
+			$('.gallery').slick('unslick');
 			$(".gallery").slick({
 				infinite: true,
 				slidesToShow: 3,
@@ -92,6 +104,8 @@ function slick_gallery_technologies(){
 		  		autoplaySpeed: 3000,
 		  		cssEase: 'linear'
 			});
+
+			$("#items-technologies").val("3");
 		}
 	});
 
