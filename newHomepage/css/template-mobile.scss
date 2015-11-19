@@ -145,11 +145,14 @@
 
 					p{						
 						&.slogan{
+							font-size: 37px;
+							.text-change{
+								font-size: 40px;
+							}
 							span{
 								display: block;
 								height: 50px;
-							}
-							font-size: 40px;
+							}							
 						}
 						&.brief{
 							font-size: 23px;

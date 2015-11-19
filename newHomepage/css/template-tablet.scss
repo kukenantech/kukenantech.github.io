@@ -26,7 +26,10 @@
 							}
 						}
 						&.slogan{
-							font-size: 40px;
+							font-size: 37px;
+							.text-change{
+								font-size: 40px;
+							}
 							span{
 								line-height: 55px;
 							}

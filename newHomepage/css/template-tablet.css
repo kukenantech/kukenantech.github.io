@@ -10,7 +10,9 @@
       body .row.first-section .content p.brief .question {
         font-size: 30px; }
     body .row.first-section .content p.slogan {
-      font-size: 40px; }
+      font-size: 37px; }
+      body .row.first-section .content p.slogan .text-change {
+        font-size: 40px; }
       body .row.first-section .content p.slogan span {
         line-height: 55px; }
   body .row.second-section .text {
