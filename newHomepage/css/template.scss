@@ -162,8 +162,8 @@ body{
 							&.active{
 								a{
 									background-color: transparent;
-									color: $red;
 									line-height: 88px;
+									text-decoration: underline;
 									transition: background-color 0.2s ease-out, 
 												color 0.2s ease-out;
 
@@ -183,13 +183,13 @@ body{
 								}
 							}
 							a:not(.button){
-								background-color: transparent;
+								background-color: transparent;								
 								line-height: 88px;
 								transition: background-color 0.2s ease-out, 
 											color 0.2s ease-out;
 								&:hover{
 									background-color: transparent;
-									color: $red;
+									text-decoration: underline;
 									transition: background-color 0.2s ease-out, 
 												color 0.2s ease-out;
 								}
@@ -313,6 +313,7 @@ body{
 
 					&.contact{
 						bottom: 0;
+						margin-top: 5%;
 						text-align: center;
 						width: 100%;
 

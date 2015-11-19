@@ -65,8 +65,8 @@ body {
         font-size: 18px; }
       body .top-bar .top-bar-section ul.right li:not(.has-form).active a {
         background-color: transparent;
-        color: #d50b15;
         line-height: 88px;
+        text-decoration: underline;
         transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
         body .top-bar .top-bar-section ul.right li:not(.has-form).active a:after {
           border-left: solid transparent 8px;
@@ -86,7 +86,7 @@ body {
         transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
         body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover {
           background-color: transparent;
-          color: #d50b15;
+          text-decoration: underline;
           transition: background-color 0.2s ease-out,  color 0.2s ease-out; }
         body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover:after {
           border-left: solid transparent 8px;
@@ -177,6 +177,7 @@ body {
               font-style: normal; }
           body .row.first-section .content p.contact {
             bottom: 0;
+            margin-top: 5%;
             text-align: center;
             width: 100%; }
             body .row.first-section .content p.contact .ghost-button {

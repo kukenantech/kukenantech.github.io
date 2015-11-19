@@ -143,12 +143,12 @@
 				.content{
 					min-height: 450px;
 
-					p{
-						span{
-							display: block;
-							height: 50px;
-						}
+					p{						
 						&.slogan{
+							span{
+								display: block;
+								height: 50px;
+							}
 							font-size: 40px;
 						}
 						&.brief{

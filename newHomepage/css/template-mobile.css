@@ -79,11 +79,11 @@
     width: 95%; }
   body .row.first-section .content {
     min-height: 450px; }
-    body .row.first-section .content p span {
-      display: block;
-      height: 50px; }
     body .row.first-section .content p.slogan {
       font-size: 40px; }
+      body .row.first-section .content p.slogan span {
+        display: block;
+        height: 50px; }
     body .row.first-section .content p.brief {
       font-size: 23px;
       line-height: 30px; }

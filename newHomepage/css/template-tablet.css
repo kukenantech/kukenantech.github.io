@@ -5,6 +5,8 @@
     min-height: 400px; }
     body .row.first-section .content p.brief {
       font-size: 25px; }
+      body .row.first-section .content p.brief span {
+        line-height: 40px; }
       body .row.first-section .content p.brief .question {
         font-size: 30px; }
     body .row.first-section .content p.slogan {
