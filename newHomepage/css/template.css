@@ -227,35 +227,12 @@ body {
         text-align: center; }
       body .row.third-section .gallery {
         line-height: 70px;
-        padding-left: 5%;
-        padding-right: 5%;
+        overflow: hidden;
+        padding-left: 2%;
+        padding-right: 2%;
         text-align: center; }
-        body .row.third-section .gallery .right {
-          height: 110px;
-          line-height: 110px;
-          position: absolute;
-          right: 0;
-          top: 0;
-          width: 5%; }
-          body .row.third-section .gallery .right:after {
-            color: #003459;
-            content: '\f105';
-            font-family: 'FontAwesome';
-            font-size: 80px;
-            vertical-align: middle; }
-        body .row.third-section .gallery .left {
-          height: 110px;
-          line-height: 110px;
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 5%; }
-          body .row.third-section .gallery .left:after {
-            color: #003459;
-            content: '\f104';
-            font-family: 'FontAwesome';
-            font-size: 80px;
-            vertical-align: middle; }
+        body .row.third-section .gallery button {
+          display: none !important; }
         body .row.third-section .gallery .item {
           display: inline-block;
           padding-left: 10px;

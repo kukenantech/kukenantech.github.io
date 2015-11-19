@@ -6,6 +6,9 @@ $(document).ready(function(){
 	//Method to sticky menu effect
 	sticky_menu_effect_scroll();
 
+	//Method to initialize gallery
+	slick_gallery_technologies();
+
 	//Only apply effects to desktop version	
 	if($(window.top).width() > 1000){
 
@@ -21,6 +24,78 @@ $(document).ready(function(){
 		event_menu_icon();
 	}
 });
+
+function slick_gallery_technologies(){
+	//Initialize the gallery
+	if($(window.top).width() > 1023){
+		$(".gallery").slick({
+			infinite: true,
+			slidesToShow: 8,
+			slidesToScroll: 1,
+			autoplay: true,
+	  		autoplaySpeed: 3000,
+	  		cssEase: 'linear'
+		});
+	}
+	else if($(window.top).width() > 640){
+		$(".gallery").slick({
+			infinite: true,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			autoplay: true,
+	  		autoplaySpeed: 3000,
+	  		cssEase: 'linear'
+		});
+	}
+	else{
+		$(".gallery").slick({
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			autoplay: true,
+	  		autoplaySpeed: 3000,
+	  		cssEase: 'linear'
+		});
+	}
+
+	//Event resize
+	$(window).resize(function(){
+		$('.gallery').slick('unslick');
+
+		//Create the gallery again
+		if($(window.top).width() > 1023){
+			$(".gallery").slick({
+				infinite: true,
+				slidesToShow: 8,
+				slidesToScroll: 1,
+				autoplay: true,
+		  		autoplaySpeed: 3000,
+		  		cssEase: 'linear'
+			});
+		}
+		else if($(window.top).width() > 640){
+			$(".gallery").slick({
+				infinite: true,
+				slidesToShow: 5,
+				slidesToScroll: 1,
+				autoplay: true,
+		  		autoplaySpeed: 3000,
+		  		cssEase: 'linear'
+			});
+		}
+		else{
+			$(".gallery").slick({
+				infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				autoplay: true,
+		  		autoplaySpeed: 3000,
+		  		cssEase: 'linear'
+			});
+		}
+	});
+
+}
 
 function event_menu_icon(){
 
@@ -65,10 +140,10 @@ function sticky_menu_effect_scroll(){
 	$(window).scroll(function(){
 
 		if($("section.menu-section .sticky").hasClass("fixed")){
-			$("nav.top-bar li.name h1 a img").attr("src", "img/Kukenan-Cube.png");
+			$("nav.top-bar li.name h1 a img").attr("src", "img/Kukenan-Logo-sticky.png");
 		}
 		else{
-			$("nav.top-bar li.name h1 a img").attr("src", "img/Kukenan-Logo-Black-Letters.png");
+			$("nav.top-bar li.name h1 a img").attr("src", "img/Kukenan-Logo-White-Letters.png");
 		}
 
 		//Assign class to body and topbar when page not load on top

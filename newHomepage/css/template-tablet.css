@@ -18,10 +18,6 @@
     padding-right: 2%; }
     body .row.second-section .image img {
       height: auto; }
-  body .row.third-section .gallery .right:after {
-    font-size: 70px; }
-  body .row.third-section .gallery .left:after {
-    font-size: 70px; }
   body .row .page-sizer {
     width: 90%; }
   body .row .page-sizer-section {

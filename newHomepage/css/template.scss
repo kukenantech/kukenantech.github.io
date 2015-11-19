@@ -359,42 +359,14 @@ body{
 				text-align: center;
 			}
 			.gallery{
-				line-height: 70px;				
-			    padding-left: 5%;
-			    padding-right: 5%;
+				line-height: 70px;	
+				overflow: hidden;			
+			    padding-left: 2%;
+			    padding-right: 2%;
 			    text-align: center;
 
-				.right{					
-				    height: 110px;
-				    line-height: 110px;
-				    position: absolute;
-				    right: 0;
-				    top: 0;				    
-				    width: 5%;
-
-					&:after{
-						color: $palleteDarkBlue;
-					    content: '\f105';
-					    font-family: 'FontAwesome';
-					    font-size: 80px;
-					    vertical-align: middle;
-					}
-				}
-				.left{
-					height: 110px;
-				    line-height: 110px;
-				    position: absolute;
-				    left: 0;
-				    top: 0;				    
-				    width: 5%;
-
-					&:after{
-						color: $palleteDarkBlue;
-					    content: '\f104';
-					    font-family: 'FontAwesome';
-					    font-size: 80px;
-					    vertical-align: middle;
-					}
+				button{
+					display: none !important;
 				}
 
 				.item{
