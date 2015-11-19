@@ -194,6 +194,7 @@ body{
 								a{
 									background:rgba(255, 255, 255, 0.3);
 									line-height: 88px;
+									z-index:0;
 
 									&:after{
 										border-left: solid transparent 8px;
@@ -214,6 +215,7 @@ body{
 								background-color: transparent;								
 								line-height: 88px;
 								overflow:hidden;
+								z-index:0;
 								position: relative;
 								-webkit-transition: all 0.2s ease;
 								-moz-transition: all 0.2s ease;
@@ -265,7 +267,7 @@ body{
 			transition: min-height 0.1s ease-in-out;
 		}
 		.sticky-custom{
-			background-color: rgba(47,49,56,0.9);
+			background-color: rgba(47,49,56,0.7);
 			border-bottom: 2px solid $white;
 			box-shadow:rgba(0, 0, 0, 0.3) 0 1px 30px 0;
 			-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 1px 30px 0;
