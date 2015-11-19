@@ -98,8 +98,6 @@ function effect_menu_link(){
 		var anchorLink = $(this).attr("href");
 		var topDiv = $(anchorLink).offset().top - 77;
 		$("html, body").stop().animate({scrollTop:topDiv}, '2000', 'swing', null);
-
-		return false;
 	});
 }
 
