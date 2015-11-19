@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 function effect_menu_link(){
 	var ink, d, x, y;
-	$("nav.top-bar section.top-bar-section ul li a").click(function(e){
+	$("nav.top-bar section.top-bar-section ul li a, a.ghost-button").click(function(e){
 		if($(this).find(".ink").length === 0){
 		    $(this).prepend("<span class='ink'></span>");
 		}
