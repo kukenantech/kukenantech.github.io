@@ -232,28 +232,41 @@ body {
               text-decoration: none;
               border-radius: 9px;
               margin-top: 10px;
+              overflow: hidden;
+              position: relative;
               transition: background-color 0.1s ease-out,  color 0.1s ease-out; }
               body .row.first-section .content p.contact .ghost-button:hover, body .row.first-section .content p.contact .ghost-button:active {
                 color: #007EA7;
                 background-color: #EDF2F4;
-                border: 2px solid #EDF2F4;
+                border: 0px;
+                width: 254px;
+                line-height: 52px;
                 transition: background-color 0.2s ease-in, color 0.2s ease-in; }
     body .row.second-section {
       background-color: #00bcd7;
       color: #FFFFFF;
       height: 500px;
       position: relative; }
-      body .row.second-section .text {
-        margin-top: 5%; }
-        body .row.second-section .text h2 {
-          margin-bottom: 5%; }
-      body .row.second-section .image {
-        line-height: 497px;
-        text-align: center; }
-        body .row.second-section .image img {
-          height: 400px;
-          vertical-align: middle;
-          width: auto; }
+      body .row.second-section .content {
+        background: url("../img/fondo-section1.png") repeat;
+        background-position: 50% 0px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: absolute;
+        height: 100%; }
+        body .row.second-section .content .text {
+          margin-top: 5%; }
+          body .row.second-section .content .text h2 {
+            margin-bottom: 5%; }
+        body .row.second-section .content .image {
+          line-height: 497px;
+          text-align: center; }
+          body .row.second-section .content .image img {
+            height: 400px;
+            vertical-align: middle;
+            width: auto; }
     body .row.third-section {
       background-color: #FFFFFF;
       height: 110px;

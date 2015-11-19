@@ -12,6 +12,9 @@ $(document).ready(function(){
 	//Effect to menu links
 	effect_menu_link();
 
+	//Active class menu items links
+	animation_active_class_menu_links();
+
 	//Only apply effects to desktop version	
 	if($(window.top).width() > 1000){
 
@@ -27,6 +30,49 @@ $(document).ready(function(){
 		event_menu_icon();
 	}
 });
+
+function animation_active_class_menu_links(){
+	//Initialization
+	add_active_class_menu_links();
+
+	//Calculate with event
+	$(window).scroll(function(){
+		add_active_class_menu_links();
+	});
+}
+
+function add_active_class_menu_links(){
+	var topAboutUs = $("#about-us").offset().top - 200;
+	var topHowWeWorks = $("#how-we-works").offset().top - 200;
+	var topContact = $("#contact-us").offset().top - 200;
+
+	var topBody = $(window).scrollTop();
+
+	if(topBody < topAboutUs){
+		//Remove all li
+		$("nav.top-bar ul.right li").removeClass("active");
+	}
+	else if(topBody >= topAboutUs && topBody < topHowWeWorks){
+		//Remove all li
+		$("nav.top-bar ul.right li").removeClass("active");
+		//Add about us
+		$("nav.top-bar ul.right li.about-us").addClass("active");
+	}
+	else if(topBody >= topHowWeWorks && topBody < topContact){
+		//Remove all li
+		$("nav.top-bar ul.right li").removeClass("active");
+		//Add about us
+		$("nav.top-bar ul.right li.how-we-works").addClass("active");
+	}
+	else if(topBody >= topContact){
+		//Remove all li
+		$("nav.top-bar ul.right li").removeClass("active");
+		//Add about us
+		$("nav.top-bar ul.right li.contact-us").addClass("active");
+	}
+
+
+}
 
 function effect_menu_link(){
 	var ink, d, x, y;
@@ -47,6 +93,11 @@ function effect_menu_link(){
 		y = e.pageY - $(this).offset().top - ink.height()/2;
 		 
 		ink.css({top: y+'px', left: x+'px'}).addClass("animate");
+
+		//Redirect window top to the section by anchor link
+		var anchorLink = $(this).attr("href");
+		var topDiv = $(anchorLink).offset().top - 77;
+		$("html, body").stop().animate({scrollTop:topDiv}, '2000', 'swing', null);
 
 		return false;
 	});

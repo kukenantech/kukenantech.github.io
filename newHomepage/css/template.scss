@@ -51,13 +51,17 @@ $lightGreen: #2eaba3;
 	text-decoration: none;
 	border-radius: 9px;
 	margin-top: 10px;
+	overflow: hidden;
+	position: relative;
 	transition: background-color 0.1s ease-out, 
 				color 0.1s ease-out;
 
 	&:hover, &:active{
 		color: $color-hover;
 		background-color: $background-hover;
-		border: 2px solid $background-hover;
+		border: 0px;
+		width: 254px;
+		line-height: 52px; 
 		transition: background-color 0.2s ease-in,
 						color 0.2s ease-in;
 	}
@@ -366,23 +370,34 @@ body{
 			height: 500px;
 			position: relative;
 
-			.text{
-				margin-top: 5%;
+			.content{
+				background: url('../img/fondo-section1.png') repeat;
+				background-position: 50% 0px;
+				-webkit-background-size: cover;
+		        -moz-background-size: cover;
+		        -o-background-size: cover;
+		        background-size: cover;
+		        position: absolute;
+    			height: 100%;
 
-				h2{
-					margin-bottom: 5%;
-				}
-			}
-			.image{
-				line-height: 497px;
-				text-align: center;
+    			.text{
+    				margin-top: 5%;
 
-				img{
-					height: 400px;
-					vertical-align: middle;
-					width: auto;
-				}
-			}			
+    				h2{
+    					margin-bottom: 5%;
+    				}
+    			}
+    			.image{
+    				line-height: 497px;
+    				text-align: center;
+
+    				img{
+    					height: 400px;
+    					vertical-align: middle;
+    					width: auto;
+    				}
+    			}
+			}						
 		}
 		&.third-section{
 			background-color: $white;
