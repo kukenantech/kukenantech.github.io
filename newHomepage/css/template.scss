@@ -200,7 +200,7 @@ body{
 									&:after{
 										border-left: solid transparent 8px;
 									    border-right: solid transparent 8px;
-									    border-bottom: solid $red 8px;
+									    border-bottom: solid $white 8px;
 									    bottom: 0px;
 									    content: " ";
 									    height: 0;
@@ -224,14 +224,14 @@ body{
 
 								&:hover{
 									background-color: transparent;
-									box-shadow:rgba(255, 255, 255, 0.3) 0 0px 2px 0;
-									-webkit-box-shadow:rgba(255, 255, 255, 0.3) 0 0px 2px 0;
-									-moz-box-shadow:rgba(255, 255, 255, 0.3) 0 0px 2px 0;
+									box-shadow:rgba(255, 255, 255, 0.3) 0 1px 2px 0;
+									-webkit-box-shadow:rgba(255, 255, 255, 0.3) 0 1px 2px 0;
+									-moz-box-shadow:rgba(255, 255, 255, 0.3) 0 1px 2px 0;
 								}
 								&:hover:after{
 									border-left: solid transparent 8px;
 								    border-right: solid transparent 8px;
-								    border-bottom: solid $red 8px;
+								    border-bottom: solid $white 8px;
 								    bottom: 0px;
 								    content: " ";
 								    height: 0;
@@ -271,7 +271,10 @@ body{
 		}
 		.sticky-custom{
 			background-color: rgba(47,49,56,0.9);
-			border-bottom: 3px solid $palleteRed;
+			border-bottom: 2px solid $white;
+			box-shadow:rgba(0,0,0, 0.3) 0 1px 0px 0;
+			-webkit-box-shadow:rgba(0,0,0, 0.3) 0 1px 0px 0;
+			-moz-box-shadow:rgba(0,0,0, 0.3) 0 1px 0px 0;
 			min-height: 90px;
    			height: auto;
 		}

@@ -101,7 +101,7 @@ body {
         body .top-bar .top-bar-section ul.right li:not(.has-form).active a:after {
           border-left: solid transparent 8px;
           border-right: solid transparent 8px;
-          border-bottom: solid #d50b15 8px;
+          border-bottom: solid #FFFFFF 8px;
           bottom: 0px;
           content: " ";
           height: 0;
@@ -121,13 +121,13 @@ body {
         transition: all 0.2s ease; }
         body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover {
           background-color: transparent;
-          box-shadow: rgba(255, 255, 255, 0.3) 0 0px 2px 0;
-          -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 0px 2px 0;
-          -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 0px 2px 0; }
+          box-shadow: rgba(255, 255, 255, 0.3) 0 1px 2px 0;
+          -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 2px 0;
+          -moz-box-shadow: rgba(255, 255, 255, 0.3) 0 1px 2px 0; }
         body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover:after {
           border-left: solid transparent 8px;
           border-right: solid transparent 8px;
-          border-bottom: solid #d50b15 8px;
+          border-bottom: solid #FFFFFF 8px;
           bottom: 0px;
           content: " ";
           height: 0;
@@ -155,7 +155,10 @@ body {
       transition: min-height 0.1s ease-in-out; }
     body .row .sticky-custom {
       background-color: rgba(47, 49, 56, 0.9);
-      border-bottom: 3px solid #b2112f;
+      border-bottom: 2px solid #FFFFFF;
+      box-shadow: rgba(0, 0, 0, 0.3) 0 1px 0px 0;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 0px 0;
+      -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 0px 0;
       min-height: 90px;
       height: auto; }
     body .row.first-section {
