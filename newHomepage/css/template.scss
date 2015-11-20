@@ -195,7 +195,7 @@ body{
 
 						&:not(.has-form){
 							&.active{
-								a{
+								a:not(.button){
 									background:rgba(255, 255, 255, 0.3);
 									line-height: 88px;
 									z-index:0;

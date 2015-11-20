@@ -94,11 +94,11 @@ body {
       body .top-bar .top-bar-section ul.right li a {
         font-family: 'Lato', sans-serif;
         font-size: 18px; }
-      body .top-bar .top-bar-section ul.right li:not(.has-form).active a {
+      body .top-bar .top-bar-section ul.right li:not(.has-form).active a:not(.button) {
         background: rgba(255, 255, 255, 0.3);
         line-height: 88px;
         z-index: 0; }
-        body .top-bar .top-bar-section ul.right li:not(.has-form).active a:after {
+        body .top-bar .top-bar-section ul.right li:not(.has-form).active a:not(.button):after {
           border-left: solid transparent 8px;
           border-right: solid transparent 8px;
           border-bottom: solid #FFFFFF 8px;
