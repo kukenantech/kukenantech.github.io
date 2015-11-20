@@ -501,7 +501,7 @@ body{
 				background: url('../img/Development.png') no-repeat center center;
 			}
 
-			.r-gathering {
+			.r-gathering, .testing {
 				@include hww-images;
 				background: url('../img/Meeting.png') no-repeat center center;
 
@@ -510,6 +510,10 @@ body{
 				    top: 320px;
     				left: -250px;
 				}
+			}
+
+			.testing {
+				background: url('../img/Testing.png') no-repeat center center;
 			}
 
 			.loe-generation {
