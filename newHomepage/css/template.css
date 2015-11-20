@@ -299,6 +299,9 @@ body {
       background-color: #FFFFFF;
       height: 700px;
       position: relative; }
+      body .row.fourth-section h2 {
+        text-align: center;
+        margin-top: 5%; }
     body .row.five-section {
       background-color: #2eaba3;
       height: 500px;
