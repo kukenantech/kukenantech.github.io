@@ -91,20 +91,23 @@
     width: 90%; }
   body .row .page-sizer-section {
     width: 95%; }
-  body .row.first-section .content {
-    min-height: 450px; }
-    body .row.first-section .content p.slogan {
-      font-size: 37px; }
-      body .row.first-section .content p.slogan .text-change {
-        font-size: 40px; }
-      body .row.first-section .content p.slogan span {
-        display: block;
-        height: 50px; }
-    body .row.first-section .content p.brief {
-      font-size: 23px;
-      line-height: 30px; }
-      body .row.first-section .content p.brief .question {
-        font-size: 26px; }
+  body .row.first-section {
+    height: 430px; }
+    body .row.first-section .content {
+      min-height: 450px; }
+      body .row.first-section .content p.slogan {
+        font-size: 37px; }
+        body .row.first-section .content p.slogan .text-change {
+          font-size: 40px; }
+        body .row.first-section .content p.slogan span {
+          display: inline-block;
+          height: 60px;
+          vertical-align: top; }
+      body .row.first-section .content p.brief {
+        font-size: 23px;
+        line-height: 30px; }
+        body .row.first-section .content p.brief .question {
+          font-size: 26px; }
   body .row.second-section {
     height: 720px; }
     body .row.second-section .content {

@@ -165,6 +165,7 @@
 				width: 95%;
 			}
 			&.first-section{
+				height: 430px;
 				.content{
 					min-height: 450px;
 
@@ -175,8 +176,9 @@
 								font-size: 40px;
 							}
 							span{
-								display: block;
-								height: 50px;
+								display: inline-block;
+								height: 60px;
+								vertical-align: top;
 							}							
 						}
 						&.brief{
