@@ -39,16 +39,38 @@ function change_text_slogan(){
 	//Replace each 3 seconds
 	window.setInterval(function(){
 	  	
-		var newSpan = "<span display='none'>Web App</span>";
-		$(".first-section .slogan .text-change span").hide("puff", null, 20000, function(){
+	  	var words = ["Web Solutions", "Web Design", "Innovation", "Creativity", "Quality"];
+	  	var effects = ["fade", "highlight", "pulsate"];
+
+	  	//Generate random to select word and effect	  	
+	  	var rEffect = Math.floor((Math.random() * 3));
+	  	var rWord = Math.floor((Math.random() * 5));
+	  	var wordSelected = false;
+
+	  	do{
+	  		if(words[rWord] == $(".first-section .slogan .text-change span").text()){
+	  			rWord = Math.floor((Math.random() * 5));
+	  			wordSelected = false;
+	  		}
+	  		else{
+	  			wordSelected = true;
+	  		}
+	  	}while(wordSelected == false);
+
+	  	console.log(effects[rEffect]);
+
+
+		var newSpan = "<span display='none'>"+words[rWord]+"</span>";
+
+		$(".first-section .slogan .text-change span").hide(effects[rEffect], null, 500, function(){
 			//Remove element and add new span
 			$(".first-section .slogan .text-change").empty();
 
 			$(".first-section .slogan .text-change").append(newSpan);
-			$(".first-section .slogan .text-change span").show("puff", null, 20000, null);
+			$(".first-section .slogan .text-change span").show(effects[rEffect], null, 500, null);
 		});
 
-	}, 20000);
+	}, 3000);
 }
 
 function animation_active_class_menu_links(){
