@@ -331,6 +331,10 @@ body{
 						.text-change{
 							font-size: 56px;
 							font-weight: 700;
+
+							span{
+								overflow: auto;
+							}
 						}
 					}
 

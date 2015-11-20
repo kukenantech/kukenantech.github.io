@@ -20,7 +20,7 @@
 								line-height: 75px;
 								margin-top: 0px;								
 								position: relative;
-								text-align: center;
+								text-align: right;
 								top: 0;
 								vertical-align: top;
 								width: 35%;		
@@ -63,6 +63,7 @@
 						}
 					}
 					.name{
+						position: absolute;
 						h1{
 							background: url("../img/Kukenan-Logo-White-Letters.png") center no-repeat;
 							background-size: auto 55px;
@@ -92,7 +93,7 @@
 						line-height: 85px;
 						margin-top: 0px;
 						position: absolute;
-						text-align: center;
+						text-align: right;
 						top: 0;
 						vertical-align: top;
 						width: 35%;		
@@ -142,6 +143,7 @@
 				}				
 			}
 			.name{
+				position: absolute;
 				h1{
 					background: url("../img/Kukenan-Logo-White-Letters.png") center no-repeat;
 					background-size: auto 65px;

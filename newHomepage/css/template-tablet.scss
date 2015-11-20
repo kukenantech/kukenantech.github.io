@@ -2,10 +2,20 @@
 @media only screen and (min-width: 641px) and (max-width: 1023px) {
 	body{
 		.top-bar{
+			.title-area{
+				width: 31%;
+				li{
+					h1{
+						background-position: center center;
+						height: 85px;
+						margin-top: 0px;
+					}
+				}
+			}
 			.top-bar-section{
 				ul{
 					&.right{
-						width: 66%;
+						width: 67%;
 					}
 				}
 			}

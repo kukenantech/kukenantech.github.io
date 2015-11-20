@@ -15,6 +15,9 @@ $(document).ready(function(){
 	//Active class menu items links
 	animation_active_class_menu_links();
 
+	//Effect text change in slogan
+	change_text_slogan();
+
 	//Only apply effects to desktop version	
 	if($(window.top).width() > 1024){
 
@@ -30,6 +33,23 @@ $(document).ready(function(){
 		event_menu_icon();
 	}
 });
+
+function change_text_slogan(){
+
+	//Replace each 3 seconds
+	window.setInterval(function(){
+	  	
+		var newSpan = "<span display='none'>Web App</span>";
+		$(".first-section .slogan .text-change span").hide("puff", null, 20000, function(){
+			//Remove element and add new span
+			$(".first-section .slogan .text-change").empty();
+
+			$(".first-section .slogan .text-change").append(newSpan);
+			$(".first-section .slogan .text-change span").show("puff", null, 20000, null);
+		});
+
+	}, 20000);
+}
 
 function animation_active_class_menu_links(){
 	//Initialization
