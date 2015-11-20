@@ -309,7 +309,7 @@ body {
       background-color: #FFFFFF;
       height: auto;
       position: relative;
-      padding-top: 5%;
+      padding-top: 3%;
       padding-bottom: 5%; }
       body .row.fourth-section .row {
         margin-bottom: 10%; }
@@ -329,28 +329,49 @@ body {
         word-spacing: 0em;
         line-height: 1.4;
         margin-bottom: 5%; }
-      body .row.fourth-section .initial-contact {
+      body .row.fourth-section .initial-contact,
+      body .row.fourth-section .development,
+      body .row.fourth-section .delivery {
         height: 300px;
         background-size: 300px 300px;
         background: url("../img/Initial-Contact.png") no-repeat center center; }
-        body .row.fourth-section .initial-contact img {
+        body .row.fourth-section .initial-contact img,
+        body .row.fourth-section .development img,
+        body .row.fourth-section .delivery img {
           width: 568px;
           height: 84px;
           border: 0;
           position: relative;
           top: 320px;
           left: 240px; }
-      body .row.fourth-section .r-gathering {
+      body .row.fourth-section .development {
+        background: url("../img/Development.png") no-repeat center center; }
+      body .row.fourth-section .delivery {
+        background: url("../img/Delivery.png") no-repeat center center; }
+      body .row.fourth-section .r-gathering, body .row.fourth-section .testing {
         height: 300px;
         background-size: 300px 300px;
         background: url("../img/Meeting.png") no-repeat center center; }
-        body .row.fourth-section .r-gathering img {
+        body .row.fourth-section .r-gathering img, body .row.fourth-section .testing img {
           width: 568px;
           height: 84px;
           border: 0;
           position: relative;
           top: 320px;
-          left: 240px; }
+          left: -250px; }
+      body .row.fourth-section .testing {
+        background: url("../img/Testing.png") no-repeat center center; }
+      body .row.fourth-section .loe-generation {
+        height: 300px;
+        background-size: 300px 300px;
+        background: url("../img/LOE.png") no-repeat center center; }
+        body .row.fourth-section .loe-generation img {
+          width: 6px;
+          height: 128px;
+          border: 0;
+          position: relative;
+          top: 280px;
+          left: 250px; }
     body .row.five-section {
       background-color: #2eaba3;
       height: 430px;
@@ -368,10 +389,50 @@ body {
         font-weight: 300;
         letter-spacing: -1px;
         text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
         color: #00171f;
         line-height: 36px; }
+      body .row.five-section form.contact_form .wrapper_left {
+        width: 49%;
+        padding: 1%;
+        display: inline-block;
+        vertical-align: top;
+        float: left; }
+        body .row.five-section form.contact_form .wrapper_left .fa {
+          position: absolute;
+          padding: 0.6em;
+          font-size: 1.2em;
+          color: #7a7c81; }
+      body .row.five-section form.contact_form .wrapper_right {
+        width: 49%;
+        padding: 1%;
+        display: inline-block;
+        vertical-align: top;
+        float: right; }
+        body .row.five-section form.contact_form .wrapper_right .fa {
+          position: absolute;
+          padding: 0.6em;
+          font-size: 1.2em;
+          color: #7a7c81; }
+      body .row.five-section form.contact_form input.input-group {
+        height: 44px;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        padding-left: 40px;
+        font-size: 15px; }
+      body .row.five-section form.contact_form select.input-group {
+        height: 44px;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        padding-left: 32px;
+        font-size: 15px; }
+      body .row.five-section form.contact_form textarea {
+        min-height: 184px;
+        border-radius: 5px;
+        padding-left: 30px;
+        font-size: 15px;
+        padding-top: 10px; }
     body .row.six-section {
       background-color: #000000;
       color: #FFFFFF;

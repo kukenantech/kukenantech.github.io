@@ -468,7 +468,7 @@ body{
 			background-color: $white;
 			height: auto;
 			position: relative;
-			padding-top: 5%;
+			padding-top: 3%;
 			padding-bottom: 5%;
 
 			.row {
@@ -497,7 +497,9 @@ body{
 				margin-bottom: 5%;
 			}
 
-			.initial-contact {
+			.initial-contact,
+			.development,
+			.delivery {
 				@include hww-images;
 				background: url('../img/Initial-Contact.png') no-repeat center center;
 
@@ -508,14 +510,40 @@ body{
 				}
 			}
 
-			.r-gathering {
+			.development {
+				background: url('../img/Development.png') no-repeat center center;
+			}
+
+			.delivery {
+				background: url('../img/Delivery.png') no-repeat center center;
+			}
+
+			.r-gathering, .testing {
 				@include hww-images;
 				background: url('../img/Meeting.png') no-repeat center center;
 
 				img {
 					@include hww-dotted-horizontal;
 				    top: 320px;
-    				left: 240px;
+    				left: -250px;
+				}
+			}
+
+			.testing {
+				background: url('../img/Testing.png') no-repeat center center;
+			}
+
+			.loe-generation {
+				@include hww-images;
+				background: url('../img/LOE.png') no-repeat center center;
+
+				img {
+					width: 6px;
+				    height: 128px;
+				    border: 0;
+				    position: relative;
+				    top: 280px;
+    				left: 250px;
 				}
 			}
 		}
@@ -537,11 +565,66 @@ body{
 			    font-weight: 300;
 			    letter-spacing: -1px;
 			    text-align: center;
-			    padding-top: 20px;
-			    padding-bottom: 20px;
+			    padding-top: 25px;
+			    padding-bottom: 25px;
 			    color: #00171f;
 			    line-height: 36px;
-			}					
+			}	
+			form{
+				&.contact_form{
+					.wrapper_left{
+						width: 49%;
+					    padding: 1%;
+					    display: inline-block;
+					    vertical-align: top;
+					    float: left;
+					    .fa {
+						    position: absolute;
+						    padding: 0.6em;
+						    font-size: 1.2em;
+						    color: #7a7c81;
+						}
+					}
+					.wrapper_right{
+						width: 49%;
+					    padding: 1%;
+					    display: inline-block;
+					    vertical-align: top;
+					    float: right;
+					    .fa {
+						    position: absolute;
+						    padding: 0.6em;
+						    font-size: 1.2em;
+						    color: #7a7c81;
+						}
+					}
+					input{
+						&.input-group{
+							height: 44px;
+							border-radius: 5px;
+							margin-bottom: 25px;
+							padding-left: 40px;
+							font-size: 15px;
+						}
+					}
+					select{
+						&.input-group{
+							height: 44px;
+							border-radius: 5px;
+							margin-bottom: 25px;
+							padding-left: 32px;
+							font-size: 15px;
+						}
+					}
+					textarea{
+						min-height: 184px;
+						border-radius: 5px;
+						padding-left: 30px;
+						font-size: 15px;
+						padding-top: 10px;
+					}
+				}
+			}				
 		}
 		&.six-section{
 			background-color: $black;
