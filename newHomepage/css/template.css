@@ -201,11 +201,19 @@ body {
             font-style: normal;
             font-size: 53px;
             margin-top: 6%; }
-            body .row.first-section .content p.slogan .text-change {
-              font-size: 56px;
-              font-weight: 700; }
-              body .row.first-section .content p.slogan .text-change span {
-                overflow: auto; }
+            body .row.first-section .content p.slogan span {
+              display: inline-block;
+              text-align: left;
+              vertical-align: top;
+              width: 49%; }
+              body .row.first-section .content p.slogan span.text-change {
+                font-size: 56px;
+                font-weight: 700;
+                text-align: right; }
+                body .row.first-section .content p.slogan span.text-change span {
+                  text-align: right;
+                  overflow: auto;
+                  width: auto; }
           body .row.first-section .content p.brief {
             color: #2f3138;
             font-family: 'abeezeeregular';

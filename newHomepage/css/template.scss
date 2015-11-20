@@ -342,12 +342,23 @@ body{
 						font-size: 53px;
 						margin-top: 6%;
 
-						.text-change{
-							font-size: 56px;
-							font-weight: 700;
+						span{
+							display: inline-block;
+							text-align: left;
+							vertical-align: top;
+							width: 49%;
 
-							span{
-								overflow: auto;
+							&.text-change{
+								font-size: 56px;
+								font-weight: 700;	
+								text-align: right;						
+
+								span{
+									text-align: right;
+									overflow: auto;
+									width: auto;
+
+								}
 							}
 						}
 					}

@@ -172,14 +172,17 @@
 					p{						
 						&.slogan{
 							font-size: 37px;
-							.text-change{
-								font-size: 40px;
-							}
 							span{
 								display: inline-block;
 								height: 60px;
 								vertical-align: top;
-							}							
+								width: auto;
+
+								&.text-change{
+									font-size: 40px;
+								}
+							}
+														
 						}
 						&.brief{
 							font-size: 23px;
@@ -194,8 +197,7 @@
 			}
 			&.second-section{
 				height: 720px;
-				.content{
-					background: transparent;
+				.content{					
 					.text{
 						float: none;
 						margin-top: 0px;
