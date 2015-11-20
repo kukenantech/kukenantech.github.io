@@ -299,11 +299,16 @@ body {
             max-height: 70px; }
     body .row.fourth-section {
       background-color: #FFFFFF;
-      height: 700px;
-      position: relative; }
+      height: auto;
+      position: relative;
+      padding-top: 5%;
+      padding-bottom: 5%; }
+      body .row.fourth-section .row {
+        margin-bottom: 10%; }
+        body .row.fourth-section .row:last-child {
+          margin-bottom: 0; }
       body .row.fourth-section h2 {
         text-align: center;
-        margin-top: 5%;
         margin-bottom: 5%; }
       body .row.fourth-section h3 {
         font-family: 'Lato', sans-serif;
@@ -314,12 +319,24 @@ body {
         text-decoration: none;
         letter-spacing: 0em;
         word-spacing: 0em;
-        line-height: 1.4; }
+        line-height: 1.4;
+        margin-bottom: 5%; }
       body .row.fourth-section .initial-contact {
         height: 300px;
-        background: url("../img/Initial-Contact.png") no-repeat center center;
-        background-size: 300px 300px; }
+        background-size: 300px 300px;
+        background: url("../img/Initial-Contact.png") no-repeat center center; }
         body .row.fourth-section .initial-contact img {
+          width: 568px;
+          height: 84px;
+          border: 0;
+          position: relative;
+          top: 320px;
+          left: 240px; }
+      body .row.fourth-section .r-gathering {
+        height: 300px;
+        background-size: 300px 300px;
+        background: url("../img/Meeting.png") no-repeat center center; }
+        body .row.fourth-section .r-gathering img {
           width: 568px;
           height: 84px;
           border: 0;

@@ -67,6 +67,18 @@ $lightGreen: #2eaba3;
 	}
 }
 
+@mixin hww-images(){
+	height: 300px;
+	background-size: 300px 300px;
+}
+
+@mixin hww-dotted-horizontal(){
+	width: 568px;
+    height: 84px;
+    border: 0;
+    position: relative;
+}
+
 body{
 	background-color: $palleteLightBlue;
 	color: $palleteBlack;
@@ -441,14 +453,23 @@ body{
 				}
 			}			
 		}
-		&.fourth-section{
+		&.fourth-section {
 			background-color: $white;
-			height: 700px;
+			height: auto;
 			position: relative;
+			padding-top: 5%;
+			padding-bottom: 5%;
+
+			.row {
+				margin-bottom: 10%;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
 
 			h2 {
 				text-align: center;
-				margin-top: 5%;
 				margin-bottom: 5%;
 			}
 
@@ -462,18 +483,26 @@ body{
 				letter-spacing: 0em;
 				word-spacing: 0em;
 				line-height: 1.4;
+				margin-bottom: 5%;
 			}
 
-			.initial-contact{
-				height: 300px;
+			.initial-contact {
+				@include hww-images;
 				background: url('../img/Initial-Contact.png') no-repeat center center;
-    			background-size: 300px 300px;
 
-				img{
-					width: 568px;
-				    height: 84px;
-				    border: 0;
-				    position: relative;
+				img {
+					@include hww-dotted-horizontal;
+				    top: 320px;
+    				left: 240px;
+				}
+			}
+
+			.r-gathering {
+				@include hww-images;
+				background: url('../img/Meeting.png') no-repeat center center;
+
+				img {
+					@include hww-dotted-horizontal;
 				    top: 320px;
     				left: 240px;
 				}
