@@ -111,15 +111,13 @@
           font-size: 26px; }
   body .row.second-section {
     height: 720px; }
-    body .row.second-section .content {
-      background: transparent; }
-      body .row.second-section .content .text {
-        float: none;
-        margin-top: 0px; }
-      body .row.second-section .content .image {
-        line-height: 100px; }
-        body .row.second-section .content .image img {
-          height: 200px; }
+    body .row.second-section .content .text {
+      float: none;
+      margin-top: 0px; }
+    body .row.second-section .content .image {
+      line-height: 100px; }
+      body .row.second-section .content .image img {
+        height: 200px; }
   body .row.third-section {
     height: 130px; } }
 
