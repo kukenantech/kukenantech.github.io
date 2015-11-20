@@ -507,6 +507,20 @@ body{
     				left: -250px;
 				}
 			}
+
+			.loe-generation {
+				@include hww-images;
+				background: url('../img/LOE.png') no-repeat center center;
+
+				img {
+					width: 6px;
+				    height: 128px;
+				    border: 0;
+				    position: relative;
+				    top: 260px;
+    				left: 250px;
+				}
+			}
 		}
 		&.five-section{
 			background-color: $lightGreen;

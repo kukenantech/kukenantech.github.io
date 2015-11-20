@@ -343,6 +343,17 @@ body {
           position: relative;
           top: 320px;
           left: -250px; }
+      body .row.fourth-section .loe-generation {
+        height: 300px;
+        background-size: 300px 300px;
+        background: url("../img/LOE.png") no-repeat center center; }
+        body .row.fourth-section .loe-generation img {
+          width: 6px;
+          height: 128px;
+          border: 0;
+          position: relative;
+          top: 260px;
+          left: 250px; }
     body .row.five-section {
       background-color: #2eaba3;
       height: 430px;
