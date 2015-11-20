@@ -321,17 +321,19 @@ body {
         word-spacing: 0em;
         line-height: 1.4;
         margin-bottom: 5%; }
-      body .row.fourth-section .initial-contact {
+      body .row.fourth-section .initial-contact, body .row.fourth-section .development {
         height: 300px;
         background-size: 300px 300px;
         background: url("../img/Initial-Contact.png") no-repeat center center; }
-        body .row.fourth-section .initial-contact img {
+        body .row.fourth-section .initial-contact img, body .row.fourth-section .development img {
           width: 568px;
           height: 84px;
           border: 0;
           position: relative;
           top: 320px;
           left: 240px; }
+      body .row.fourth-section .development {
+        background: url("../img/Development.png") no-repeat center center; }
       body .row.fourth-section .r-gathering {
         height: 300px;
         background-size: 300px 300px;
