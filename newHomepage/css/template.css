@@ -305,6 +305,16 @@ body {
         text-align: center;
         margin-top: 5%;
         margin-bottom: 5%; }
+      body .row.fourth-section h3 {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0em;
+        word-spacing: 0em;
+        line-height: 1.4; }
     body .row.five-section {
       background-color: #2eaba3;
       height: 430px;

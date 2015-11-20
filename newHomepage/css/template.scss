@@ -451,6 +451,18 @@ body{
 				margin-top: 5%;
 				margin-bottom: 5%;
 			}
+
+			h3 {
+				font-family: 'Lato', sans-serif;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 36px;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0em;
+				word-spacing: 0em;
+				line-height: 1.4;
+			}
 		}
 		&.five-section{
 			background-color: $lightGreen;
