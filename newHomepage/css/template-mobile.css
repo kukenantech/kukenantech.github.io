@@ -99,9 +99,13 @@
         font-size: 37px; }
         body .row.first-section .content p.slogan span {
           display: inline-block;
+          line-height: 60px;
           height: 60px;
           vertical-align: top;
           width: auto; }
+          body .row.first-section .content p.slogan span span {
+            height: auto;
+            line-height: auto; }
           body .row.first-section .content p.slogan span.text-change {
             font-size: 40px; }
       body .row.first-section .content p.brief {
