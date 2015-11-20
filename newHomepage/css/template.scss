@@ -453,15 +453,19 @@ body{
 				}
 			}			
 		}
-		&.fourth-section{
+		&.fourth-section {
 			background-color: $white;
 			height: auto;
 			position: relative;
 			padding-top: 5%;
 			padding-bottom: 5%;
 
-			.row{
-				margin-bottom: 5%;
+			.row {
+				margin-bottom: 10%;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
 			}
 
 			h2 {
@@ -482,22 +486,22 @@ body{
 				margin-bottom: 5%;
 			}
 
-			.initial-contact{
+			.initial-contact {
 				@include hww-images;
 				background: url('../img/Initial-Contact.png') no-repeat center center;
 
-				img{
+				img {
 					@include hww-dotted-horizontal;
 				    top: 320px;
     				left: 240px;
 				}
 			}
 
-			.r-gathering{
+			.r-gathering {
 				@include hww-images;
 				background: url('../img/Meeting.png') no-repeat center center;
 
-				img{
+				img {
 					@include hww-dotted-horizontal;
 				    top: 320px;
     				left: 240px;
