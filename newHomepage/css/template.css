@@ -390,14 +390,12 @@ body {
         vertical-align: top;
         float: right; }
       body .row.five-section form.contact_form input.input-group, body .row.five-section form.contact_form select.input-group {
-        font-family: "FontAwesome";
         height: 44px;
         border-radius: 5px;
         margin-bottom: 25px; }
       body .row.five-section form.contact_form textarea {
         min-height: 184px;
-        border-radius: 5px;
-        font-family: "FontAwesome"; }
+        border-radius: 5px; }
     body .row.six-section {
       background-color: #000000;
       color: #FFFFFF;
