@@ -457,7 +457,7 @@ body{
 			background-color: $white;
 			height: auto;
 			position: relative;
-			padding-top: 5%;
+			padding-top: 3%;
 			padding-bottom: 5%;
 
 			.row {
@@ -504,7 +504,7 @@ body{
 				img {
 					@include hww-dotted-horizontal;
 				    top: 320px;
-    				left: 240px;
+    				left: -250px;
 				}
 			}
 		}

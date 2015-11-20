@@ -301,7 +301,7 @@ body {
       background-color: #FFFFFF;
       height: auto;
       position: relative;
-      padding-top: 5%;
+      padding-top: 3%;
       padding-bottom: 5%; }
       body .row.fourth-section .row {
         margin-bottom: 10%; }
@@ -342,7 +342,7 @@ body {
           border: 0;
           position: relative;
           top: 320px;
-          left: 240px; }
+          left: -250px; }
     body .row.five-section {
       background-color: #2eaba3;
       height: 430px;
