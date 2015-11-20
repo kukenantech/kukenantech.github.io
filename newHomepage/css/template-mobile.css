@@ -60,9 +60,9 @@
       min-height: 20px;
       text-align: left;
       width: 99%; }
-      body .top-bar .top-bar-section ul.right li:not(.has-form).active a {
+      body .top-bar .top-bar-section ul.right li:not(.has-form).active a:not(.button) {
         line-height: 20px; }
-        body .top-bar .top-bar-section ul.right li:not(.has-form).active a:after {
+        body .top-bar .top-bar-section ul.right li:not(.has-form).active a:not(.button):after {
           border: none; }
       body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button) {
         line-height: 20px; }
