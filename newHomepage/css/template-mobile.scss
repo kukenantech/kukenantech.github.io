@@ -40,7 +40,7 @@
 									min-height: 20px;
 									&:not(.has-form){
 										&.active{
-											a{
+											a:not(.button){
 												line-height: 20px;
 											}
 										}

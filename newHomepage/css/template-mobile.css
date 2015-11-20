@@ -23,7 +23,7 @@
           height: 75px; }
   body.f-topbar-fixed .row .top-bar-animated .top-bar-section ul.right li {
     min-height: 20px; }
-    body.f-topbar-fixed .row .top-bar-animated .top-bar-section ul.right li:not(.has-form).active a {
+    body.f-topbar-fixed .row .top-bar-animated .top-bar-section ul.right li:not(.has-form).active a:not(.button) {
       line-height: 20px; }
     body.f-topbar-fixed .row .top-bar-animated .top-bar-section ul.right li:not(.has-form) a:not(.button) {
       line-height: 20px; }
