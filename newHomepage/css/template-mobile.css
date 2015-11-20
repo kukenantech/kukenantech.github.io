@@ -97,12 +97,13 @@
       min-height: 450px; }
       body .row.first-section .content p.slogan {
         font-size: 37px; }
-        body .row.first-section .content p.slogan .text-change {
-          font-size: 40px; }
         body .row.first-section .content p.slogan span {
           display: inline-block;
           height: 60px;
-          vertical-align: top; }
+          vertical-align: top;
+          width: auto; }
+          body .row.first-section .content p.slogan span.text-change {
+            font-size: 40px; }
       body .row.first-section .content p.brief {
         font-size: 23px;
         line-height: 30px; }

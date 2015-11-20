@@ -23,10 +23,10 @@
           font-size: 30px; }
       body .row.first-section .content p.slogan {
         font-size: 37px; }
-        body .row.first-section .content p.slogan .text-change {
-          font-size: 40px; }
         body .row.first-section .content p.slogan span {
           line-height: 55px; }
+          body .row.first-section .content p.slogan span.text-change {
+            font-size: 40px; }
   body .row.second-section .content .text {
     margin-top: 2%;
     padding-left: 2%; }
