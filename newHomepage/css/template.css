@@ -299,11 +299,12 @@ body {
             max-height: 70px; }
     body .row.fourth-section {
       background-color: #FFFFFF;
-      height: 700px;
-      position: relative; }
+      height: auto;
+      position: relative;
+      padding-top: 5%;
+      padding-bottom: 5%; }
       body .row.fourth-section h2 {
         text-align: center;
-        margin-top: 5%;
         margin-bottom: 5%; }
       body .row.fourth-section h3 {
         font-family: 'Lato', sans-serif;
