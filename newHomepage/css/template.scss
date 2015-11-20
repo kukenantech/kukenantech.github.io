@@ -453,8 +453,16 @@ body{
 		}
 		&.five-section{
 			background-color: $lightGreen;
-			height: 500px;
+			height: 430px;
 			position: relative;
+			background: url('../img/icons-background-contact-us.png') repeat;
+			background-position: 50% 0px;
+			-webkit-background-size: cover;
+	        -moz-background-size: cover;
+	        -o-background-size: cover;
+	        background-size: cover;
+	        position: absolute;
+			height: 100%;
 		}
 		&.six-section{
 			background-color: $black;
