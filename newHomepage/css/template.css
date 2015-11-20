@@ -314,7 +314,8 @@ body {
         text-decoration: none;
         letter-spacing: 0em;
         word-spacing: 0em;
-        line-height: 1.4; }
+        line-height: 1.4;
+        margin-bottom: 5%; }
       body .row.fourth-section .initial-contact {
         height: 300px;
         background: url("../img/Initial-Contact.png") no-repeat center center;
