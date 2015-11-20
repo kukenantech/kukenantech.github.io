@@ -19,15 +19,13 @@
         font-size: 40px; }
       body .row.first-section .content p.slogan span {
         line-height: 55px; }
-  body .row.second-section .content {
-    background: transparent; }
-    body .row.second-section .content .text {
-      margin-top: 2%;
-      padding-left: 2%; }
-    body .row.second-section .content .image {
-      padding-right: 2%; }
-      body .row.second-section .content .image img {
-        height: auto; }
+  body .row.second-section .content .text {
+    margin-top: 2%;
+    padding-left: 2%; }
+  body .row.second-section .content .image {
+    padding-right: 2%; }
+    body .row.second-section .content .image img {
+      height: auto; }
   body .row .page-sizer {
     width: 90%; }
   body .row .page-sizer-section {
