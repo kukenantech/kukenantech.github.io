@@ -16,7 +16,7 @@ $(document).ready(function(){
 	animation_active_class_menu_links();
 
 	//Only apply effects to desktop version	
-	if($(window.top).width() > 1000){
+	if($(window.top).width() > 1024){
 
 		//Method to adjust height of first section to display first and second section on page load
 		auto_height_first_section();		
