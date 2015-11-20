@@ -464,13 +464,18 @@ body{
 				line-height: 1.4;
 			}
 
-			.image{
-				text-align: center;
+			.initial-contact{
+				height: 300px;
+				background: url('../img/Initial-Contact.png') no-repeat center center;
+    			background-size: 300px 300px;
 
 				img{
-					height: 300px;
-					vertical-align: middle;
-					width: auto;
+					width: 568px;
+				    height: 84px;
+				    border: 0;
+				    position: relative;
+				    top: 320px;
+    				left: 240px;
 				}
 			}
 		}

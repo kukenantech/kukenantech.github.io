@@ -315,12 +315,17 @@ body {
         letter-spacing: 0em;
         word-spacing: 0em;
         line-height: 1.4; }
-      body .row.fourth-section .image {
-        text-align: center; }
-        body .row.fourth-section .image img {
-          height: 300px;
-          vertical-align: middle;
-          width: auto; }
+      body .row.fourth-section .initial-contact {
+        height: 300px;
+        background: url("../img/Initial-Contact.png") no-repeat center center;
+        background-size: 300px 300px; }
+        body .row.fourth-section .initial-contact img {
+          width: 568px;
+          height: 84px;
+          border: 0;
+          position: relative;
+          top: 320px;
+          left: 240px; }
     body .row.five-section {
       background-color: #2eaba3;
       height: 430px;
