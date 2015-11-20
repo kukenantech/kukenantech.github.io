@@ -12,6 +12,7 @@ $lightGray: #edf2f4;
 $lightBlue: #effafe;
 $lightBlue2: #afcad4;
 $lightGreen: #2eaba3;
+$footer_color: #001a23;
 
 @font-face {
     font-family: 'abeezeeregular';
@@ -661,11 +662,122 @@ body{
 				}
 			}				
 		}
-		&.six-section{
-			background-color: $black;
+		&.six-section, .footer{
+			background-color: $footer_color;
 			color: $white;
-			height: 300px;
+			padding-bottom: 20px;
 			position: relative;
+			border-top: 5px solid #002034;
+			ul.links_site {
+			    display: inline-block;
+			    width: 200px;
+			    margin: 0px;
+			    font-size: 18px;
+			    color: white;
+			    list-style: none;
+			    padding-top: 70px;
+			    position: relative;
+			    float: left;
+			    li{
+			    	color: white;
+			    	a{
+			    		color: white;
+			    		&:hover{
+			    			text-decoration: underline;
+			    		}
+			    	}
+			    }
+			}
+			ul.social_media {
+			    display: inline-block;
+			    width: 165px;
+			    margin: 0px;
+			    font-size: 18px;
+			    color: white;
+			    list-style: none;
+			    padding-top: 70px;
+			    position: relative;
+			    float: right;
+			    li{
+			    	color: white;
+			    	display: inline-block;
+			    	a{
+			    		color: transparent;
+					    display: inline-block;
+					    width: 50px;
+					    height: 50px;
+					    overflow: hidden;
+			    		&:hover{
+			    			text-decoration: none;
+			    			&.mail{
+			    			background: url('../img/social-media-sprite-normal.png') no-repeat;			    				
+				    		}
+				    		&.linkedin{
+				    			background: url('../img/social-media-sprite-normal.png') no-repeat;	
+				    			background-position-x: -50px;	
+				    		}
+				    		&.skype{
+				    			background: url('../img/social-media-sprite-normal.png') no-repeat;	
+				    			background-position-x: -100px;	
+				    		}
+				    		&.facebook{
+				    			background: url('../img/social-media-sprite-normal.png') no-repeat;	
+				    			background-position-x: -150px;	
+				    		}
+				    		&.twitter{
+				    			background: url('../img/social-media-sprite-normal.png') no-repeat;	
+				    			background-position-x: -200px;	
+				    		}
+				    		&.gplus{
+				    			background: url('../img/social-media-sprite-normal.png') no-repeat;	
+				    			background-position-x: -250px;	
+				    		}
+			    		}
+			    		&.mail{
+			    			background: url('../img/social-media-sprite-light.png') no-repeat;			    				
+			    		}
+			    		&.linkedin{
+			    			background: url('../img/social-media-sprite-light.png') no-repeat;	
+			    			background-position-x: -50px;	
+			    		}
+			    		&.skype{
+			    			background: url('../img/social-media-sprite-light.png') no-repeat;	
+			    			background-position-x: -100px;	
+			    		}
+			    		&.facebook{
+			    			background: url('../img/social-media-sprite-light.png') no-repeat;	
+			    			background-position-x: -150px;	
+			    		}
+			    		&.twitter{
+			    			background: url('../img/social-media-sprite-light.png') no-repeat;	
+			    			background-position-x: -200px;	
+			    		}
+			    		&.gplus{
+			    			background: url('../img/social-media-sprite-light.png') no-repeat;	
+			    			background-position-x: -250px;	
+			    		}
+			    	}
+			    }
+			}
+			.logo_footer {
+			    background: url("../img/Kukenan-cube-footer.png") no-repeat;
+			    width: 183px;
+			    height: 215px;
+			    margin: 0 auto;
+			    margin-top: 25px;
+			    a.logohome {
+				    display: inline-block;
+				    width: 100%;
+				    height: 100%;
+				    color: transparent;
+				    text-indent: -999999px;
+				}
+			}
+			.copyright {
+			    font-size: 14px;
+			    color: gray;
+			    text-align: center;
+			}
 		}
 	}
 }
