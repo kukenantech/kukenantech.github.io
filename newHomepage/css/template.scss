@@ -561,6 +561,12 @@ body{
 					    display: inline-block;
 					    vertical-align: top;
 					    float: left;
+					    .fa {
+						    position: absolute;
+						    padding: 0.6em;
+						    font-size: 1.2em;
+						    color: #7a7c81;
+						}
 					}
 					.wrapper_right{
 						width: 49%;
@@ -568,17 +574,37 @@ body{
 					    display: inline-block;
 					    vertical-align: top;
 					    float: right;
+					    .fa {
+						    position: absolute;
+						    padding: 0.6em;
+						    font-size: 1.2em;
+						    color: #7a7c81;
+						}
 					}
-					input, select{
+					input{
 						&.input-group{
 							height: 44px;
 							border-radius: 5px;
 							margin-bottom: 25px;
+							padding-left: 40px;
+							font-size: 15px;
+						}
+					}
+					select{
+						&.input-group{
+							height: 44px;
+							border-radius: 5px;
+							margin-bottom: 25px;
+							padding-left: 32px;
+							font-size: 15px;
 						}
 					}
 					textarea{
 						min-height: 184px;
 						border-radius: 5px;
+						padding-left: 30px;
+						font-size: 15px;
+						padding-top: 10px;
 					}
 				}
 			}				
