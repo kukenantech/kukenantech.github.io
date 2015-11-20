@@ -492,11 +492,42 @@ body{
 			    font-weight: 300;
 			    letter-spacing: -1px;
 			    text-align: center;
-			    padding-top: 20px;
-			    padding-bottom: 20px;
+			    padding-top: 25px;
+			    padding-bottom: 25px;
 			    color: #00171f;
 			    line-height: 36px;
-			}					
+			}	
+			form{
+				&.contact_form{
+					.wrapper_left{
+						width: 49%;
+					    padding: 1%;
+					    display: inline-block;
+					    vertical-align: top;
+					    float: left;
+					}
+					.wrapper_right{
+						width: 49%;
+					    padding: 1%;
+					    display: inline-block;
+					    vertical-align: top;
+					    float: right;
+					}
+					input, select{
+						&.input-group{
+							font-family: "FontAwesome";
+							height: 44px;
+							border-radius: 5px;
+							margin-bottom: 25px;
+						}
+					}
+					textarea{
+						min-height: 184px;
+						border-radius: 5px;
+						font-family: "FontAwesome";
+					}
+				}
+			}				
 		}
 		&.six-section{
 			background-color: $black;
