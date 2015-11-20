@@ -55,6 +55,7 @@
 				}
 			}
 			&.second-section{
+				height: 530px;
 				.content{
 					.text{
 						margin-top: 2%;
@@ -70,7 +71,38 @@
 			}
 			&.third-section{
 			}
-
+			&.fourth-section{
+				.row{
+					&.stage{
+						&.stage-3{
+							.line{
+								.columns{
+									img{
+										height: 100%;
+										width: 5px;
+									}
+								}
+							}
+						}
+					}
+					&.line{
+						height: 60px;
+						margin-top: 0px;
+						margin-bottom: 0px;
+						.columns{
+							height: 100%;
+						}
+					}
+					.column{
+						&.image{
+							background-size: 60% auto;
+						}
+						&.dotted{
+							text-align: center;
+						}
+					}
+				}
+			}
 			&.five-section{	
 				min-height: 430px;
 				height: auto;	
@@ -140,7 +172,7 @@
 						}
 						
 					}
-				}				
+				}		
 			}
 			.page-sizer{
 				width: 90%;
@@ -150,7 +182,6 @@
 				padding-right: 1%;
 				width: 90%;
 			}
-
 		}
 	}
 }

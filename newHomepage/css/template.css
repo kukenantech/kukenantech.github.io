@@ -314,7 +314,14 @@ body {
       padding-top: 3%;
       padding-bottom: 5%; }
       body .row.fourth-section .row {
-        margin-bottom: 10%; }
+        margin-bottom: 1%; }
+        body .row.fourth-section .row span {
+          color: #FFFFFF; }
+        body .row.fourth-section .row.line {
+          margin-top: 1%;
+          text-align: center; }
+          body .row.fourth-section .row.line img {
+            margin: 0 auto; }
         body .row.fourth-section .row:last-child {
           margin-bottom: 0; }
       body .row.fourth-section h2 {

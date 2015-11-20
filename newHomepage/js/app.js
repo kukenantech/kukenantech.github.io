@@ -18,6 +18,9 @@ $(document).ready(function(){
 	//Effect text change in slogan
 	change_text_slogan();
 
+	//Move image in "How we works" section
+	move_image_how_we_work();
+
 	//Only apply effects to desktop version	
 	if($(window.top).width() > 1024){
 
@@ -34,13 +37,52 @@ $(document).ready(function(){
 	}
 });
 
+function move_image_how_we_work(){
+
+	//Move the images for each stage
+	if($(window.top).width() < 640){
+		$("section.fourth-section .stage .info").each(function(){
+
+			var image = $(this).find(".image");
+			var content = $(this).find(".content");
+
+			content.after(image);
+		});
+	}
+
+	//Apply fix in resize event
+	$(window).resize(function(){
+		if($(window.top).width() < 640){
+			$("section.fourth-section .stage .info").each(function(){
+
+				var image = $(this).find(".image");
+				var content = $(this).find(".content");
+
+				content.after(image);
+			});
+		}
+		else{
+			//Only stages 1, 3, 4 and 6
+			$("section.fourth-section .stage .info").each(function(){
+
+				var image = $(this).find(".image");
+				var content = $(this).find(".content");
+
+				if($(this).parents(".stage").hasClass("stage-1") || $(this).parents(".stage").hasClass("stage-3") || $(this).parents(".stage").hasClass("stage-4") || $(this).parents(".stage").hasClass("stage-6")){
+					content.before(image);
+				}					
+			});
+		}
+	});
+}
+
 function change_text_slogan(){
 
 	//Replace each 3 seconds
 	window.setInterval(function(){
 	  	
 	  	var words = ["Web Solutions", "Web Design", "Innovation", "Creativity", "Quality"];
-	  	var effects = ["fade", "highlight", "pulsate"];
+	  	var effects = ["fade", "pulsate"];
 
 	  	//Generate random to select word and effect	  	
 	  	var rEffect = Math.floor((Math.random() * 3));
@@ -56,9 +98,6 @@ function change_text_slogan(){
 	  			wordSelected = true;
 	  		}
 	  	}while(wordSelected == false);
-
-	  	console.log(effects[rEffect]);
-
 
 		var newSpan = "<span display='none'>"+words[rWord]+"</span>";
 

@@ -213,7 +213,30 @@
 			&.third-section{
 				height: 130px;
 			}
-
+			&.fourth-section{
+				.row{
+					&.line{
+						height: 50px;
+						margin-top: 5%;
+						margin-bottom: 0px;
+						.columns{
+							img{
+								height: 50px;
+								width: 5px;
+							}
+						}
+					}
+					.column{
+						&.image{
+							background-size: auto 100%;
+							height: 100px !important; 
+						}
+						&.dotted{
+							text-align: center;
+						}
+					}
+				}
+			}
 			&.five-section{	
 				min-height: 430px;
 				height: auto;	
@@ -281,7 +304,7 @@
 							
 						}
 					}
-				}				
+				}
 			}
 		}
 	}
