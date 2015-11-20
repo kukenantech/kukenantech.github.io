@@ -202,6 +202,8 @@ body {
             body .row.first-section .content p.slogan .text-change {
               font-size: 56px;
               font-weight: 700; }
+              body .row.first-section .content p.slogan .text-change span {
+                overflow: auto; }
           body .row.first-section .content p.brief {
             color: #2f3138;
             font-family: 'abeezeeregular';
@@ -301,11 +303,39 @@ body {
       position: relative; }
       body .row.fourth-section h2 {
         text-align: center;
-        margin-top: 5%; }
+        margin-top: 5%;
+        margin-bottom: 5%; }
+      body .row.fourth-section h3 {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0em;
+        word-spacing: 0em;
+        line-height: 1.4; }
     body .row.five-section {
       background-color: #2eaba3;
       height: 430px;
+<<<<<<< HEAD
       position: relative; }
+      body .row.five-section .icons {
+        background: url("../img/icons-background-contact-us.png") repeat;
+        position: absolute;
+        width: 100%;
+        height: 100%; }
+=======
+      position: relative;
+      background: url("../img/icons-background-contact-us.png") repeat;
+      background-position: 50% 0px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      position: absolute;
+      height: 100%; }
+>>>>>>> origin/master
     body .row.six-section {
       background-color: #000000;
       color: #FFFFFF;
