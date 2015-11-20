@@ -486,7 +486,9 @@ body{
 				margin-bottom: 5%;
 			}
 
-			.initial-contact, .development {
+			.initial-contact,
+			.development,
+			.delivery {
 				@include hww-images;
 				background: url('../img/Initial-Contact.png') no-repeat center center;
 
@@ -499,6 +501,10 @@ body{
 
 			.development {
 				background: url('../img/Development.png') no-repeat center center;
+			}
+
+			.delivery {
+				background: url('../img/Delivery.png') no-repeat center center;
 			}
 
 			.r-gathering, .testing {
