@@ -187,7 +187,8 @@
     list-style: none;
     padding-top: 20px;
     position: relative;
-    float: left; }
+    float: none;
+    text-align: center; }
   body .row.six-section ul.social_media, body .row .footer ul.social_media {
     display: block;
     width: 168px;
