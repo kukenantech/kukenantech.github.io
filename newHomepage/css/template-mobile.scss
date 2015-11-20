@@ -20,15 +20,25 @@
 								line-height: 75px;
 								margin-top: 0px;								
 								position: relative;
-								text-align: right;
+								text-align: center;
 								top: 0;
 								vertical-align: top;
 								width: 35%;		
 								a{
 									font-family: "Lato";
 									line-height: 75px;
-									margin-right: 10%;
 									height: 75px;
+									overflow: hidden;
+									position: relative;
+									overflow:hidden;
+
+									span{
+										&.ink{
+											&:after{
+												box-shadow: none;
+											}
+										}
+									}
 								}						
 							}
 						}
@@ -82,15 +92,23 @@
 						line-height: 85px;
 						margin-top: 0px;
 						position: absolute;
-						text-align: right;
+						text-align: center;
 						top: 0;
 						vertical-align: top;
 						width: 35%;		
 						a{
 							font-family: "Lato";
 							line-height: 85px;
-							margin-right: 10%;
 							height: 85px;
+							overflow:hidden;
+
+							span{
+								&.ink{
+									&:after{
+										box-shadow: none;
+									}
+								}
+							}
 						}						
 					}
 				}
