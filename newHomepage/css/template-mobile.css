@@ -12,7 +12,7 @@
         line-height: 75px;
         margin-top: 0px;
         position: relative;
-        text-align: center;
+        text-align: right;
         top: 0;
         vertical-align: top;
         width: 35%; }
@@ -31,11 +31,13 @@
       line-height: 20px; }
     body.f-topbar-fixed .row .top-bar-animated .top-bar-section ul.right li:not(.has-form) a:not(.button) {
       line-height: 20px; }
-  body.f-topbar-fixed .row .top-bar-animated .name h1 {
-    background: url("../img/Kukenan-Logo-White-Letters.png") center no-repeat;
-    background-size: auto 55px;
-    margin-top: 0px;
-    height: 74px; }
+  body.f-topbar-fixed .row .top-bar-animated .name {
+    position: absolute; }
+    body.f-topbar-fixed .row .top-bar-animated .name h1 {
+      background: url("../img/Kukenan-Logo-White-Letters.png") center no-repeat;
+      background-size: auto 55px;
+      margin-top: 0px;
+      height: 74px; }
   body .top-bar.expanded .title-area {
     background-color: transparent; }
   body .top-bar .title-area {
@@ -49,7 +51,7 @@
         line-height: 85px;
         margin-top: 0px;
         position: absolute;
-        text-align: center;
+        text-align: right;
         top: 0;
         vertical-align: top;
         width: 35%; }
@@ -74,11 +76,13 @@
         line-height: 20px; }
         body .top-bar .top-bar-section ul.right li:not(.has-form) a:not(.button):hover:after {
           border: none; }
-  body .top-bar .name h1 {
-    background: url("../img/Kukenan-Logo-White-Letters.png") center no-repeat;
-    background-size: auto 65px;
-    height: 86px;
-    margin-top: 0px; }
+  body .top-bar .name {
+    position: absolute; }
+    body .top-bar .name h1 {
+      background: url("../img/Kukenan-Logo-White-Letters.png") center no-repeat;
+      background-size: auto 65px;
+      height: 86px;
+      margin-top: 0px; }
   body .row .sticky-custom {
     box-shadow: rgba(0, 0, 0, 0.3) 0 1px 10px 0;
     -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 10px 0;
