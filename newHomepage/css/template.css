@@ -16,6 +16,8 @@ body {
   font-family: 'abeezeeregular';
   font-size: 16px;
   min-height: 1000px; }
+  body .clear {
+    clear: both; }
   body h2 {
     font-family: 'Lato', sans-serif;
     font-size: 50px; }
@@ -422,6 +424,32 @@ body {
           padding: 0.6em;
           font-size: 1.2em;
           color: #7a7c81; }
+      body .row.five-section form.contact_form .final_section {
+        float: left;
+        width: 99%;
+        padding: 1%;
+        padding-top: 0px;
+        padding-bottom: 30px; }
+        body .row.five-section form.contact_form .final_section .g-recaptcha {
+          width: 49%;
+          padding-right: 0.5%;
+          float: left;
+          text-align: left;
+          position: relative; }
+          body .row.five-section form.contact_form .final_section .g-recaptcha > div {
+            float: right; }
+        body .row.five-section form.contact_form .final_section button.send-btn {
+          margin: 0px;
+          padding: 0px;
+          text-align: center;
+          min-width: 180px;
+          height: 45px;
+          border-radius: 10px;
+          margin-left: 30px;
+          background-color: #b2112f;
+          color: white;
+          font-size: 16px;
+          font-weight: normal; }
       body .row.five-section form.contact_form input.input-group {
         height: 44px;
         border-radius: 5px;

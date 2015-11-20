@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         
     <script src="js/vendor/modernizr.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body class="f-topbar-fixed">
     
@@ -166,7 +167,7 @@
     <!-- Section to fourth section (How we works) -->
     <section id="how-we-works" class="row fourth-section">
       <div class="page-sizer">
-        <div class="large-12 medium-12 small-12 columns">
+        <div class="large-12 medium-12 small-12 column">
           <h2>How We Works</h2>
           <div class="row stage stage-1">
             <div class="row info" data-equalizer data-equalizer-mq="medium-up">
@@ -566,9 +567,15 @@
            <div class="wrapper_right">
              <textarea class="textarea" placeholder="Idea">               
              </textarea>             
-           </div>             
-
-           <button href="#" class="send-btn">Send</button>
+           </div>
+           <div class="final_section">             
+             <div class="g-recaptcha" data-sitekey="6Le8axETAAAAADd_FVz8ylckK37yfWJyW9jkP9Ak"></div>
+             <div class="wrapper_button">
+               <button href="#" class="send-btn">Send</button>
+             </div>
+             
+           </div>
+           <div class="clear"></div>
           </form>
 
         </div>
