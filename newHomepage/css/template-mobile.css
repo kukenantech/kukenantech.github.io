@@ -119,6 +119,18 @@
       body .row.second-section .content .image img {
         height: 200px; }
   body .row.third-section {
-    height: 130px; } }
+    height: 130px; }
+  body .row.fourth-section .row.line {
+    height: 50px;
+    margin-top: 5%;
+    margin-bottom: 0px; }
+    body .row.fourth-section .row.line .columns img {
+      height: 50px;
+      width: 5px; }
+  body .row.fourth-section .row .column.image {
+    background-size: auto 100%;
+    height: 100px !important; }
+  body .row.fourth-section .row .column.dotted {
+    text-align: center; } }
 
 /*# sourceMappingURL=template-mobile.css.map */

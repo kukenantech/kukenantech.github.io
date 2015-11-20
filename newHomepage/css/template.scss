@@ -472,7 +472,18 @@ body{
 			padding-bottom: 5%;
 
 			.row {
-				margin-bottom: 10%;
+				margin-bottom: 1%;
+
+				span{
+					color: $white;
+				}
+				&.line{
+					margin-top: 1%;
+					text-align: center;
+					img{
+						margin: 0 auto;
+					}
+				}
 
 				&:last-child {
 					margin-bottom: 0;

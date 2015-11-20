@@ -27,13 +27,28 @@
           line-height: 55px; }
           body .row.first-section .content p.slogan span.text-change {
             font-size: 40px; }
-  body .row.second-section .content .text {
-    margin-top: 2%;
-    padding-left: 2%; }
-  body .row.second-section .content .image {
-    padding-right: 2%; }
-    body .row.second-section .content .image img {
-      height: auto; }
+  body .row.second-section {
+    height: 530px; }
+    body .row.second-section .content .text {
+      margin-top: 2%;
+      padding-left: 2%; }
+    body .row.second-section .content .image {
+      padding-right: 2%; }
+      body .row.second-section .content .image img {
+        height: auto; }
+  body .row.fourth-section .row.stage.stage-3 .line .columns img {
+    height: 100%;
+    width: 5px; }
+  body .row.fourth-section .row.line {
+    height: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+    body .row.fourth-section .row.line .columns {
+      height: 100%; }
+  body .row.fourth-section .row .column.image {
+    background-size: 60% auto; }
+  body .row.fourth-section .row .column.dotted {
+    text-align: center; }
   body .row .page-sizer {
     width: 90%; }
   body .row .page-sizer-section {
