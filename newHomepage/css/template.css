@@ -318,9 +318,20 @@ body {
         margin-bottom: 5%; }
       body .row.fourth-section .initial-contact {
         height: 300px;
-        background: url("../img/Initial-Contact.png") no-repeat center center;
-        background-size: 300px 300px; }
+        background-size: 300px 300px;
+        background: url("../img/Initial-Contact.png") no-repeat center center; }
         body .row.fourth-section .initial-contact img {
+          width: 568px;
+          height: 84px;
+          border: 0;
+          position: relative;
+          top: 320px;
+          left: 240px; }
+      body .row.fourth-section .r-gathering {
+        height: 300px;
+        background-size: 300px 300px;
+        background: url("../img/Meeting.png") no-repeat center center; }
+        body .row.fourth-section .r-gathering img {
           width: 568px;
           height: 84px;
           border: 0;
