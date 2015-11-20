@@ -264,7 +264,7 @@ body {
           line-height: 497px;
           text-align: center; }
           body .row.second-section .content .image img {
-            height: auto;
+            height: 400px;
             vertical-align: middle;
             width: auto; }
     body .row.third-section {
