@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         
     <script src="js/vendor/modernizr.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
   <body class="f-topbar-fixed">
     
@@ -511,9 +512,15 @@
            <i class="fa fa-lightbulb-o"></i> 
              <textarea class="textarea" placeholder="Idea">               
              </textarea>             
-           </div>             
-
-           <button href="#" class="send-btn">Send</button>
+           </div>
+           <div class="final_section">             
+             <div class="g-recaptcha" data-sitekey="6Le8axETAAAAADd_FVz8ylckK37yfWJyW9jkP9Ak"></div>
+             <div class="wrapper_button">
+               <button href="#" class="send-btn">Send</button>
+             </div>
+             
+           </div>
+           <div class="clear"></div>
           </form>
 
         </div>
