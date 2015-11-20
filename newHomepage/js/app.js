@@ -85,7 +85,7 @@ function change_text_slogan(){
 	  	var effects = ["fade", "pulsate"];
 
 	  	//Generate random to select word and effect	  	
-	  	var rEffect = Math.floor((Math.random() * 3));
+	  	var rEffect = Math.floor((Math.random() * 2));
 	  	var rWord = Math.floor((Math.random() * 5));
 	  	var wordSelected = false;
 
@@ -103,10 +103,10 @@ function change_text_slogan(){
 
 		$(".first-section .slogan .text-change span").hide(effects[rEffect], null, 500, function(){
 			//Remove element and add new span
-			$(".first-section .slogan .text-change").empty();
+			$(this).remove();
 
 			$(".first-section .slogan .text-change").append(newSpan);
-			$(".first-section .slogan .text-change span").show(effects[rEffect], null, 500, null);
+			$(".first-section .slogan .text-change span").show();
 		});
 
 	}, 3000);

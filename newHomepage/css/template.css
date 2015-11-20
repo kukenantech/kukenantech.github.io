@@ -203,6 +203,7 @@ body {
             margin-top: 6%; }
             body .row.first-section .content p.slogan span {
               display: inline-block;
+              line-height: 85px;
               text-align: left;
               vertical-align: top;
               width: 49%; }
