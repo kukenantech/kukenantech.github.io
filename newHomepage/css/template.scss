@@ -463,6 +463,16 @@ body{
 				word-spacing: 0em;
 				line-height: 1.4;
 			}
+
+			.image{
+				text-align: center;
+
+				img{
+					height: 300px;
+					vertical-align: middle;
+					width: auto;
+				}
+			}
 		}
 		&.five-section{
 			background-color: $lightGreen;
