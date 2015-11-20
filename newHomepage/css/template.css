@@ -303,6 +303,8 @@ body {
       position: relative;
       padding-top: 5%;
       padding-bottom: 5%; }
+      body .row.fourth-section .row {
+        margin-bottom: 5%; }
       body .row.fourth-section h2 {
         text-align: center;
         margin-bottom: 5%; }
