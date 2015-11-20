@@ -497,6 +497,10 @@ body{
 				}
 			}
 
+			.development {
+				background: url('../img/Development.png') no-repeat center center;
+			}
+
 			.r-gathering {
 				@include hww-images;
 				background: url('../img/Meeting.png') no-repeat center center;

@@ -332,6 +332,8 @@ body {
           position: relative;
           top: 320px;
           left: 240px; }
+      body .row.fourth-section .development {
+        background: url("../img/Development.png") no-repeat center center; }
       body .row.fourth-section .r-gathering {
         height: 300px;
         background-size: 300px 300px;
