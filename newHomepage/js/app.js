@@ -32,18 +32,18 @@ $(document).ready(function(){
 
 		//Parallax Effects
 		parallax_efect_first_section();
+
+		//Method to hide hww images before scroll down
+		hww_hide_images();
+
+		//Method to fade in hww images on scroll down
+		hww_content_scroll_fade_in();
 	}
 	else if($(window.top).width() < 640){
 
 		//Overwrite event to menu-icon
 		event_menu_icon();
 	}
-
-	//Method to hide hww images before scroll down
-	hww_hide_images();
-
-	//Method to fade in hww images on scroll down
-	hww_content_scroll_fade_in();
 });
 
 function go_top_link(){
@@ -406,25 +406,23 @@ function parallax_efect_first_section(){
 }
 
 function hww_hide_images(){
-	if($(window.top).width() > 1024){
-		$("#contact-image").addClass("scroll-hide");
-		$("#requirements-image").addClass("scroll-hide");
-		$("#loe-image").addClass("scroll-hide");
-		$("#dev-image").addClass("scroll-hide");
-		$("#testing-image").addClass("scroll-hide");
-		$("delivery-image").addClass("scroll-hide");
+	$("#contact-image").addClass("scroll-hide");
+	$("#requirements-image").addClass("scroll-hide");
+	$("#loe-image").addClass("scroll-hide");
+	$("#dev-image").addClass("scroll-hide");
+	$("#testing-image").addClass("scroll-hide");
+	$("delivery-image").addClass("scroll-hide");
 
-		$("#dotted-1-2").addClass("scroll-hide");
-		$("#dotted-2-3").addClass("scroll-hide");
-		$("#dotted-3-4").addClass("scroll-hide");
-		$("#dotted-4-5").addClass("scroll-hide");
-		$("#dotted-5-6").addClass("scroll-hide");
-		$("#dotted-6-7").addClass("scroll-hide");
+	$("#dotted-1-2").addClass("scroll-hide");
+	$("#dotted-2-3").addClass("scroll-hide");
+	$("#dotted-3-4").addClass("scroll-hide");
+	$("#dotted-4-5").addClass("scroll-hide");
+	$("#dotted-5-6").addClass("scroll-hide");
+	$("#dotted-6-7").addClass("scroll-hide");
 
 
-		//Hidding the How we works images
-		$(".scroll-hide").hide();
-	}
+	//Hidding the How we works images
+	$(".scroll-hide").hide();
 }
 
 function hww_content_scroll_fade_in(){
