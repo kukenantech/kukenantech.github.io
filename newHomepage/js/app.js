@@ -53,7 +53,7 @@ function hww_content_scroll_fade_in(){
         dotted_2_3_Offset = $(".dotted-2-3").offset().top - ($(window).height() - 100)
         dotted_3_4_Offset = $(".dotted-3-4").offset().top - ($(window).height() - 100)
         dotted_4_5_Offset = $(".dotted-4-5").offset().top - ($(window).height() - 100)
-        dotted_5_6_Offset = $(".dotted-5-6").offset().top - ($(window).height() - 200);
+        dotted_5_6_Offset = $(".dotted-5-6").offset().top - ($(window).height() - 100);
     
     if(docScroll >= stageOneOffset) {
     	$("#contact-image").fadeIn(500);
