@@ -93,6 +93,19 @@
     width: 95%; }
   body .row.first-section {
     height: 430px; }
+    body .row.first-section .columns {
+      background: url("../img/mobile/fondo-section1.png") repeat;
+      background-position: 50% 0px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+      body .row.first-section .columns .left {
+        background: url("../img/mobile/section1-1.png") left bottom no-repeat;
+        background-size: 100% auto; }
+      body .row.first-section .columns .right {
+        background: url("../img/mobile/section1-2.png") right bottom no-repeat;
+        background-size: 100% auto; }
     body .row.first-section .content {
       min-height: 450px; }
       body .row.first-section .content p.slogan {
@@ -115,13 +128,20 @@
           font-size: 26px; }
   body .row.second-section {
     height: 720px; }
-    body .row.second-section .content .text {
-      float: none;
-      margin-top: 0px; }
-    body .row.second-section .content .image {
-      line-height: 100px; }
-      body .row.second-section .content .image img {
-        height: 200px; }
+    body .row.second-section .content {
+      background: url("../img/mobile/fondo-section1.png") repeat;
+      background-position: 50% 0px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+      body .row.second-section .content .text {
+        float: none;
+        margin-top: 0px; }
+      body .row.second-section .content .image {
+        line-height: 100px; }
+        body .row.second-section .content .image img {
+          height: 200px; }
   body .row.third-section {
     height: 130px; }
   body .row.fourth-section .row.line {
@@ -136,10 +156,24 @@
     height: 100px !important; }
   body .row.fourth-section .row .column.dotted {
     text-align: center; }
+  body .row.fourth-section .initial-contact {
+    background: url("../img/mobile/Initial-Contact.png") no-repeat center center; }
+  body .row.fourth-section .development {
+    background: url("../img/mobile/Development.png") no-repeat center center; }
+  body .row.fourth-section .delivery {
+    background: url("../img/mobile/Delivery.png") no-repeat center center; }
+  body .row.fourth-section .r-gathering {
+    background: url("../img/mobile/Meeting.png") no-repeat center center; }
+  body .row.fourth-section .testing {
+    background: url("../img/mobile/Testing.png") no-repeat center center; }
+  body .row.fourth-section .loe-generation {
+    background: url("../img/mobile/LOE.png") no-repeat center center; }
   body .row.five-section {
     min-height: 430px;
     height: auto; }
     body .row.five-section .icons {
+      background: url("../img/mobile/icons-background-contact-us.png") 100% auto repeat;
+      background-position: 50% 0px;
       position: absolute;
       width: 100%;
       height: 100%;
