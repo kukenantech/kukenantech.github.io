@@ -438,17 +438,17 @@ function hww_hide_images(){
 function hww_content_scroll_fade_in(){
   $(window).scroll(function(){
     var docScroll = $(this).scrollTop(), 
-        stageOneOffset = $(".stage-1").offset().top - ($(window).height() - 200),
-        stageTwoOffset = $(".stage-2").offset().top - ($(window).height() - 200)
-        stageThreeOffset = $(".stage-3").offset().top - ($(window).height() - 200)
-        stageFourOffset = $(".stage-4").offset().top - ($(window).height() - 200)
-        stageFiveOffset = $(".stage-5").offset().top - ($(window).height() - 200)
-        stageSixOffset = $(".stage-6").offset().top - ($(window).height() - 200)
-        dotted_1_2_Offset = $(".dotted-1-2").offset().top - ($(window).height() - 100)
-        dotted_2_3_Offset = $(".dotted-2-3").offset().top - ($(window).height() - 100)
-        dotted_3_4_Offset = $(".dotted-3-4").offset().top - ($(window).height() - 100)
-        dotted_4_5_Offset = $(".dotted-4-5").offset().top - ($(window).height() - 100)
-        dotted_5_6_Offset = $(".dotted-5-6").offset().top - ($(window).height() - 100);
+        stageOneOffset = $(".stage-1").offset().top - ($(window).height() - 250),
+        stageTwoOffset = $(".stage-2").offset().top - ($(window).height() - 250)
+        stageThreeOffset = $(".stage-3").offset().top - ($(window).height() - 250)
+        stageFourOffset = $(".stage-4").offset().top - ($(window).height() - 250)
+        stageFiveOffset = $(".stage-5").offset().top - ($(window).height() - 250)
+        stageSixOffset = $(".stage-6").offset().top - ($(window).height() - 250)
+        dotted_1_2_Offset = $(".dotted-1-2").offset().top - ($(window).height() - 150)
+        dotted_2_3_Offset = $(".dotted-2-3").offset().top - ($(window).height() - 150)
+        dotted_3_4_Offset = $(".dotted-3-4").offset().top - ($(window).height() - 150)
+        dotted_4_5_Offset = $(".dotted-4-5").offset().top - ($(window).height() - 150)
+        dotted_5_6_Offset = $(".dotted-5-6").offset().top - ($(window).height() - 150);
     
     if(docScroll >= stageOneOffset) {
     	$("#contact-image").fadeIn(500);
