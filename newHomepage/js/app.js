@@ -120,7 +120,7 @@ function change_text_slogan(){
 	  	
 	  	var words = ["Web Solutions", "Web Design", "Innovation", "Creativity", "Quality"];
 	  	var effects = ["fade"];
-	  	var colors = ["#eab124", "#20364d", "#de4226", "#9dd8a4", "#fe8656"];
+	  	var colors = ["#f6ca5c", "#20364d", "#f9abab", "#9dd8a4", "#cdf9ac"];
 
 	  	//Generate random to select word and effect	  	
 	  	var rEffect = Math.floor((Math.random() * 2));
