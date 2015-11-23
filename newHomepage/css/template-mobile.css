@@ -1,4 +1,7 @@
 @media only screen and (max-width: 640px) {
+  body .cd-top {
+    right: 20px;
+    bottom: 20px; }
   body h2 {
     font-size: 40px; }
   body.f-topbar-fixed .row .top-bar-animated .title-area {

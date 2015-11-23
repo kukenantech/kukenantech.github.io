@@ -24,6 +24,9 @@ $(document).ready(function(){
 	//Move image in "How we works" section
 	move_image_how_we_work();
 
+	//Method to link "Go top"
+	go_top_link();
+
 	//Only apply effects to desktop version	
 	if($(window.top).width() > 1024){
 
@@ -39,6 +42,34 @@ $(document).ready(function(){
 		event_menu_icon();
 	}
 });
+
+function go_top_link(){
+	// browser window scroll (in pixels) after which the "back to top" link is shown
+	var offset = 300,
+	//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+	offset_opacity = 1200,
+	//duration of the top scrolling animation (in ms)
+	scroll_top_duration = 700,
+	//grab the "back to top" link
+	$back_to_top = $('.cd-top');
+
+	//hide or show the "back to top" link
+	$(window).scroll(function(){
+		( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+		if( $(this).scrollTop() > offset_opacity ) { 
+			$back_to_top.addClass('cd-fade-out');
+		}
+	});
+
+	//smooth scroll to top
+	$back_to_top.on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0 ,
+		 	}, scroll_top_duration
+		);
+	});
+}
 
 function hww_content_scroll_fade_in(){
   $(window).scroll(function(){
