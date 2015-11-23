@@ -118,29 +118,29 @@ function hww_content_scroll_fade_in(){
     }
 
     if(docScroll >= dotted_1_2_Offset) {
-    	$("#dotted-1-2").fadeIn(500);
+    	$("#dotted-1-2").fadeIn(200);
     } else {
-    	$("#dotted-1-2").fadeOut(500);
+    	$("#dotted-1-2").fadeOut(200);
     }
     if(docScroll >= dotted_2_3_Offset) {
-    	$("#dotted-2-3").fadeIn(500);
+    	$("#dotted-2-3").fadeIn(200);
     } else {
-    	$("#dotted-2-3").fadeOut(500);
+    	$("#dotted-2-3").fadeOut(200);
     }
     if(docScroll >= dotted_3_4_Offset) {
-    	$("#dotted-3-4").fadeIn(500);
+    	$("#dotted-3-4").fadeIn(200);
     } else {
-    	$("#dotted-3-4").fadeOut(500);
+    	$("#dotted-3-4").fadeOut(200);
     }
     if(docScroll >= dotted_4_5_Offset) {
-    	$("#dotted-4-5").fadeIn(500);
+    	$("#dotted-4-5").fadeIn(200);
     } else {
-    	$("#dotted-4-5").fadeOut(500);
+    	$("#dotted-4-5").fadeOut(200);
     }
     if(docScroll >= dotted_5_6_Offset) {
-    	$("#dotted-5-6").fadeIn(500);
+    	$("#dotted-5-6").fadeIn(200);
     } else {
-    	$("#dotted-5-6").fadeOut(500);
+    	$("#dotted-5-6").fadeOut(200);
     }
   })
 }
