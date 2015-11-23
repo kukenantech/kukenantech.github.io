@@ -3,6 +3,9 @@ $(document).ready(function(){
 	//Initialize third party services
 	$(document).foundation();
 
+	//Method to fade in hww images on scroll
+	hww_content_scroll_fade_in();
+
 	//Method to sticky menu effect
 	sticky_menu_effect_scroll();
 
@@ -66,6 +69,80 @@ function go_top_link(){
 		 	}, scroll_top_duration
 		);
 	});
+}
+
+function hww_content_scroll_fade_in(){
+  $(window).scroll(function(){
+    var docScroll = $(this).scrollTop(), 
+        stageOneOffset = $(".stage-1").offset().top - ($(window).height() - 200),
+        stageTwoOffset = $(".stage-2").offset().top - ($(window).height() - 200)
+        stageThreeOffset = $(".stage-3").offset().top - ($(window).height() - 200)
+        stageFourOffset = $(".stage-4").offset().top - ($(window).height() - 200)
+        stageFiveOffset = $(".stage-5").offset().top - ($(window).height() - 200)
+        stageSixOffset = $(".stage-6").offset().top - ($(window).height() - 200)
+        dotted_1_2_Offset = $(".dotted-1-2").offset().top - ($(window).height() - 200)
+        dotted_2_3_Offset = $(".dotted-2-3").offset().top - ($(window).height() - 200)
+        dotted_3_4_Offset = $(".dotted-3-4").offset().top - ($(window).height() - 200)
+        dotted_4_5_Offset = $(".dotted-4-5").offset().top - ($(window).height() - 200)
+        dotted_5_6_Offset = $(".dotted-5-6").offset().top - ($(window).height() - 200);
+    
+    if(docScroll >= stageOneOffset) {
+    	$("#contact-image").fadeIn(500);
+    } else {
+    	$("#contact-image").fadeOut(500);
+    }
+    if(docScroll >= stageTwoOffset) {
+    	$("#requirements-image").fadeIn(500);
+    } else {
+    	$("#requirements-image").fadeOut(500);
+    }
+    if(docScroll >= stageThreeOffset) {
+    	$("#loe-image").fadeIn(500);
+    } else {
+    	$("#loe-image").fadeOut(500);
+    }
+    if(docScroll >= stageFourOffset) {
+    	$("#dev-image").fadeIn(500);
+    } else {
+    	$("#dev-image").fadeOut(500);
+    }
+    if(docScroll >= stageFiveOffset) {
+    	$("#testing-image").fadeIn(500);
+    } else {
+    	$("#testing-image").fadeOut(500);
+    }
+    if(docScroll >= stageSixOffset) {
+    	$("#delivery-image").fadeIn(500);
+    } else {
+    	$("#delivery-image").fadeOut(500);
+    }
+
+    if(docScroll >= dotted_1_2_Offset) {
+    	$("#dotted-1-2").fadeIn(500);
+    } else {
+    	$("#dotted-1-2").fadeOut(500);
+    }
+    if(docScroll >= dotted_2_3_Offset) {
+    	$("#dotted-2-3").fadeIn(500);
+    } else {
+    	$("#dotted-2-3").fadeOut(500);
+    }
+    if(docScroll >= dotted_3_4_Offset) {
+    	$("#dotted-3-4").fadeIn(500);
+    } else {
+    	$("#dotted-3-4").fadeOut(500);
+    }
+    if(docScroll >= dotted_4_5_Offset) {
+    	$("#dotted-4-5").fadeIn(500);
+    } else {
+    	$("#dotted-4-5").fadeOut(500);
+    }
+    if(docScroll >= dotted_5_6_Offset) {
+    	$("#dotted-5-6").fadeIn(500);
+    } else {
+    	$("#dotted-5-6").fadeOut(500);
+    }
+  })
 }
 
 function move_image_how_we_work(){
