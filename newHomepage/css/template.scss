@@ -170,17 +170,17 @@ body{
 	
 		.row{
 			.sticky-custom-animated{
-				min-height: 75px;
+				min-height: 65px;
 			}
 			.top-bar-animated{
-				min-height: 75px;
+				min-height: 65px;
 
 				.name{
 					h1{
-						height: 65px;
-						margin-top: 4%;
+						height: 60px;
+						margin-top: 3%;
 						background: url("../img/Kukenan-Logo-sticky.png") no-repeat;
-						background-size: auto 55px;
+						background-size: auto 50px;
 						transition: background 0.2s ease-in-out;
 						width: 200px;
 
@@ -193,15 +193,15 @@ body{
 					ul{
 						&.right{
 							li{
-								min-height: 75px;
+								min-height: 65px;
 								&:not(.has-form){
 									&.active{
 										a{
-											line-height: 75px;
+											line-height: 65px;
 										}
 									}
 									a:not(.button){
-										line-height: 75px;
+										line-height: 65px;
 									}
 								}								
 							}
@@ -220,7 +220,7 @@ body{
 			h1{		
 				background: url("../img/Kukenan-Logo-White-Letters.png") no-repeat;
 				background-size: auto 65px;
-				height: 75px;
+				height: 65px;
 				margin-top: 6%;
 				transition: background 0.2s ease-in-out;
 				text-indent: -9999px;
@@ -325,6 +325,9 @@ body{
 			min-height: 85px;
 			transition: min-height 0.1s ease-in-out;
 		}
+		.sticky-custom-animated{
+			background-color: rgb(47,49,56) !important;
+		}
 		.sticky-custom{
 			background-color: rgba(47,49,56,0.9);
 			border-bottom: 2px solid $white;
@@ -384,15 +387,13 @@ body{
 						margin-top: 6%;
 
 						span{
-							display: inline-block;
 							line-height: 85px;
 							text-align: left;
+							font-weight: 700;
 							vertical-align: top;
-							width: 49%;
 
 							&.text-change{
-								font-size: 56px;
-								font-weight: 700;	
+								font-size: 56px;	
 								text-align: right;						
 
 								span{
@@ -608,6 +609,10 @@ body{
 			position: relative;
 			.icons{
 				background: url('../img/icons-background-contact-us.png') repeat;	
+				-webkit-background-size: cover;
+		        -moz-background-size: cover;
+		        -o-background-size: cover;
+		        background-size: cover;
 				position: absolute;
 				width: 100%;
 				height: 100%;
