@@ -348,8 +348,11 @@ body {
         margin-bottom: 1%; }
         body .row.fourth-section .row span {
           color: #FFFFFF; }
+        body .row.fourth-section .row.stage-3 .line {
+          min-height: 128px; }
         body .row.fourth-section .row.line {
           margin-top: 1%;
+          min-height: 86px;
           text-align: center; }
           body .row.fourth-section .row.line img {
             margin: 0 auto; }

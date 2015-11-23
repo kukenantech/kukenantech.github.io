@@ -7,10 +7,7 @@ $(document).ready(function(){
 	sticky_menu_effect_scroll();
 
 	//Method to initialize gallery
-	slick_gallery_technologies();
-
-	//Effect to menu links
-	effect_menu_link();
+	slick_gallery_technologies();	
 
 	//Active class menu items links
 	animation_active_class_menu_links();
@@ -23,6 +20,9 @@ $(document).ready(function(){
 
 	//Method to link "Go top"
 	go_top_link();
+
+	//Effect to menu links
+	effect_menu_link();
 
 	//Only apply effects to desktop version	
 	if($(window.top).width() > 1024){
@@ -164,7 +164,7 @@ function animation_active_class_menu_links(){
 function add_active_class_menu_links(){
 	var topAboutUs = $("#about-us").offset().top - 200;
 	var topHowWeWorks = $("#how-we-works").offset().top - 200;
-	var topContact = $("#contact-us").offset().top - 200;
+	var topContact = $("#contact").offset().top - 200;
 
 	var topBody = $(window).scrollTop();
 
@@ -214,8 +214,9 @@ function effect_menu_link(){
 		ink.css({top: y+'px', left: x+'px'}).addClass("animate");
 
 		//Redirect window top to the section by anchor link
-		var anchorLink = $(this).attr("href");
+		var anchorLink = $(this).attr("href");		
 		var topDiv = $(anchorLink).offset().top - 67;
+
 		$("html, body").stop().animate({scrollTop:topDiv}, '2000', 'swing', null);
 	});
 
@@ -349,7 +350,7 @@ function auto_height_first_section(){
 
 	//Assign values
 	$("section.row.first-section").css("height", auto_height+"px");
-	$("section.row.first-section p.slogan").css("margin-top", percentage+"%");		
+	$("section.row.first-section p.slogan").css("margin-top", percentage+"%");
 }
 
 function sticky_menu_effect_scroll(){

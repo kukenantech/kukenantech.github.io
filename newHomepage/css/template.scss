@@ -522,8 +522,14 @@ body{
 				span{
 					color: $white;
 				}
+				&.stage-3{
+					.line{
+						min-height: 128px;
+					}
+				}
 				&.line{
 					margin-top: 1%;
+					min-height: 86px;
 					text-align: center;
 					img{
 						margin: 0 auto;
