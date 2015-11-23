@@ -49,11 +49,11 @@ function hww_content_scroll_fade_in(){
         stageFourOffset = $(".stage-4").offset().top - ($(window).height() - 200)
         stageFiveOffset = $(".stage-5").offset().top - ($(window).height() - 200)
         stageSixOffset = $(".stage-6").offset().top - ($(window).height() - 200)
-        dotted_1_2_Offset = $(".dotted-1-2").offset().top - ($(window).height() - 200)
-        dotted_2_3_Offset = $(".dotted-2-3").offset().top - ($(window).height() - 200)
-        dotted_3_4_Offset = $(".dotted-3-4").offset().top - ($(window).height() - 200)
-        dotted_4_5_Offset = $(".dotted-4-5").offset().top - ($(window).height() - 200)
-        dotted_5_6_Offset = $(".dotted-5-6").offset().top - ($(window).height() - 200);
+        dotted_1_2_Offset = $(".dotted-1-2").offset().top - ($(window).height() - 100)
+        dotted_2_3_Offset = $(".dotted-2-3").offset().top - ($(window).height() - 100)
+        dotted_3_4_Offset = $(".dotted-3-4").offset().top - ($(window).height() - 100)
+        dotted_4_5_Offset = $(".dotted-4-5").offset().top - ($(window).height() - 100)
+        dotted_5_6_Offset = $(".dotted-5-6").offset().top - ($(window).height() - 100);
     
     if(docScroll >= stageOneOffset) {
     	$("#contact-image").fadeIn(500);
