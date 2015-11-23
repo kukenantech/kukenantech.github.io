@@ -486,9 +486,8 @@ body {
           font-size: 16px;
           font-weight: normal; }
           body .row.five-section form.contact_form .final_section button.send-btn:hover, body .row.five-section form.contact_form .final_section button.send-btn:active {
-            font-size: 18px;
             background-color: #ce1739;
-            transition: background-color 0.2s ease-in, font-size 0.8s ease-in; }
+            transition: background-color 0.2s ease-in; }
       body .row.five-section form.contact_form input.input-group {
         height: 44px;
         border-radius: 5px;
