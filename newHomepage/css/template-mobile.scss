@@ -65,7 +65,7 @@
 					.name{
 						position: absolute;
 						h1{
-							background: url("../img/Kukenan-Logo-White-Letters.png") center no-repeat;
+							background: url("../img/mobile/Kukenan-Logo-sticky.png") center no-repeat;
 							background-size: auto 55px;
 							margin-top: 0px;
 							height: 74px;
@@ -145,7 +145,7 @@
 			.name{
 				position: absolute;
 				h1{
-					background: url("../img/Kukenan-Logo-White-Letters.png") center no-repeat;
+					background: url("../img/mobile/Kukenan-Logo-White-Letters.png") center no-repeat;
 					background-size: auto 65px;
 					height: 86px;
 					margin-top: 0px;
@@ -166,6 +166,24 @@
 			}
 			&.first-section{
 				height: 430px;
+
+				.columns{
+					background: url('../img/mobile/fondo-section1.png') repeat;
+					background-position: 50% 0px;
+					-webkit-background-size: cover;
+			        -moz-background-size: cover;
+			        -o-background-size: cover;
+			        background-size: cover;
+
+			        .left{
+	    				background: url('../img/mobile/section1-1.png') left bottom no-repeat;
+	    				background-size: 100% auto;
+    				}
+    				.right{
+	    				background: url('../img/mobile/section1-2.png') right bottom no-repeat;
+	    				background-size: 100% auto;
+    				}
+				}
 				.content{
 					min-height: 450px;
 
@@ -203,6 +221,13 @@
 			&.second-section{
 				height: 720px;
 				.content{					
+					background: url('../img/mobile/fondo-section1.png') repeat;
+					background-position: 50% 0px;
+					-webkit-background-size: cover;
+			        -moz-background-size: cover;
+			        -o-background-size: cover;
+			        background-size: cover;
+
 					.text{
 						float: none;
 						margin-top: 0px;
@@ -241,11 +266,31 @@
 						}
 					}
 				}
+				.initial-contact{
+					background: url('../img/mobile/Initial-Contact.png') no-repeat center center;
+				}
+				.development {
+					background: url('../img/mobile/Development.png') no-repeat center center;
+				}
+				.delivery {
+					background: url('../img/mobile/Delivery.png') no-repeat center center;
+				}
+				.r-gathering{
+					background: url('../img/mobile/Meeting.png') no-repeat center center;
+				}
+				.testing {
+					background: url('../img/mobile/Testing.png') no-repeat center center;
+				}
+				.loe-generation {
+					background: url('../img/mobile/LOE.png') no-repeat center center;
+				}
 			}
 			&.five-section{	
 				min-height: 430px;
 				height: auto;	
 				.icons{
+					background: url('../img/mobile/icons-background-contact-us.png') 100% auto repeat;	
+					background-position: 50% 0px;
 					position: absolute;
 					width: 100%;
 					height: 100%;
