@@ -119,11 +119,13 @@ function change_text_slogan(){
 	window.setInterval(function(){
 	  	
 	  	var words = ["Web Solutions", "Web Design", "Innovation", "Creativity", "Quality"];
-	  	var effects = ["fade", "pulsate"];
+	  	var effects = ["fade"];
+	  	var colors = ["#eab124", "#20364d", "#de4226", "#9dd8a4", "#fe8656"];
 
 	  	//Generate random to select word and effect	  	
 	  	var rEffect = Math.floor((Math.random() * 2));
 	  	var rWord = Math.floor((Math.random() * 5));
+	  	var rColors = Math.floor((Math.random() * 5));
 	  	var wordSelected = false;
 
 	  	do{
@@ -136,14 +138,14 @@ function change_text_slogan(){
 	  		}
 	  	}while(wordSelected == false);
 
-		var newSpan = "<span display='none'>"+words[rWord]+"</span>";
+		var newSpan = "<span style='display:none; color:"+colors[rColors]+"'>"+words[rWord]+"</span>";
 
-		$(".first-section .slogan .text-change span").hide(effects[rEffect], null, 500, function(){
+		$(".first-section .slogan .text-change span").hide("fade", null, 300, function(){
 			//Remove element and add new span
 			$(this).remove();
 
 			$(".first-section .slogan .text-change").append(newSpan);
-			$(".first-section .slogan .text-change span").show();
+			$(".first-section .slogan .text-change span").fadeIn( 300 );
 		});
 
 	}, 3000);
@@ -189,7 +191,6 @@ function add_active_class_menu_links(){
 		$("nav.top-bar ul.right li.contact-us").addClass("active");
 	}
 
-
 }
 
 function effect_menu_link(){
@@ -214,7 +215,15 @@ function effect_menu_link(){
 
 		//Redirect window top to the section by anchor link
 		var anchorLink = $(this).attr("href");
-		var topDiv = $(anchorLink).offset().top - 77;
+		var topDiv = $(anchorLink).offset().top - 67;
+		$("html, body").stop().animate({scrollTop:topDiv}, '2000', 'swing', null);
+	});
+
+	//Add event to links in footer
+	$("section.footer ul.links_site li a").click(function(e){
+		//Redirect window top to the section by anchor link
+		var anchorLink = $(this).attr("href");
+		var topDiv = $(anchorLink).offset().top - 67;
 		$("html, body").stop().animate({scrollTop:topDiv}, '2000', 'swing', null);
 	});
 }

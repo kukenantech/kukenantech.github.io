@@ -12,7 +12,7 @@
 			.row{
 				.top-bar-animated{
 					.title-area{
-						height: 75px;
+						height: 65px;
 
 						li{
 							display: inline-block;
@@ -20,8 +20,8 @@
 
 							&.toggle-topbar{
 								float: right;
-								height: 75px;
-								line-height: 75px;
+								height: 65px;
+								line-height: 65px;
 								margin-top: 0px;								
 								position: relative;
 								text-align: right;
@@ -30,8 +30,8 @@
 								width: 35%;		
 								a{
 									font-family: "Lato";
-									line-height: 75px;
-									height: 75px;
+									line-height: 65px;
+									height: 65px;
 									overflow: hidden;
 									position: relative;
 									overflow:hidden;
@@ -70,9 +70,9 @@
 						position: absolute;
 						h1{
 							background: url("../img/mobile/Kukenan-Logo-sticky.png") center no-repeat;
-							background-size: auto 55px;
+							background-size: auto 50px;
 							margin-top: 0px;
-							height: 74px;
+							height: 65px;
 						}
 					}
 				}

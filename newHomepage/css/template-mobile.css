@@ -5,14 +5,14 @@
   body h2 {
     font-size: 40px; }
   body.f-topbar-fixed .row .top-bar-animated .title-area {
-    height: 75px; }
+    height: 65px; }
     body.f-topbar-fixed .row .top-bar-animated .title-area li {
       display: inline-block;
       width: 49%; }
       body.f-topbar-fixed .row .top-bar-animated .title-area li.toggle-topbar {
         float: right;
-        height: 75px;
-        line-height: 75px;
+        height: 65px;
+        line-height: 65px;
         margin-top: 0px;
         position: relative;
         text-align: right;
@@ -21,8 +21,8 @@
         width: 35%; }
         body.f-topbar-fixed .row .top-bar-animated .title-area li.toggle-topbar a {
           font-family: "Lato";
-          line-height: 75px;
-          height: 75px;
+          line-height: 65px;
+          height: 65px;
           overflow: hidden;
           position: relative;
           overflow: hidden; }
@@ -38,9 +38,9 @@
     position: absolute; }
     body.f-topbar-fixed .row .top-bar-animated .name h1 {
       background: url("../img/mobile/Kukenan-Logo-sticky.png") center no-repeat;
-      background-size: auto 55px;
+      background-size: auto 50px;
       margin-top: 0px;
-      height: 74px; }
+      height: 65px; }
   body .top-bar.expanded .title-area {
     background-color: transparent; }
   body .top-bar .title-area {
