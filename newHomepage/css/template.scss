@@ -410,8 +410,11 @@ body{
 							vertical-align: top;
 
 							&.text-change{
+								display: inline-block;
+								height: 85px;
 								font-size: 56px;	
-								text-align: right;						
+								text-align: left;	
+								width: 350px;					
 
 								span{
 									position:absolute;
@@ -423,10 +426,10 @@ body{
 
 									&.show-el{
 										opacity:1;
-										-webkit-transition:opacity .25s linear;
-										-moz-transition:opacity .25s linear;
-										-o-transition:opacity .25s linear;
-										transition:opacity .25s linear;
+										-webkit-transition:opacity .5s linear;
+										-moz-transition:opacity .5s linear;
+										-o-transition:opacity .5s linear;
+										transition:opacity .5s linear;
 									}
 								}
 							}

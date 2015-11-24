@@ -250,8 +250,11 @@ body {
               font-weight: 700;
               vertical-align: top; }
               body .row.first-section .content p.slogan span.text-change {
+                display: inline-block;
+                height: 85px;
                 font-size: 56px;
-                text-align: right; }
+                text-align: left;
+                width: 350px; }
                 body .row.first-section .content p.slogan span.text-change span {
                   position: absolute;
                   top: 0;
@@ -261,10 +264,10 @@ body {
                   width: auto; }
                   body .row.first-section .content p.slogan span.text-change span.show-el {
                     opacity: 1;
-                    -webkit-transition: opacity .25s linear;
-                    -moz-transition: opacity .25s linear;
-                    -o-transition: opacity .25s linear;
-                    transition: opacity .25s linear; }
+                    -webkit-transition: opacity .5s linear;
+                    -moz-transition: opacity .5s linear;
+                    -o-transition: opacity .5s linear;
+                    transition: opacity .5s linear; }
           body .row.first-section .content p.brief {
             color: #2f3138;
             font-family: 'abeezeeregular';
