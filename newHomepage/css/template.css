@@ -239,6 +239,7 @@ body {
         body .row.first-section .content p {
           text-align: center; }
           body .row.first-section .content p.slogan {
+            position: relative;
             color: #EDF2F4;
             font-family: 'Lato', sans-serif;
             font-style: normal;
@@ -254,14 +255,13 @@ body {
                 height: 85px;
                 font-size: 56px;
                 text-align: left;
-                width: 350px; }
+                width: 365px;
+                position: relative;
+                font-size: 56px; }
                 body .row.first-section .content p.slogan span.text-change span {
                   position: absolute;
-                  top: 0;
                   opacity: 0;
-                  text-align: right;
-                  overflow: auto;
-                  width: auto; }
+                  left: 0; }
                   body .row.first-section .content p.slogan span.text-change span.show-el {
                     opacity: 1;
                     -webkit-transition: opacity .5s linear;
