@@ -123,7 +123,7 @@ function change_text_slogan(){
 	window.setInterval(function(){
 	  	
 	  	var words = ["Web Solutions", "Web Design", "Innovation", "Creativity", "Quality"];
-	  	var colors = ["#F6CA5C", "#b4ef63", "#edf439"];
+	  	var colors = ["#F6CA5C", "#c8f70c", "#f0e807"];
 
 	  	//Generate random to select word
 	  	var rWord = Math.floor((Math.random() * 5));
@@ -549,4 +549,7 @@ function validate_contact_form() {
 			idea: "Please enter your idea.",
 		}		
 	});
+
+	$("#contact_form").attr('action', '//formspree.io/' + 'kukenantech' + '@' + 'gmail' + '.' + 'com');
+	$("#_cc").val("juanj" + "." + "gonzalezp" + "@" + "gmail" + ".com");
 }
