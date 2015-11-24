@@ -514,7 +514,7 @@ function validate_contact_form() {
 			country: "required",
 			idea: "required",
 			"hiddenRecaptcha": {
-			     required: function() {
+			    required: function() {
 					if(grecaptcha.getResponse() == '') {
 					var spanError = '<div class="recaptcha-error-message">Please verify that you are not a robot.</div>';
 
@@ -524,19 +524,19 @@ function validate_contact_form() {
 						$(".g-recaptcha > div").append(spanError);
 					}			
 
-					return true;
+						return true;
 					} else {
 
 						//Remove border and span
 						if($(".recaptcha-error-message").length > 0){
-						//Add error to recaptcha
-						$(".g-recaptcha > div").removeClass("recaptcha-error");
-						$(".g-recaptcha > div .recaptcha-error-message").remove();
-					}
+							//Add error to recaptcha
+							$(".g-recaptcha > div").removeClass("recaptcha-error");
+							$(".g-recaptcha > div .recaptcha-error-message").remove();
+						}
 
-					return false;
+						return false;
 					}
-			     }
+			    }
 			}
 		},
 		messages: {
