@@ -93,6 +93,18 @@ body{
 		font-family: 'Lato', sans-serif;
 		font-size: 50px;
 	}
+	label{
+		&.error{
+			color: $palleteRed;
+			margin-bottom: 5px;
+		}
+	}
+	.recaptcha-error{
+		border: 2px solid $red;
+		.recaptcha-error-message{
+			color: $red;
+		}
+	}
 
 	//Go top link	
 	.cd-top {
@@ -689,7 +701,7 @@ body{
 							    height: 45px;
 							    border-radius: 10px;
 							    margin-left: 30px;
-							    background-color: #b2112f;
+							    background-color: $palleteRed;
 							    color: white;
 							    font-size: 16px;
 							    font-weight: normal;
@@ -710,6 +722,10 @@ body{
 							margin-bottom: 25px;
 							padding-left: 40px;
 							font-size: 15px;
+
+							&.error{
+								margin-bottom: 0px;
+							}
 						}
 					}
 					select{
