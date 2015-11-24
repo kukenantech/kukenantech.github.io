@@ -119,6 +119,7 @@ function move_image_how_we_work(){
 function change_text_slogan(){
 	var rText = 0;
 	var rColors = 1;
+	var container = $(".first-section .slogan .text-change");
 	var element = $(".first-section .slogan .text-change span");
 	var colors = ["#F6CA5C", "#c8f70c", "#f0e807"];
 
@@ -128,42 +129,12 @@ function change_text_slogan(){
 		element.eq(rText).removeClass("show-el"),
 		rText=(rText+1)%element.length;
 
+		var _width = element.eq(rText)[0].scrollWidth, _height = element.eq(rText)[0].scrollHeight;
+		container.css({width:_width,height:_height});
+
 		var newColor=colors[rColors];
 		rColors=(rColors+1)%colors.length;
 		element.eq(rText).css({color:newColor}).addClass("show-el");
-	  	
-	  	/*var words = ["Web Solutions", "Web Design", "Innovation", "Creativity", "Quality"];
-	  	var colors = ["#F6CA5C", "#c8f70c", "#f0e807"];
-
-	  	//Generate random to select word
-	  	var rWord = Math.floor((Math.random() * 5));
-	  	//var rColors = Math.floor((Math.random() * 3));
-	  	var wordSelected = false;
-
-	  	do{
-	  		if(words[rWord] == $(".first-section .slogan .text-change span").text()){
-	  			rWord = Math.floor((Math.random() * 5));
-	  			wordSelected = false;
-	  		}
-	  		else{
-	  			wordSelected = true;
-	  		}
-	  	}while(wordSelected == false);
-
-		var newSpan = "<span class='show-el' style='color:"+colors[rColors]+"'>"+words[rWord]+"</span>";
-
-		$(".first-section .slogan .text-change span").hide("fade", null, 500, function(){
-			//Remove element and add new span
-			$(this).remove();
-
-			$(".first-section .slogan .text-change").append(newSpan);
-			$(".first-section .slogan .text-change span").fadeIn( 500 );
-		});
-
-		rColors++;
-		if(rColors == colors.length){
-			rColors = 0;
-		}*/
 	}, 2e3);
 }
 

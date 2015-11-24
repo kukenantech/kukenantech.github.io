@@ -397,6 +397,7 @@ body{
 					text-align: center;
 
 					&.slogan{
+						position: relative;
 						color: $palleteLightGray;
 						font-family: 'Lato', sans-serif;
 						font-style: normal;						
@@ -410,16 +411,14 @@ body{
 							vertical-align: top;
 
 							&.text-change{
-								font-size: 56px;	
-								text-align: right;						
+								display: inline-block;
+								position: relative;
+								font-size: 56px;					
 
 								span{
 									position:absolute;
-									top: 0;
 									opacity: 0;
-									text-align: right;
-									overflow: auto;
-									width: auto;
+									left: 0;
 
 									&.show-el{
 										opacity:1;
