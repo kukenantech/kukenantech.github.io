@@ -140,8 +140,7 @@ function change_text_slogan(){
 			_width = element.eq(rText)[0].scrollWidth;
 		}
 
-		_height = 85;
-		
+		_height = 85;		
 		container.css({width:_width,height:_height});
 
 		var newColor=colors[rColors];
