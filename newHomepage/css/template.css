@@ -25,7 +25,7 @@ body {
     color: #b2112f;
     margin-bottom: 5px; }
   body #hiddenRecaptcha-error {
-    display: none; }
+    display: none !important; }
   body .recaptcha-error {
     border: 2px solid #b2112f;
     padding: 3px; }

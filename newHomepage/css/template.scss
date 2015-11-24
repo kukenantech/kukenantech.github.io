@@ -100,7 +100,7 @@ body{
 		}
 	}
 	#hiddenRecaptcha-error{
-		display: none;
+		display: none !important;
 	}
 	.recaptcha-error{
 		border: 2px solid $palleteRed;
