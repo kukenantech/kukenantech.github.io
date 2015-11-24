@@ -506,6 +506,7 @@ function validate_contact_form() {
 				required: true,
 				email: true
 			},
+			country: "required",
 			idea: "required",
 		},
 		messages: {
@@ -514,6 +515,7 @@ function validate_contact_form() {
 				required: "Please enter an email address.",
 				email: "Please enter a valid email address.",
 			},
+			country: "Please entre your country",
 			idea: "Please enter your idea.",
 		}
 	});
