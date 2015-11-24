@@ -333,7 +333,7 @@
         <div class="large-12 medium-12 columns">
           <div class="contact_copy">We are here to <b>help</b> you make your idea into a reality. Keep in Touch!</div>
 
-          <form class="contact_form" id="contact_form" action="//formspree.io/kukenantech@gmail.com" method="POST">
+          <form class="contact_form" id="contact_form" method="POST">
 
             <div class="wrapper_left">
 
@@ -600,7 +600,9 @@
              <textarea class="textarea" name="idea" placeholder="Idea"></textarea>
              <input type="hidden" name="_next" value="http://kukenan.tech" />
              <input type="hidden" name="_subject" value="Make your idea into reality with us | Kukenan.tech" />
-             <input type="hidden" id="_cc" name="_cc" />
+             <input type="hidden" id="_cc" name="_cc" 
+             />
+             <input type="text" name="_gotcha" style="display:none" />
            </div>
            <div class="final_section">        
               <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
