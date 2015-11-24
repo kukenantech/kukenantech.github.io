@@ -24,6 +24,9 @@ $(document).ready(function(){
 	//Effect to menu links
 	effect_menu_link();
 
+	//Validate contact form
+	validate_contact_form();
+
 	//Only apply effects to desktop version	
 	if($(window.top).width() > 1024){
 
@@ -485,4 +488,10 @@ function hww_content_scroll_fade_in(){
     	$("#dotted-5-6").fadeIn(200);
     }
   })
+}
+
+function validate_contact_form() {
+	$("contact_form").validate(function() {
+		
+	});
 }
