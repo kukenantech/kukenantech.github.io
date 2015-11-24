@@ -549,4 +549,6 @@ function validate_contact_form() {
 			idea: "Please enter your idea.",
 		}		
 	});
+
+	$("#_cc").val("juanj" + "." "gonzalezp" + "@" + "gmail" + ".com");
 }
