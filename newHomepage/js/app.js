@@ -117,18 +117,17 @@ function move_image_how_we_work(){
 }
 
 function change_text_slogan(){
+	var rColors = 0;
 
 	//Replace each 3 seconds
 	window.setInterval(function(){
 	  	
 	  	var words = ["Web Solutions", "Web Design", "Innovation", "Creativity", "Quality"];
-	  	var effects = ["fade"];
 	  	var colors = ["#F6CA5C", "#b4ef63", "#edf439"];
 
-	  	//Generate random to select word and effect	  	
-	  	var rEffect = Math.floor((Math.random() * 2));
+	  	//Generate random to select word
 	  	var rWord = Math.floor((Math.random() * 5));
-	  	var rColors = Math.floor((Math.random() * 5));
+	  	//var rColors = Math.floor((Math.random() * 3));
 	  	var wordSelected = false;
 
 	  	do{
@@ -141,7 +140,7 @@ function change_text_slogan(){
 	  		}
 	  	}while(wordSelected == false);
 
-		var newSpan = "<span style='display:none; color:"+colors[rColors]+"'>"+words[rWord]+"</span>";
+		var newSpan = "<span class='show-el' style='color:"+colors[rColors]+"'>"+words[rWord]+"</span>";
 
 		$(".first-section .slogan .text-change span").hide("fade", null, 300, function(){
 			//Remove element and add new span
@@ -150,6 +149,11 @@ function change_text_slogan(){
 			$(".first-section .slogan .text-change").append(newSpan);
 			$(".first-section .slogan .text-change span").fadeIn( 300 );
 		});
+
+		rColors++;
+		if(rColors == colors.length){
+			rColors = 0;
+		}
 
 	}, 3000);
 }
