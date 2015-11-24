@@ -117,12 +117,22 @@ function move_image_how_we_work(){
 }
 
 function change_text_slogan(){
-	var rColors = 0;
+	var rText = 0;
+	var rColors = 1;
+	var element = $(".first-section .slogan .text-change span");
+	var colors = ["#F6CA5C", "#c8f70c", "#f0e807"];
 
 	//Replace each 3 seconds
 	window.setInterval(function(){
+
+		element.eq(rText).removeClass("show-el"),
+		rText=(rText+1)%element.length;
+
+		var newColor=colors[rColors];
+		rColors=(rColors+1)%colors.length;
+		element.eq(rText).css({color:newColor}).addClass("show-el");
 	  	
-	  	var words = ["Web Solutions", "Web Design", "Innovation", "Creativity", "Quality"];
+	  	/*var words = ["Web Solutions", "Web Design", "Innovation", "Creativity", "Quality"];
 	  	var colors = ["#F6CA5C", "#c8f70c", "#f0e807"];
 
 	  	//Generate random to select word
@@ -153,9 +163,8 @@ function change_text_slogan(){
 		rColors++;
 		if(rColors == colors.length){
 			rColors = 0;
-		}
-
-	}, 3000);
+		}*/
+	}, 2e3);
 }
 
 function animation_active_class_menu_links(){
