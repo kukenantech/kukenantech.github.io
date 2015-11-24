@@ -100,7 +100,8 @@ body{
 		}
 	}
 	.recaptcha-error{
-		border: 2px solid $red;
+		border: 2px solid $palleteRed;
+		padding: 3px;
 		.recaptcha-error-message{
 			color: $red;
 			font-size: 12px;
