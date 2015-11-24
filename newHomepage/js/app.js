@@ -502,7 +502,10 @@ function validate_contact_form() {
 		},
 		messages: {
 			name: "Please enter your name.",
-			email: "Please enter a valid email address.",
+			email: {
+				required: "Please enter an email address.",
+				email: "Please enter a valid email address.",
+			},
 			idea: "Please enter your idea.",
 		}
 	});
