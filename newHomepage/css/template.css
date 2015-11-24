@@ -246,20 +246,20 @@ body {
               text-align: left;
               font-weight: 700;
               vertical-align: top; }
-              body .row.first-section .content p.slogan span.show-el {
-                opacity: 1.0;
-                -webkit-transition: opacity 0.25s 0s;
-                -webkit-transition-delay: linear;
-                -moz-transition: opacity 0.25s 0s linear;
-                -o-transition: opacity 0.25s 0s linear;
-                transition: opacity 0.25s 0s linear; }
               body .row.first-section .content p.slogan span.text-change {
+                opacity: 0;
                 font-size: 56px;
                 text-align: right; }
                 body .row.first-section .content p.slogan span.text-change span {
                   text-align: right;
                   overflow: auto;
                   width: auto; }
+              body .row.first-section .content p.slogan span.show-el {
+                opacity: 1;
+                -webkit-transition: opacity .25s linear;
+                -moz-transition: opacity .25s linear;
+                -o-transition: opacity .25s linear;
+                transition: opacity .25s linear; }
           body .row.first-section .content p.brief {
             color: #2f3138;
             font-family: 'abeezeeregular';

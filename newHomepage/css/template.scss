@@ -405,16 +405,8 @@ body{
 							font-weight: 700;
 							vertical-align: top;
 
-							&.show-el{
-								opacity:1.0;
-								-webkit-transition:opacity 0.25s 0s;
-								-webkit-transition-delay:linear;
-								-moz-transition:opacity 0.25s 0s linear;
-								-o-transition:opacity 0.25s 0s linear;
-								transition:opacity 0.25s 0s linear
-							}
-
 							&.text-change{
+								opacity:0;
 								font-size: 56px;	
 								text-align: right;						
 
@@ -424,6 +416,14 @@ body{
 									width: auto;
 
 								}
+							}
+
+							&.show-el{
+								opacity:1;
+								-webkit-transition:opacity .25s linear;
+								-moz-transition:opacity .25s linear;
+								-o-transition:opacity .25s linear;
+								transition:opacity .25s linear;
 							}
 						}
 					}
