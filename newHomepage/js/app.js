@@ -233,6 +233,8 @@ function effect_menu_link(){
 }
 
 function slick_gallery_technologies(){
+	var drag = !($(window.top).width() > 1024);
+
 	//Initialize the gallery
 	if($(window.top).width() > 1023){
 		$(".gallery").slick({
@@ -241,7 +243,8 @@ function slick_gallery_technologies(){
 			slidesToScroll: 1,
 			autoplay: true,
 	  		autoplaySpeed: 3000,
-	  		cssEase: 'linear'
+	  		cssEase: 'linear',
+	  		draggable: drag
 		});
 
 		$("#items-technologies").val("8");
@@ -253,7 +256,8 @@ function slick_gallery_technologies(){
 			slidesToScroll: 1,
 			autoplay: true,
 	  		autoplaySpeed: 3000,
-	  		cssEase: 'linear'
+	  		cssEase: 'linear',
+	  		draggable: drag
 		});
 
 		$("#items-technologies").val("5");
@@ -265,7 +269,8 @@ function slick_gallery_technologies(){
 			slidesToScroll: 1,
 			autoplay: true,
 	  		autoplaySpeed: 3000,
-	  		cssEase: 'linear'
+	  		cssEase: 'linear',
+	  		draggable: drag
 		});
 
 		$("#items-technologies").val("3");
@@ -283,7 +288,8 @@ function slick_gallery_technologies(){
 				slidesToScroll: 1,
 				autoplay: true,
 		  		autoplaySpeed: 3000,
-		  		cssEase: 'linear'
+		  		cssEase: 'linear',
+		  		draggable: drag
 			});
 
 			$("#items-technologies").val("8");
@@ -296,7 +302,8 @@ function slick_gallery_technologies(){
 				slidesToScroll: 1,
 				autoplay: true,
 		  		autoplaySpeed: 3000,
-		  		cssEase: 'linear'
+		  		cssEase: 'linear',
+		  		draggable: drag
 			});
 
 			$("#items-technologies").val("5");
@@ -309,7 +316,8 @@ function slick_gallery_technologies(){
 				slidesToScroll: 1,
 				autoplay: true,
 		  		autoplaySpeed: 3000,
-		  		cssEase: 'linear'
+		  		cssEase: 'linear',
+		  		draggable: drag
 			});
 
 			$("#items-technologies").val("3");
