@@ -524,7 +524,7 @@ function validate_contact_form() {
 			            	$(".g-recaptcha > div").append(spanError);
 			            }			
 
-			            return true;
+			            return false;
 			         } else {
 
 			         	//Remove border and span
@@ -534,7 +534,7 @@ function validate_contact_form() {
 			            	$(".g-recaptcha > div .recaptcha-error-message").remove();
 			            }
 
-			            return false;
+			            return true;
 			         }
 			     }
 			}
