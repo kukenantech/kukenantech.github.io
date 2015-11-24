@@ -494,7 +494,7 @@ function validate_contact_form() {
 	$("#contact_form").validate({
 		rules: {
 			name: "required",
-			email: {
+			_replyto: {
 				required: true,
 				email: true
 			},
@@ -502,7 +502,7 @@ function validate_contact_form() {
 		},
 		messages: {
 			name: "Please enter your name.",
-			email: {
+			_replyto: {
 				required: "Please enter an email address.",
 				email: "Please enter a valid email address.",
 			},
