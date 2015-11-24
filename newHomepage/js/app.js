@@ -491,7 +491,19 @@ function hww_content_scroll_fade_in(){
 }
 
 function validate_contact_form() {
-	$("contact_form").validate(function() {
-		
+	$("#contact_form").validate({
+		rules: {
+			name: "required",
+			email: {
+				required: true,
+				email: true
+			},
+			idea: "required",
+		},
+		messages: {
+			name: "Please enter your name.",
+			email: "Please enter a valid email address.",
+			idea: "Please enter your idea.",
+		}
 	});
 }
