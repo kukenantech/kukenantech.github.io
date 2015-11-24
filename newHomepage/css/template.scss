@@ -99,6 +99,9 @@ body{
 			margin-bottom: 5px;
 		}
 	}
+	#hiddenRecaptcha-error{
+		display: none;
+	}
 	.recaptcha-error{
 		border: 2px solid $palleteRed;
 		padding: 3px;
