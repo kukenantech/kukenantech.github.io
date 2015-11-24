@@ -123,7 +123,13 @@
             height: auto;
             line-height: auto; }
           body .row.first-section .content p.slogan span.text-change {
-            font-size: 40px; }
+            height: 60px;
+            font-size: 40px;
+            width: 216px; }
+            body .row.first-section .content p.slogan span.text-change span.text-1 {
+              width: 260px; }
+            body .row.first-section .content p.slogan span.text-change span.text-2 {
+              width: 216px; }
       body .row.first-section .content p.brief {
         font-size: 23px;
         line-height: 30px; }

@@ -206,7 +206,18 @@
 								}
 
 								&.text-change{
+									height: 60px;
 									font-size: 40px;
+									width: 216px;
+
+									span{
+										&.text-1{
+											width: 260px;
+										}
+										&.text-2{
+											width: 216px;
+										}
+									}
 								}
 							}
 														

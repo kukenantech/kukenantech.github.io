@@ -89,7 +89,18 @@
 							span{
 								line-height: 55px;
 								&.text-change{
+									height: 55px;
 									font-size: 40px;
+									width: 260px;
+
+									span{
+										&.text-1{
+											width: 260px;
+										}
+										&.text-2{
+											width: 216px;
+										}
+									}
 								}
 							}
 							

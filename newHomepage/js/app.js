@@ -131,17 +131,26 @@ function change_text_slogan(){
 		rText=(rText+1)%element.length;
 
 		if(element.eq(rText).text() == "Web Solutions"){
-			_width = 365;
+			if($(window.top).width() < 1024){
+				_width = 260;
+			}
+			else{
+				_width = 365;
+			}			
 		}
 		else if(element.eq(rText).text() == "Web Design"){
-			_width = 305;
+			if($(window.top).width() < 1024){
+				_width = 216;
+			}
+			else{
+				_width = 305;
+			}			
 		}
 		else{
 			_width = element.eq(rText)[0].scrollWidth;
 		}
 
-		_height = 85;		
-		container.css({width:_width,height:_height});
+		container.css({width:_width});
 
 		var newColor=colors[rColors];
 		rColors=(rColors+1)%colors.length;

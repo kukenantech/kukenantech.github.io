@@ -51,7 +51,13 @@
         body .row.first-section .content p.slogan span {
           line-height: 55px; }
           body .row.first-section .content p.slogan span.text-change {
-            font-size: 40px; }
+            height: 55px;
+            font-size: 40px;
+            width: 260px; }
+            body .row.first-section .content p.slogan span.text-change span.text-1 {
+              width: 260px; }
+            body .row.first-section .content p.slogan span.text-change span.text-2 {
+              width: 216px; }
   body .row.second-section {
     height: 530px; }
     body .row.second-section .content {
