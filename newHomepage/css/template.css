@@ -27,7 +27,8 @@ body {
   body .recaptcha-error {
     border: 2px solid #d50b15; }
     body .recaptcha-error .recaptcha-error-message {
-      color: #d50b15; }
+      color: #d50b15;
+      font-size: 12px; }
   body .cd-top {
     display: inline-block;
     height: 50px;
