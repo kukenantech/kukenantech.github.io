@@ -24,8 +24,11 @@ body {
   body label.error {
     color: #b2112f;
     margin-bottom: 5px; }
+  body #hiddenRecaptcha-error {
+    display: none !important; }
   body .recaptcha-error {
-    border: 2px solid #d50b15; }
+    border: 2px solid #b2112f;
+    padding: 3px; }
     body .recaptcha-error .recaptcha-error-message {
       color: #d50b15;
       font-size: 12px; }
@@ -521,6 +524,8 @@ body {
         margin-bottom: 25px;
         padding-left: 32px;
         font-size: 15px; }
+        body .row.five-section form.contact_form select.input-group.error {
+          margin-bottom: 0px; }
       body .row.five-section form.contact_form textarea {
         min-height: 184px;
         border-radius: 5px;

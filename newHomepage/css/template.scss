@@ -99,8 +99,12 @@ body{
 			margin-bottom: 5px;
 		}
 	}
+	#hiddenRecaptcha-error{
+		display: none !important;
+	}
 	.recaptcha-error{
-		border: 2px solid $red;
+		border: 2px solid $palleteRed;
+		padding: 3px;
 		.recaptcha-error-message{
 			color: $red;
 			font-size: 12px;
@@ -745,6 +749,10 @@ body{
 							margin-bottom: 25px;
 							padding-left: 32px;
 							font-size: 15px;
+
+							&.error{
+								margin-bottom: 0px;
+							}
 						}
 					}
 					textarea{
