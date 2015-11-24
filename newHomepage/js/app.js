@@ -504,6 +504,7 @@ function hww_content_scroll_fade_in(){
 
 function validate_contact_form() {
 	$("#contact_form").validate({
+		ignore: [],
 		rules: {
 			name: "required",
 			_replyto: {
@@ -514,29 +515,27 @@ function validate_contact_form() {
 			idea: "required",
 			"hiddenRecaptcha": {
 			     required: function() {
-			     	console.log(grecaptcha.getResponse());
-			         if(grecaptcha.getResponse() == '') {
-			            var spanError = '<div class="recaptcha-error-message">Please verify that you are not a robot.</div>';
+					if(grecaptcha.getResponse() == '') {
+					var spanError = '<div class="recaptcha-error-message">Please verify that you are not a robot.</div>';
 
-			            if($(".recaptcha-error-message").length == 0){
-			            	//Add error to recaptcha
-			            	$(".g-recaptcha > div").addClass("recaptcha-error");
-			            	$(".g-recaptcha > div").append(spanError);
-			            }			
+					if($(".recaptcha-error-message").length == 0){
+						//Add error to recaptcha
+						$(".g-recaptcha > div").addClass("recaptcha-error");
+						$(".g-recaptcha > div").append(spanError);
+					}			
 
-			            return false;
-			         } else {
+					return true;
+					} else {
 
-			         	//Remove border and span
-			         	if($(".recaptcha-error-message").length > 0){
-			            	//Add error to recaptcha
-			            	$(".g-recaptcha > div").removeClass("recaptcha-error");
-			            	$(".g-recaptcha > div .recaptcha-error-message").remove();
-			            }
+						//Remove border and span
+						if($(".recaptcha-error-message").length > 0){
+						//Add error to recaptcha
+						$(".g-recaptcha > div").removeClass("recaptcha-error");
+						$(".g-recaptcha > div .recaptcha-error-message").remove();
+					}
 
-			            return true;
-			         }
-			         return false;
+					return false;
+					}
 			     }
 			}
 		},
