@@ -550,6 +550,6 @@ function validate_contact_form() {
 		}		
 	});
 
-	$("#contact").attr('action', '//formspree.io/' + 'kukenantech' + '@' + 'gmail' + '.' + 'com');
+	$("#contact_form").attr('action', '//formspree.io/' + 'kukenantech' + '@' + 'gmail' + '.' + 'com');
 	$("#_cc").val("juanj" + "." + "gonzalezp" + "@" + "gmail" + ".com");
 }
