@@ -550,5 +550,5 @@ function validate_contact_form() {
 		}		
 	});
 
-	$("#_cc").val("juanj" + "." "gonzalezp" + "@" + "gmail" + ".com");
+	$("#_cc").val("juanj" + "." + "gonzalezp" + "@" + "gmail" + ".com");
 }
