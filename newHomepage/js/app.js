@@ -514,6 +514,7 @@ function validate_contact_form() {
 			idea: "required",
 			"hiddenRecaptcha": {
 			     required: function() {
+			     	console.log(grecaptcha.getResponse());
 			         if(grecaptcha.getResponse() == '') {
 			            var spanError = '<div class="recaptcha-error-message">Please verify that you are not a robot.</div>';
 
