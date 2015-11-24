@@ -142,12 +142,12 @@ function change_text_slogan(){
 
 		var newSpan = "<span class='show-el' style='color:"+colors[rColors]+"'>"+words[rWord]+"</span>";
 
-		$(".first-section .slogan .text-change span").hide("fade", null, 300, function(){
+		$(".first-section .slogan .text-change span").hide("fade", null, 500, function(){
 			//Remove element and add new span
 			$(this).remove();
 
 			$(".first-section .slogan .text-change").append(newSpan);
-			$(".first-section .slogan .text-change span").fadeIn( 300 );
+			$(".first-section .slogan .text-change span").fadeIn( 500 );
 		});
 
 		rColors++;
