@@ -130,7 +130,8 @@
         body .row.first-section .content p.brief .question {
           font-size: 26px; }
   body .row.second-section {
-    height: 720px; }
+    height: 720px;
+    padding-top: 3%; }
     body .row.second-section .content {
       background: url("../img/mobile/fondo-section1.png") repeat;
       background-position: 50% 0px;
