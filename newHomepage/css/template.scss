@@ -746,6 +746,10 @@ body{
 							margin-bottom: 25px;
 							padding-left: 32px;
 							font-size: 15px;
+
+							&.error{
+								margin-bottom: 0px;
+							}
 						}
 					}
 					textarea{
