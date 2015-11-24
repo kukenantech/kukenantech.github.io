@@ -536,6 +536,7 @@ function validate_contact_form() {
 
 			            return true;
 			         }
+			         return false;
 			     }
 			}
 		},
