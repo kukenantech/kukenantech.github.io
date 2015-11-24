@@ -521,9 +521,12 @@ function validate_contact_form() {
 	$( "#contact_form" ).submit(function( event ) {
 		if(grecaptcha.getResponse() == ""){
 			var spanError = '<div class="recaptcha-error-message">Please verify that you are not a robot.</div>';
-			//Add error to recaptcha
-			$(".g-recaptcha > div").addClass("recaptcha-error");
-			$(".g-recaptcha > div").append(spanError);
+
+			if($(".recaptcha-error-message").length == 0){
+				//Add error to recaptcha
+				$(".g-recaptcha > div").addClass("recaptcha-error");
+				$(".g-recaptcha > div").append(spanError);
+			}			
 
 			return false;
 		}
