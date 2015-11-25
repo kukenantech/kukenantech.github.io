@@ -482,7 +482,7 @@ body{
 		&.second-section{
 			background-color: $greenBlue;	
 			color: $white;	
-			height: 500px;
+			height: auto;
 			position: relative;
 
 			.content{
@@ -494,16 +494,18 @@ body{
 		        background-size: cover;
 		        position: relative;
     			height: 100%;
+    			width: 100%;
 
     			.text{
     				margin-top: 5%;
+    				margin-bottom: 5%;
 
     				h2{
     					margin-bottom: 5%;
     				}
     			}
     			.image{
-    				line-height: 497px;
+    				line-height: 700px;
     				text-align: center;
 
     				img{

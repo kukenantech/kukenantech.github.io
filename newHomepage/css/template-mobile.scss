@@ -234,7 +234,6 @@
 				}
 			}
 			&.second-section{
-				height: 720px;
 				padding-top: 3%;
 				.content{					
 					background: url('../img/mobile/fondo-section1.png') repeat;
@@ -242,7 +241,7 @@
 					-webkit-background-size: cover;
 			        -moz-background-size: cover;
 			        -o-background-size: cover;
-			        background-size: cover;
+			        background-size: cover;			        
 
 					.text{
 						float: none;
@@ -250,6 +249,7 @@
 					}
 					.image{
 						line-height: 100px;
+						margin-bottom: 5%;
 						img{
 							height: 200px;
 						}

@@ -58,22 +58,20 @@
               width: 260px; }
             body .row.first-section .content p.slogan span.text-change span.text-2 {
               width: 216px; }
-  body .row.second-section {
-    height: 530px; }
-    body .row.second-section .content {
-      background: url("../img/mobile/fondo-section1.png") repeat;
-      background-position: 50% 0px;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; }
-      body .row.second-section .content .text {
-        margin-top: 2%;
-        padding-left: 2%; }
-      body .row.second-section .content .image {
-        padding-right: 2%; }
-        body .row.second-section .content .image img {
-          height: auto; }
+  body .row.second-section .content {
+    background: url("../img/mobile/fondo-section1.png") repeat;
+    background-position: 50% 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+    body .row.second-section .content .text {
+      margin-top: 2%;
+      padding-left: 2%; }
+    body .row.second-section .content .image {
+      padding-right: 2%; }
+      body .row.second-section .content .image img {
+        height: auto; }
   body .row.fourth-section .row.stage.stage-3 .line .columns img {
     height: 100%;
     width: 5px; }

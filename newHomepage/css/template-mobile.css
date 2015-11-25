@@ -136,7 +136,6 @@
         body .row.first-section .content p.brief .question {
           font-size: 26px; }
   body .row.second-section {
-    height: 720px;
     padding-top: 3%; }
     body .row.second-section .content {
       background: url("../img/mobile/fondo-section1.png") repeat;
@@ -149,7 +148,8 @@
         float: none;
         margin-top: 0px; }
       body .row.second-section .content .image {
-        line-height: 100px; }
+        line-height: 100px;
+        margin-bottom: 5%; }
         body .row.second-section .content .image img {
           height: 200px; }
   body .row.third-section {
