@@ -135,7 +135,7 @@ function change_text_slogan(){
 				_width = 260;
 			}
 			else{
-				_width = 365;
+				_width = 370;
 			}			
 		}
 		else if(element.eq(rText).text() == "Web Design"){
@@ -143,7 +143,7 @@ function change_text_slogan(){
 				_width = 216;
 			}
 			else{
-				_width = 305;
+				_width = 315;
 			}			
 		}
 		else{
