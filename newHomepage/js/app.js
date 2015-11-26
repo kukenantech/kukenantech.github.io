@@ -365,8 +365,10 @@ function auto_height_first_section(){
 	}
 
 	//Assign values
-	$("section.row.first-section").css("height", auto_height+"px");
-	$("section.row.first-section p.slogan").css("margin-top", percentage+"%");
+	if(auto_height > 530){
+		$("section.row.first-section").css("height", auto_height+"px");
+		$("section.row.first-section p.slogan").css("margin-top", percentage+"%");
+	}	
 }
 
 function sticky_menu_effect_scroll(){
