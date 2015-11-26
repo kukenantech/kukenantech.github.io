@@ -238,10 +238,11 @@
 				.content{					
 					background: url('../img/mobile/fondo-section1.png') repeat;
 					background-position: 50% 0px;
-					-webkit-background-size: cover;
-			        -moz-background-size: cover;
-			        -o-background-size: cover;
-			        background-size: cover;			        
+					-webkit-background-size: auto;
+			        -moz-background-size: auto;
+			        -o-background-size: auto;
+			        background-size: auto;	
+			        margin: 0 auto;		        
 
 					.text{
 						float: none;
