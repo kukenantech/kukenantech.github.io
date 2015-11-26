@@ -373,6 +373,20 @@ function auto_height_first_section(){
 
 function sticky_menu_effect_scroll(){
 
+	//Initialize topbar
+	if($(window).scrollTop() == 0){
+		$("body").removeClass("animated");
+		$("div.contain-to-grid.sticky-custom").removeClass("sticky-custom-animated");
+		$("div.contain-to-grid.sticky-custom .top-bar").removeClass("top-bar-animated");
+	}
+	else{
+		if($("body").hasClass("animated") == false){
+			$("body").addClass("animated");
+			$("div.contain-to-grid.sticky-custom").addClass("sticky-custom-animated", 100, "swing");
+			$("div.contain-to-grid.sticky-custom .top-bar").addClass("top-bar-animated", 100, "swing");
+		}
+	}
+
 	$(window).scroll(function(){
 
 		if($("section.menu-section .sticky").hasClass("fixed")){
