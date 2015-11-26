@@ -365,7 +365,7 @@ function auto_height_first_section(){
 	}
 
 	//Assign values
-	if(auto_height > 530){
+	if(auto_height > 320){
 		$("section.row.first-section").css("height", auto_height+"px");
 		$("section.row.first-section p.slogan").css("margin-top", percentage+"%");
 	}	
