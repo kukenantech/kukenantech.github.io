@@ -407,6 +407,8 @@ body {
         word-spacing: 0em;
         line-height: 1.4;
         margin-bottom: 5%; }
+      body .row.fourth-section .content {
+        min-height: 300px; }
       body .row.fourth-section .initial-contact,
       body .row.fourth-section .development,
       body .row.fourth-section .delivery {

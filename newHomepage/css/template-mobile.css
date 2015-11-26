@@ -154,6 +154,8 @@
           height: 200px; }
   body .row.third-section {
     height: 130px; }
+  body .row.fourth-section .row .content {
+    min-height: auto; }
   body .row.fourth-section .row.stage-3 .line {
     min-height: 50px; }
   body .row.fourth-section .row.line {

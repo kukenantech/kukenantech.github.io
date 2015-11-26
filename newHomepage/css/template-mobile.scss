@@ -261,6 +261,9 @@
 			}
 			&.fourth-section{
 				.row{
+					.content{
+						min-height: auto;
+					}
 					&.stage-3{
 						.line{
 							min-height: 50px;
