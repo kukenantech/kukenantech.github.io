@@ -467,9 +467,8 @@ function hww_hide_images(){
 	$(".scroll-hide").hide();
 }
 
-function hww_content_scroll_fade_in(){
-  $(window).scroll(function(){
-    var docScroll = $(this).scrollTop(), 
+function hww_content_scroll_fade_in_effects(){
+	var docScroll = $(this).scrollTop(), 
         stageOneOffset = $(".stage-1").offset().top - ($(window).height() - 250),
         stageTwoOffset = $(".stage-2").offset().top - ($(window).height() - 250)
         stageThreeOffset = $(".stage-3").offset().top - ($(window).height() - 250)
@@ -516,7 +515,15 @@ function hww_content_scroll_fade_in(){
     if(docScroll >= dotted_5_6_Offset) {
     	$("#dotted-5-6").fadeIn(200);
     }
-  })
+}
+
+function hww_content_scroll_fade_in(){
+
+	hww_content_scroll_fade_in_effects();
+
+	$(window).scroll(function(){
+		hww_content_scroll_fade_in_effects();
+	});
 }
 
 function validate_contact_form() {
