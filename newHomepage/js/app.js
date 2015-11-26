@@ -203,7 +203,7 @@ function add_active_class_menu_links(){
 
 function effect_menu_link(){
 	var ink, d, x, y;
-	$("nav.top-bar section.top-bar-section ul li a, a.ghost-button, nav.top-bar li.toggle-topbar a").click(function(e){
+	$("nav.top-bar section.top-bar-section ul li a, a.ghost-button, nav.top-bar li.toggle-topbar a, .link").click(function(e){
 		if($(this).find(".ink").length === 0){
 		    $(this).prepend("<span class='ink'></span>");
 		}
