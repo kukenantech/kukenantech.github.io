@@ -1,30 +1,679 @@
-<!DOCTYPE html>
-<html>
-	<head>		
-		<meta name="description" content="Customized Web Solutions,  Web apps, Business value,  Creative Ideas, Development Plan, Happy Clients."/>
-		<meta property="og:title" content="Kukenan.tech Website" />
-		<meta property="og:type" content="website"/>
-		<meta property="og:image" content="http://kukenan.tech/Kukenan-Logo.jpg"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
-		<link rel="stylesheet" type="text/css" href="css/tablet-main.css" />
-		<link rel="stylesheet" type="text/css" href="css/mobile-main.css" />
-		<link rel="shortcut icon" href="kukenan-cube.ico" />
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Customized Web Solutions,  Web apps, Business value,  Creative Ideas, Development Plan, Happy Clients."/>
+    <meta property="og:title" content="Kukenan.tech Website" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://kukenan.tech/Kukenan-Cube.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <title>Kukenan.Tech | Welcome</title>
+    <link rel="shortcut icon" href="Kukenan-Cube.ico" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <link rel="stylesheet" href="css/template.css" />
+    <link rel="stylesheet" href="css/template-tablet.css" />
+    <link rel="stylesheet" href="css/template-mobile.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,100&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        
+    <script src="js/vendor/modernizr.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
-		<title>Kukenan.tech</title>
-	</head>
-	<body>
-		<h1>Kukenan.Tech</h1>
-		<div class="under-construction">
-			<div class="comming-soon">
-				<span class="contact">
-					<a class="ghost-button" href="mailto:kukenantech@gmail.com?subject=Drop us a line Kukenan.Tech​">Email Us</a>
-				</span>
-			</div>
-		</div>
-	</body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-70626932-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body class="f-topbar-fixed">
+    
+    <!-- Section to topbar menu -->
+    <section class="row menu-section">
+      <div class="large-12 columns">
+        <div class="contain-to-grid sticky-custom fixed">
+          <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+              <li class="name">
+                <h1>
+                  <a href="#">
+                    <img data-interchange="[img/mobile/Kukenan-Cube.png, (default)], [img/Kukenan-Cube.png, (large)]" alt="Go to homepage" title="Kukenan.Tech Logo"/>
+                    <noscript><img src="img/Kukenan-Cube.png"></noscript>
+                  </a>
+                </h1>
+              </li>
+               <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+              <li class="toggle-topbar menu-icon"><a><span>Menú</span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+              <!-- Right Nav Section -->
+              <ul class="right">
+                <li class="about-us"><a href="#about-us">About us</a></li>
+                <li class="how-we-works"><a href="#how-we-works">How we work</a></li>
+                <li class="contact-us"><a href="#contact">Contact us</a></li>
+              </ul>
+            </section>
+          </nav>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section to first section (Slogan and brief) -->
+    <section class="row first-section" id='slogan'>
+      <div class="large-12 medium-12 columns" data-type="background" data-speed="1">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="page-sizer content">
+          <p class="slogan">
+            <span class="text-change" data-type="slogan" data-speed="7">
+              <span class="show-el text-1">Web Solutions</span>
+              <span class="text-2">Web Design</span>
+              <span>Innovation</span>
+              <span>Creativity</span>
+              <span>Quality</span>
+            </span>
+             Beyond the Sky
+          </p> 
+          <p class="brief">
+            <span class="question" data-type="slogan" data-speed="7">Do you have an idea in mind?</span>
+            <span data-type="slogan" data-speed="7">Drop us a line and look how your idea becomes a reality.</span>
+          </p>
+          <p class="contact">
+            <a class="ghost-button" href="#contact">Get in Touch</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section to third section (Our tecnologies) -->
+    <section class="row third-section">
+      <div class="page-sizer-section">
+        <div class="large-12 columns">
+          <h2>Technologies we use</h2>
+          <input id="items-technologies" type="hidden" value="0" />
+          <div class="gallery">
+            <div class="item">              
+              <img data-interchange="[img/mobile/drupal.png, (default)], [img/drupal.png, (large)]" alt="Drupal Logo" title="Drupal CMS"/>
+              <noscript><img src="img/drupal.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/foundation.png, (default)], [img/foundation.png, (large)]" alt="Foundation Logo" title="Zurb Foundation"/>
+              <noscript><img src="img/foundation.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/jQuery.png, (default)], [img/jQuery.png, (large)]" alt="jQuery Logo" title="jQuery"/>
+              <noscript><img src="img/jQuery.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/sass.png, (default)], [img/sass.png, (large)]" alt="Sass Logo" title="Sass CSS"/>
+              <noscript><img src="img/sass.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/solr.png, (default)], [img/solr.png, (large)]" alt="Solr Logo" title="Apache Solr"/>
+              <noscript><img src="img/solr.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/git.png, (default)], [img/git.png, (large)]" alt="Git Logo" title="Git"/>
+              <noscript><img src="img/git.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/MySQL.png, (default)], [img/MySQL.png, (large)]" alt="MySQL Logo" title="MySQL Database"/>
+              <noscript><img src="img/MySQL.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/acquia.png, (default)], [img/acquia.png, (large)]" alt="Acquia Logo" title="Acquia Cloud Solution"/>
+              <noscript><img src="img/acquia.png"></noscript>
+            </div>
+             <div class="item">
+              <img data-interchange="[img/mobile/asp.png, (default)], [img/asp.png, (large)]" alt="ASP.NET Logo" title="ASP.NET"/>
+              <noscript><img src="img/asp.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/aws.png, (default)], [img/aws.png, (large)]" alt="AWS Logo" title="Amazon Web Services"/>
+              <noscript><img src="img/aws.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/bootstrap.png, (default)], [img/bootstrap.png, (large)]" alt="Boostrap Logo" title="Boostrap Framework"/>
+              <noscript><img src="img/bootstrap.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/CorelDRAW-X7.png, (default)], [img/CorelDRAW-X7.png, (large)]" alt="CorelDraw Logo" title="CorelDraw Design"/>
+              <noscript><img src="img/CorelDRAW-X7.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/illustrator.png, (default)], [img/illustrator.png, (large)]" alt="Illustrator Logo" title="Illustrator Design"/>
+              <noscript><img src="img/illustrator.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/less.png, (default)], [img/less.png, (large)]" alt="Less Logo" title="Less CSS"/>
+              <noscript><img src="img/less.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/pantheon.png, (default)], [img/pantheon.png, (large)]" alt="Pantheon Logo" title="Pantheon Cloud Solution"/>
+              <noscript><img src="img/pantheon.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/photoshop.png, (default)], [img/photoshop.png, (large)]" alt="Photoshop Logo" title="Photoshop"/>
+              <noscript><img src="img/photoshop.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/postgresql.png, (default)], [img/postgresql.png, (large)]" alt="PostgreSQL Logo" title="PostgreSQL Database"/>
+              <noscript><img src="img/postgresql.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/wordpress.png, (default)], [img/wordpress.png, (large)]" alt="Wordpress Logo" title="Wordpress CMS"/>
+              <noscript><img src="img/wordpress.png"></noscript>
+            </div>
+            <div class="item">
+              <img data-interchange="[img/mobile/yii.png, (default)], [img/yii.png, (large)]" alt="Yii Logo" title="Yii Framework"/>
+              <noscript><img src="img/yii.png"></noscript>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section to second section (About Us) -->
+    <section id="about-us" class="row second-section">
+      <div class="content row" data-type="background" data-speed="1">
+        <div class="page-sizer" data-equalizer data-equalizer-mq="medium-up">
+          <div class="large-6 medium-6 small-12 columns text" data-equalizer-watch>
+            <h2>About Us</h2>
+            <p>
+              Let's say you have a business idea and you don't know anything about the Web or Internet. Nowadays,  your day-to-day restaurant and your favorite brand and even the neighbor who sells cupcakes has a presence on the web.
+            </p>
+            <p>
+              We're here to do this job for you, with our help we'll transform your business idea into a reality. Our team is a <strong>Solutions Provider</strong> focused in <strong>Web Technology</strong> and <strong>Web Consulting</strong>, with strongest skills in Drupal, one of the most used Content Management System over the internet, and along with a bunch of other trend technologies we are able to provide customized solutions to your needs.
+            </p>
+            <p>
+              The great news is you will be part of our team! You'll not be our customer or potential customer, if you choose our solutions you'll be involved in every detail of the whole process of transforming your idea into a reality. <strong>Kukenan.tech</strong> is more than a team, we are your <strong>Creative Team</strong> which means you can trust that we'll offer <strong>Solutions Beyond the Sky</strong>.
+            </p>
+          </div>
+          <div class="large-6 medium-6 small-12 columns image" data-equalizer-watch>
+            <img data-interchange="[img/mobile/kukenan-logo-vivid.png, (default)], [img/kukenan-logo-vivid.png, (large)]" alt="Initial Kukenan Logo">
+            <noscript><img src="img/kukenan-logo-vivid.png"></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section to fourth section (How we works) -->
+    <section id="how-we-works" class="row fourth-section">
+      <div class="page-sizer">
+        <div class="large-12 medium-12 small-12 column">
+          <h2>How We Work</h2>
+          <div class="row stage stage-1">
+            <div class="row info" data-equalizer data-equalizer-mq="medium-up">
+              <div id="contact-image" class="column large-6 medium-6 small-push-12 image initial-contact" data-equalizer-watch>              
+              </div>
+              <div class="column large-6 medium-6 small-pull-12 content" data-equalizer-watch>
+                <h3>Initial Contact</h3>
+                <p>
+                  <strong>Contact us, It's easy!</strong> Explain us your idea or needs in our <a class="link" href="#contact">Contact Form</a> and we'll respond in shortest possible time, we'll brainstorming your idea internally and hopefully we'll back to you with a proposal or with a few questions to make things clear.
+                </p>
+              </div>
+            </div>
+            <div class="column large-12 medium-12 dotted-1-2">
+              <div class="row line">
+                <div class="columns large-2 medium-3 hide-for-small-only"><span>Lorem Ipsum</span></div>
+                <div id="dotted-1-2" class="columns large-8 medium-6">
+                  <img src="img/dotted_line_1.png" class="hide-for-small-only" alt="Dotted 1">
+                  <img src="img/dotted_line_3.png" class="show-for-small-only" alt="Dotted 3">
+                </div>
+                <div class="columns large-2 medium-3 hide-for-small-only"><span>Lorem Ipsum</span></div>              
+              </div>
+            </div>
+          </div>
+          <div class="row stage stage-2">
+            <div class="row info" data-equalizer data-equalizer-mq="medium-up">
+              <div class="column large-6 medium-6 small-12 content" data-equalizer-watch>
+                <h3>Requirements Gathering</h3>
+                <p>
+                  After the initial contact, we'll propose to schedule a few meetings to meet you and hear more about your idea.                 
+                  This is the <strong>most important</strong> phase of our development process, because here we aim to better understand what you want to be done.
+                </p>
+                <p>
+                  So, here we'll perform some questions to ensure we are on the same page.
+                </p>
+              </div>
+              <div id="requirements-image" class="column large-6 medium-6 small-12 image r-gathering" data-equalizer-watch>              
+              </div>
+            </div>
+            <div class="column large-12 medium-12 dotted-2-3">
+              <div class="row line">
+                <div class="columns large-2 medium-3 hide-for-small-only"><span>Lorem Ipsum</span></div>
+                <div id="dotted-2-3" class="columns large-8 medium-6">
+                  <img src="img/dotted_line_2.png" class="hide-for-small-only" alt="Dotted 2">
+                  <img src="img/dotted_line_3.png" class="show-for-small-only" alt="Dotted 3">
+                </div>
+                <div class="columns large-2 medium-3 hide-for-small-only"><span>Lorem Ipsum</span></div>              
+              </div>
+            </div>
+          </div>
+          <div class="row stage stage-3">
+            <div class="row info" data-equalizer data-equalizer-mq="medium-up">
+              <div id="loe-image"  class="column large-6 medium-6 small-12 image loe-generation" data-equalizer-watch>
+              </div>
+              <div class="column large-6 medium-6 small-12 content" data-equalizer-watch>
+                <h3>LOE Generation</h3>
+                <p>
+                  With a clear understanding of your idea, our next step is split all the work in small tasks easy to understand, so we can plan how much time we'll need to complete the project. We will create and share and document called <strong>LOE</strong> (Level of Effort), in this document we'll summarize the total of hours and we'll apply a rate to define how much will cost the project.
+                </p>
+                <p>
+                Keep in mind that we'll only charge the total of hours estimated in this <strong>LOE</strong> (even if we invest more than the estimated CAP), this is part of our warranty for you.
+                </p>
+              </div>
+            </div>
+            <div class="column large-12 medium-12 dotted-3-4">
+              <div class="row line">
+                <div class="columns hide-for-large-only medium-3 hide-for-small-only"><span>Lorem Ipsum</span></div>
+                <div id="dotted-3-4" class="columns large-6 medium-6">
+                  <img src="img/dotted_line_3.png" alt="Dotted 3">
+                </div>
+                <div class="columns hide-for-large-only medium-3 hide-for-small-only"><span>Lorem Ipsum</span></div>              
+              </div>
+            </div>
+          </div>
+          <div class="row stage stage-4">
+            <div class="row info" data-equalizer data-equalizer-mq="medium-up">
+              <div id="dev-image"  class="column large-6 medium-6 small-12 image development" data-equalizer-watch>              
+              </div>
+              <div class="column large-6 medium-6 small-12 content" data-equalizer-watch>
+                <h3>Development</h3>
+                <p>
+                  Once approved the estimated hours in the LOE step, we'll begin the construction of your product or solution by using the <strong>technologies at forefront</strong>.
+                </p>
+                <p>
+                  At this moment, you will have an important role during the development process to provide us additional details of the idea. Additionally, we'll plan meetings to show you the progress and receive your <strong>feedback</strong>.
+                </p>
+              </div>
+            </div>
+            <div class="column large-12 medium-12 dotted-4-5">
+              <div class="row line">
+                <div class="columns large-2 medium-3 hide-for-small-only"><span>Lorem Ipsum</span></div>
+                <div id="dotted-4-5" class="columns large-8 medium-6">
+                  <img src="img/dotted_line_1.png" class="hide-for-small-only" alt="Dotted 1">
+                  <img src="img/dotted_line_3.png" class="show-for-small-only" alt="Dotted 3">
+                </div>
+                <div class="columns large-2 medium-3 hide-for-small-only"><span>Lorem Ipsum</span></div>              
+              </div>
+            </div>
+          </div>
+          <div class="row stage stage-5">
+            <div class="row info" data-equalizer data-equalizer-mq="medium-up">
+              <div class="column large-6 medium-6 small-12 content" data-equalizer-watch>
+                <h3>Testing</h3>
+                <p>
+                  After complete the development, the most important things in web solutions are <strong>details</strong> and <strong>support</strong>, for this reason at this stage we focus our effort in performing enough <strong>testing</strong> to verify that the product meets your <strong>expectations</strong>.
+                </p>
+              </div>            
+              <div id="testing-image"  class="column large-6 medium-6 small-12 image testing" data-equalizer-watch>
+              </div>
+            </div>
+            <div class="column large-12 medium-12 dotted-5-6">
+              <div class="row line">
+                <div class="columns large-2 medium-3 hide-for-small-only"><span>Lorem Ipsum</span></div>
+                <div id="dotted-5-6" class="columns large-8 medium-6">
+                  <img src="img/dotted_line_2.png" class="hide-for-small-only" alt="Dotted 2">
+                  <img src="img/dotted_line_3.png" class="show-for-small-only" alt="Dotted 3">
+                </div>
+                <div class="columns large-2 medium-3 hide-for-small-only"><span>Lorem Ipsum</span></div>              
+              </div>
+            </div>
+          </div>
+          <div class="row stage stage-6">
+            <div class="row info" data-equalizer data-equalizer-mq="medium-up">
+              <div id="delivery-image"  class="column large-6 medium-6 small-12 image delivery" data-equalizer-watch>
+              </div>
+              <div class="column large-6 medium-6 small-12 content" data-equalizer-watch>
+                <h3>Delivery</h3>
+                <p>
+                  Finally, when all stages have been completed we are ready to <strong>deliver</strong> your materialized idea and provide necessary support to manage everything needed to publish the web solution.
+                </p>
+                <p>
+                  In kukenan.tech our main goal is to deliver <strong>high quality</strong> products <strong>on time</strong> and <strong>within your budget</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Section to five section (Contact Us) -->
+    <section id="contact" class="row five-section">
+      <div class="icons" data-type="background" data-speed="1"></div>
+      <div class="page-sizer">
+        <div class="large-12 medium-12 columns">
+          <div class="contact_copy">We are here to <b>help</b> you make your idea into a reality. Keep in Touch!</div>
+
+          <form class="contact_form" id="contact_form" method="POST">
+
+            <div class="wrapper_left">
+
+              <i class="fa fa-user"></i>        <!-- user icon for name field -->
+              <input class="input-group" type="text" name="name" placeholder="Name" required="required">
+
+              <i class="fa fa-envelope-o"></i> <!-- envelope icon for email field -->
+             <input class="input-group" type="text" name='_replyto' placeholder="E-Mail">
+
+             <i class="fa fa-map-pin"></i>    <!-- file text icon for subject field -->
+             <select name="country" placeholder="Country" class="input-group">
+              <option value="">Country</option>
+              <option value="AF">Afghanistan</option>
+              <option value="AL">Albania</option>
+              <option value="DZ">Algeria</option>
+              <option value="AS">American Samoa</option>
+              <option value="AD">Andorra</option>
+              <option value="AG">Angola</option>
+              <option value="AI">Anguilla</option>
+              <option value="AG">Antigua &amp; Barbuda</option>
+              <option value="AR">Argentina</option>
+              <option value="AA">Armenia</option>
+              <option value="AW">Aruba</option>
+              <option value="AU">Australia</option>
+              <option value="AT">Austria</option>
+              <option value="AZ">Azerbaijan</option>
+              <option value="BS">Bahamas</option>
+              <option value="BH">Bahrain</option>
+              <option value="BD">Bangladesh</option>
+              <option value="BB">Barbados</option>
+              <option value="BY">Belarus</option>
+              <option value="BE">Belgium</option>
+              <option value="BZ">Belize</option>
+              <option value="BJ">Benin</option>
+              <option value="BM">Bermuda</option>
+              <option value="BT">Bhutan</option>
+              <option value="BO">Bolivia</option>
+              <option value="BL">Bonaire</option>
+              <option value="BA">Bosnia &amp; Herzegovina</option>
+              <option value="BW">Botswana</option>
+              <option value="BR">Brazil</option>
+              <option value="BC">British Indian Ocean Ter</option>
+              <option value="BN">Brunei</option>
+              <option value="BG">Bulgaria</option>
+              <option value="BF">Burkina Faso</option>
+              <option value="BI">Burundi</option>
+              <option value="KH">Cambodia</option>
+              <option value="CM">Cameroon</option>
+              <option value="CA">Canada</option>
+              <option value="IC">Canary Islands</option>
+              <option value="CV">Cape Verde</option>
+              <option value="KY">Cayman Islands</option>
+              <option value="CF">Central African Republic</option>
+              <option value="TD">Chad</option>
+              <option value="CD">Channel Islands</option>
+              <option value="CL">Chile</option>
+              <option value="CN">China</option>
+              <option value="CI">Christmas Island</option>
+              <option value="CS">Cocos Island</option>
+              <option value="CO">Colombia</option>
+              <option value="CC">Comoros</option>
+              <option value="CG">Congo</option>
+              <option value="CK">Cook Islands</option>
+              <option value="CR">Costa Rica</option>
+              <option value="CT">Cote D'Ivoire</option>
+              <option value="HR">Croatia</option>
+              <option value="CU">Cuba</option>
+              <option value="CB">Curacao</option>
+              <option value="CY">Cyprus</option>
+              <option value="CZ">Czech Republic</option>
+              <option value="DK">Denmark</option>
+              <option value="DJ">Djibouti</option>
+              <option value="DM">Dominica</option>
+              <option value="DO">Dominican Republic</option>
+              <option value="TM">East Timor</option>
+              <option value="EC">Ecuador</option>
+              <option value="EG">Egypt</option>
+              <option value="SV">El Salvador</option>
+              <option value="GQ">Equatorial Guinea</option>
+              <option value="ER">Eritrea</option>
+              <option value="EE">Estonia</option>
+              <option value="ET">Ethiopia</option>
+              <option value="FA">Falkland Islands</option>
+              <option value="FO">Faroe Islands</option>
+              <option value="FJ">Fiji</option>
+              <option value="FI">Finland</option>
+              <option value="FR">France</option>
+              <option value="GF">French Guiana</option>
+              <option value="PF">French Polynesia</option>
+              <option value="FS">French Southern Ter</option>
+              <option value="GA">Gabon</option>
+              <option value="GM">Gambia</option>
+              <option value="GE">Georgia</option>
+              <option value="DE">Germany</option>
+              <option value="GH">Ghana</option>
+              <option value="GI">Gibraltar</option>
+              <option value="GB">Great Britain</option>
+              <option value="GR">Greece</option>
+              <option value="GL">Greenland</option>
+              <option value="GD">Grenada</option>
+              <option value="GP">Guadeloupe</option>
+              <option value="GU">Guam</option>
+              <option value="GT">Guatemala</option>
+              <option value="GN">Guinea</option>
+              <option value="GY">Guyana</option>
+              <option value="HT">Haiti</option>
+              <option value="HW">Hawaii</option>
+              <option value="HN">Honduras</option>
+              <option value="HK">Hong Kong</option>
+              <option value="HU">Hungary</option>
+              <option value="IS">Iceland</option>
+              <option value="IN">India</option>
+              <option value="ID">Indonesia</option>
+              <option value="IA">Iran</option>
+              <option value="IQ">Iraq</option>
+              <option value="IR">Ireland</option>
+              <option value="IM">Isle of Man</option>
+              <option value="IL">Israel</option>
+              <option value="IT">Italy</option>
+              <option value="JM">Jamaica</option>
+              <option value="JP">Japan</option>
+              <option value="JO">Jordan</option>
+              <option value="KZ">Kazakhstan</option>
+              <option value="KE">Kenya</option>
+              <option value="KI">Kiribati</option>
+              <option value="NK">Korea North</option>
+              <option value="KS">Korea South</option>
+              <option value="KW">Kuwait</option>
+              <option value="KG">Kyrgyzstan</option>
+              <option value="LA">Laos</option>
+              <option value="LV">Latvia</option>
+              <option value="LB">Lebanon</option>
+              <option value="LS">Lesotho</option>
+              <option value="LR">Liberia</option>
+              <option value="LY">Libya</option>
+              <option value="LI">Liechtenstein</option>
+              <option value="LT">Lithuania</option>
+              <option value="LU">Luxembourg</option>
+              <option value="MO">Macau</option>
+              <option value="MK">Macedonia</option>
+              <option value="MG">Madagascar</option>
+              <option value="MY">Malaysia</option>
+              <option value="MW">Malawi</option>
+              <option value="MV">Maldives</option>
+              <option value="ML">Mali</option>
+              <option value="MT">Malta</option>
+              <option value="MH">Marshall Islands</option>
+              <option value="MQ">Martinique</option>
+              <option value="MR">Mauritania</option>
+              <option value="MU">Mauritius</option>
+              <option value="ME">Mayotte</option>
+              <option value="MX">Mexico</option>
+              <option value="MI">Midway Islands</option>
+              <option value="MD">Moldova</option>
+              <option value="MC">Monaco</option>
+              <option value="MN">Mongolia</option>
+              <option value="MS">Montserrat</option>
+              <option value="MA">Morocco</option>
+              <option value="MZ">Mozambique</option>
+              <option value="MM">Myanmar</option>
+              <option value="NA">Nambia</option>
+              <option value="NU">Nauru</option>
+              <option value="NP">Nepal</option>
+              <option value="AN">Netherland Antilles</option>
+              <option value="NL">Netherlands (Holland, Europe)</option>
+              <option value="NV">Nevis</option>
+              <option value="NC">New Caledonia</option>
+              <option value="NZ">New Zealand</option>
+              <option value="NI">Nicaragua</option>
+              <option value="NE">Niger</option>
+              <option value="NG">Nigeria</option>
+              <option value="NW">Niue</option>
+              <option value="NF">Norfolk Island</option>
+              <option value="NO">Norway</option>
+              <option value="OM">Oman</option>
+              <option value="PK">Pakistan</option>
+              <option value="PW">Palau Island</option>
+              <option value="PS">Palestine</option>
+              <option value="PA">Panama</option>
+              <option value="PG">Papua New Guinea</option>
+              <option value="PY">Paraguay</option>
+              <option value="PE">Peru</option>
+              <option value="PH">Philippines</option>
+              <option value="PO">Pitcairn Island</option>
+              <option value="PL">Poland</option>
+              <option value="PT">Portugal</option>
+              <option value="PR">Puerto Rico</option>
+              <option value="QA">Qatar</option>
+              <option value="ME">Republic of Montenegro</option>
+              <option value="RS">Republic of Serbia</option>
+              <option value="RE">Reunion</option>
+              <option value="RO">Romania</option>
+              <option value="RU">Russia</option>
+              <option value="RW">Rwanda</option>
+              <option value="NT">St Barthelemy</option>
+              <option value="EU">St Eustatius</option>
+              <option value="HE">St Helena</option>
+              <option value="KN">St Kitts-Nevis</option>
+              <option value="LC">St Lucia</option>
+              <option value="MB">St Maarten</option>
+              <option value="PM">St Pierre &amp; Miquelon</option>
+              <option value="VC">St Vincent &amp; Grenadines</option>
+              <option value="SP">Saipan</option>
+              <option value="SO">Samoa</option>
+              <option value="AS">Samoa American</option>
+              <option value="SM">San Marino</option>
+              <option value="ST">Sao Tome &amp; Principe</option>
+              <option value="SA">Saudi Arabia</option>
+              <option value="SN">Senegal</option>
+              <option value="RS">Serbia</option>
+              <option value="SC">Seychelles</option>
+              <option value="SL">Sierra Leone</option>
+              <option value="SG">Singapore</option>
+              <option value="SK">Slovakia</option>
+              <option value="SI">Slovenia</option>
+              <option value="SB">Solomon Islands</option>
+              <option value="OI">Somalia</option>
+              <option value="ZA">South Africa</option>
+              <option value="ES">Spain</option>
+              <option value="LK">Sri Lanka</option>
+              <option value="SD">Sudan</option>
+              <option value="SR">Suriname</option>
+              <option value="SZ">Swaziland</option>
+              <option value="SE">Sweden</option>
+              <option value="CH">Switzerland</option>
+              <option value="SY">Syria</option>
+              <option value="TA">Tahiti</option>
+              <option value="TW">Taiwan</option>
+              <option value="TJ">Tajikistan</option>
+              <option value="TZ">Tanzania</option>
+              <option value="TH">Thailand</option>
+              <option value="TG">Togo</option>
+              <option value="TK">Tokelau</option>
+              <option value="TO">Tonga</option>
+              <option value="TT">Trinidad &amp; Tobago</option>
+              <option value="TN">Tunisia</option>
+              <option value="TR">Turkey</option>
+              <option value="TU">Turkmenistan</option>
+              <option value="TC">Turks &amp; Caicos Is</option>
+              <option value="TV">Tuvalu</option>
+              <option value="UG">Uganda</option>
+              <option value="UA">Ukraine</option>
+              <option value="AE">United Arab Emirates</option>
+              <option value="GB">United Kingdom</option>
+              <option value="US">United States of America</option>
+              <option value="UY">Uruguay</option>
+              <option value="UZ">Uzbekistan</option>
+              <option value="VU">Vanuatu</option>
+              <option value="VS">Vatican City State</option>
+              <option value="VE">Venezuela</option>
+              <option value="VN">Vietnam</option>
+              <option value="VB">Virgin Islands (Brit)</option>
+              <option value="VA">Virgin Islands (USA)</option>
+              <option value="WK">Wake Island</option>
+              <option value="WF">Wallis &amp; Futana Is</option>
+              <option value="YE">Yemen</option>
+              <option value="ZR">Zaire</option>
+              <option value="ZM">Zambia</option>
+              <option value="ZW">Zimbabwe</option>
+              </select>
+            </div>
+           <div class="wrapper_right">           
+           <i class="fa fa-lightbulb-o"></i> 
+             <textarea class="textarea" name="idea" placeholder="Idea"></textarea>
+             <input type="hidden" name="_next" value="http://kukenan.tech" />
+             <input type="hidden" name="_subject" value="Make your idea into reality with us | Kukenan.tech" />
+             <input type="hidden" id="_cc" name="_cc" 
+             />
+             <input type="text" name="_gotcha" style="display:none" />
+           </div>
+           <div class="final_section">        
+              <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
+              <div class="g-recaptcha" data-sitekey="6Le8axETAAAAADd_FVz8ylckK37yfWJyW9jkP9Ak"></div>
+              <div class="wrapper_button">
+                <input class="send-btn" type="submit" value="Submit" />
+              </div>
+             
+           </div>
+           <div class="clear"></div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="row six-section footer">
+      <div class="page-sizer">
+        <div class="large-12 medium-12 columns">
+          <ul class="links_site">
+                <li ><a href="#slogan">Home</a></li>
+                <li ><a href="#about-us">About us</a></li>
+                <li ><a href="#how-we-works">How we work</a></li>
+                <li ><a href="#contact">Contact us</a></li>
+          </ul>
+          <ul class="social_media">
+                <li ><a class="mail" href="mailto:kukenantech@gmail.com" target="_blank">Email</a></li>
+                <li ><a class="linkedin" href="https://www.linkedin.com/in/kukenan-tech-65744210b" target="_blank">Linkedin</a></li>
+                <li ><a class="skype" href="skype:kukenan.tech" target="_blank">Skype</a></li>
+                <li ><a class="facebook" href="https://www.facebook.com/kukenantech/" target="_blank">Facebook</a></li>
+                <li ><a class="twitter" href="https://twitter.com/kukenantech" target="_blank">Twitter</a></li>
+                 <li ><a class="gplus" href="https://plus.google.com/u/0/109149567496242507730/posts?hl=es" target="_blank">Gplus</a></li>
+          </ul>
+          <div class="logo_footer"></div>
+          <div class="clear"></div>
+          <div class="copyright"><span>Kukenan.tech - All rights reserved 2015.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <a href="#0" class="cd-top">Top</a>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/vendor/jquery-ui.min.js"></script>
+    <script src="js/vendor/jquery.validate.min.js"></script>
+    <script src="js/vendor/slick.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
 </html>
