@@ -126,7 +126,10 @@
     body .row.five-section form.contact_form select.input-group {
       margin-bottom: 20px; }
     body .row.five-section form.contact_form textarea {
-      min-height: 125px; }
+      min-height: 125px;
+      margin: 0 auto !important;
+      width: 100% !important;
+      margin-bottom: 10px !important; }
     body .row.five-section form.contact_form .final_section .g-recaptcha {
       width: 100%;
       padding-right: 0px;
