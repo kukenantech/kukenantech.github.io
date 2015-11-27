@@ -209,13 +209,18 @@
 								}
 
 								&.text-change{
+									display: block;
 									height: 60px;
 									font-size: 40px;
-									width: 216px;
+									margin: 0 auto;
+									text-align: center;
+									width: 100%;
 
 									span{
-										&.text-1{
-											width: 260px;
+										&.text-1{										
+											text-align: center;
+											min-width: 260px;
+											width: 100%;
 										}
 										&.text-2{
 											width: 216px;

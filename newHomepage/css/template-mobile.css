@@ -125,11 +125,16 @@
             height: auto;
             line-height: auto; }
           body .row.first-section .content p.slogan span.text-change {
+            display: block;
             height: 60px;
             font-size: 40px;
-            width: 216px; }
+            margin: 0 auto;
+            text-align: center;
+            width: 100%; }
             body .row.first-section .content p.slogan span.text-change span.text-1 {
-              width: 260px; }
+              text-align: center;
+              min-width: 260px;
+              width: 100%; }
             body .row.first-section .content p.slogan span.text-change span.text-2 {
               width: 216px; }
       body .row.first-section .content p.brief {
