@@ -813,6 +813,7 @@ body{
 						padding-left: 30px;
 						font-size: 15px;
 						padding-top: 10px;
+						max-height: 185px;
 
 						@include placeholder_opacity();
 					}

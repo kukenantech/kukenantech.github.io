@@ -570,7 +570,8 @@ body {
         border-radius: 5px;
         padding-left: 30px;
         font-size: 15px;
-        padding-top: 10px; }
+        padding-top: 10px;
+        max-height: 185px; }
         body .row.five-section form.contact_form textarea::-webkit-input-placeholder {
           /* Chrome */
           transition: opacity 250ms ease-in-out; }
