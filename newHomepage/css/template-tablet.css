@@ -128,7 +128,8 @@
     body .row.five-section form.contact_form textarea {
       min-height: 125px;
       margin: 0 auto !important;
-      width: 100% !important; }
+      width: 100% !important;
+      margin-bottom: 10px !important; }
     body .row.five-section form.contact_form .final_section .g-recaptcha {
       width: 100%;
       padding-right: 0px;
