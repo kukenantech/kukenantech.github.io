@@ -752,6 +752,12 @@ body{
 						    	float: right;
 						    }
 						}
+						.wrapper_button{
+							img{
+								display: none;
+								width: 20px;
+							}
+						}
 						input{
 							&.send-btn {
 							    margin: 0px;

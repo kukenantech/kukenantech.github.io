@@ -509,6 +509,9 @@ body {
           position: relative; }
           body .row.five-section form.contact_form .final_section .g-recaptcha > div {
             float: right; }
+        body .row.five-section form.contact_form .final_section .wrapper_button img {
+          display: inline-block;
+          width: 20px; }
         body .row.five-section form.contact_form .final_section input.send-btn {
           margin: 0px;
           padding: 0px;
