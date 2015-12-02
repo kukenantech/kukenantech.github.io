@@ -602,7 +602,7 @@ function submit_contact_form_ajax(){
 					$('#contact_form .wrapper_button img').css("display", "none");
 					$('#contact_form .wrapper_button input.send-btn').removeAttr("disabled");
 
-					swal("Thanks!", "We have received your message and we will contact as soon as possible!", "success");				
+					swal("Thanks!", "We have received your message and we will contact you as soon as possible!", "success");				
 				},
 				error: function(err) {
 					$('#contact_form .wrapper_button img').css("display", "none");
