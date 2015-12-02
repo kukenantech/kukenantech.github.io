@@ -27,6 +27,9 @@ $(document).ready(function(){
 	//Validate contact form
 	validate_contact_form();
 
+	//Post contact form ajax
+	submit_contact_form_ajax();
+
 	//Only apply effects to desktop version	
 	if($(window.top).width() > 1024){
 
@@ -576,4 +579,35 @@ function validate_contact_form() {
 
 	$("#contact_form").attr('action', '//formspree.io/' + 'kukenantech' + '@' + 'gmail' + '.' + 'com');
 	$("#_cc").val("juanj" + "." + "gonzalezp" + "@" + "gmail" + ".com");
+}
+
+function submit_contact_form_ajax(){
+	var contactForm = $('#contact_form');
+	contactForm.submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			url: '//formspree.io/kukenantech@gmail.com',
+			method: 'POST',
+			data: $(this).serialize(),
+			dataType: 'json',
+			beforeSend: function() {
+				$('#contact_form .wrapper_button img').css("display", "inline-block");
+				$('#contact_form .wrapper_button input.send-btn').attr("disabled", "disabled");
+			},
+			success: function(data) {
+				//Reset form
+				contactForm[0].reset();
+				grecaptcha.reset();
+				$('#contact_form .wrapper_button img').css("display", "none");
+				$('#contact_form .wrapper_button input.send-btn').removeAttr("disabled");
+
+				swal("Thanks!", "We have received your message and we will contact as soon as possible!", "success");				
+			},
+			error: function(err) {
+				$('#contact_form .wrapper_button img').css("display", "none");
+				$('#contact_form .wrapper_button input.send-btn').removeAttr("disabled");
+				swal("Something happened!", "Something happened sending your message, please try again.", "error");
+			}
+		});
+	});
 }

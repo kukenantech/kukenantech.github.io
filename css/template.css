@@ -93,6 +93,9 @@ body {
   100% {
     opacity: 0;
     transform: scale(2.5); } }
+  body .sweet-alert fieldset {
+    padding: 0px;
+    margin: 0px; }
   body.f-topbar-fixed {
     background-color: #007EA7; }
     body.f-topbar-fixed .row .sticky-custom-animated {
@@ -509,6 +512,9 @@ body {
           position: relative; }
           body .row.five-section form.contact_form .final_section .g-recaptcha > div {
             float: right; }
+        body .row.five-section form.contact_form .final_section .wrapper_button img {
+          display: none;
+          width: 20px; }
         body .row.five-section form.contact_form .final_section input.send-btn {
           margin: 0px;
           padding: 0px;
