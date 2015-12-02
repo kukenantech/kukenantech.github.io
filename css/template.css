@@ -93,6 +93,9 @@ body {
   100% {
     opacity: 0;
     transform: scale(2.5); } }
+  body .sweet-alert fieldset {
+    padding: 0px;
+    margin: 0px; }
   body.f-topbar-fixed {
     background-color: #007EA7; }
     body.f-topbar-fixed .row .sticky-custom-animated {

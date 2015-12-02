@@ -597,6 +597,7 @@ function submit_contact_form_ajax(){
 			success: function(data) {
 				//Reset form
 				contactForm[0].reset();
+				grecaptcha.reset();
 				$('#contact_form .wrapper_button img').css("display", "none");
 				$('#contact_form .wrapper_button input.send-btn').removeAttr("disabled");
 
