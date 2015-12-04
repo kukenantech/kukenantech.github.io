@@ -99,6 +99,39 @@ body {
   body.not-found {
     background-color: #FFFFFF !important;
     min-height: 500px; }
+    body.not-found .content-not-found {
+      text-align: center; }
+      body.not-found .content-not-found .first {
+        margin-top: 4%;
+        margin-bottom: 4%; }
+        body.not-found .content-not-found .first .text {
+          text-align: right; }
+          body.not-found .content-not-found .first .text .face {
+            margin-right: 36%;
+            padding-top: 5%; }
+          body.not-found .content-not-found .first .text .oops {
+            position: relative; }
+            body.not-found .content-not-found .first .text .oops p {
+              color: #717275;
+              font-family: 'Lato';
+              font-size: 100px;
+              margin-right: 25%; }
+              body.not-found .content-not-found .first .text .oops p span {
+                font-size: 110px; }
+            body.not-found .content-not-found .first .text .oops span {
+              font-size: 100px; }
+              body.not-found .content-not-found .first .text .oops span.text-404 {
+                right: 0;
+                position: absolute;
+                top: 30%; }
+        body.not-found .content-not-found .first .image {
+          text-align: left; }
+          body.not-found .content-not-found .first .image img {
+            height: 350px; }
+      body.not-found .content-not-found .second p {
+        color: #717275;
+        font-size: 30px;
+        margin-bottom: 0px; }
   body.f-topbar-fixed {
     background-color: #007EA7; }
     body.f-topbar-fixed .row .sticky-custom-animated {

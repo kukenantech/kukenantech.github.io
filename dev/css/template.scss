@@ -13,6 +13,7 @@ $lightBlue: #effafe;
 $lightBlue2: #afcad4;
 $lightGreen: #2eaba3;
 $footer_color: #001a23;
+$dark_gray: #717275;
 
 @font-face {
     font-family: 'abeezeeregular';
@@ -221,6 +222,59 @@ body{
 	&.not-found{
 		background-color: $white !important;
 		min-height: 500px;
+
+		.content-not-found{
+			text-align: center;
+
+			.first{
+				margin-top: 4%;
+				margin-bottom: 4%;
+
+				.text{
+					text-align: right;
+					.face{
+						margin-right: 36%;
+						padding-top: 5%;
+					}
+					.oops{
+						position: relative;
+
+						p{
+							color: $dark_gray;
+							font-family: 'Lato';
+							font-size: 100px;	
+							margin-right: 25%;	
+							span{
+								font-size: 110px;
+							}					
+						}
+						span{
+							font-size: 100px;
+
+							&.text-404{
+								right: 0;
+								position: absolute;
+								top: 30%;								    
+							}
+						}
+
+					}
+				}
+				.image{
+					text-align: left;
+					img{
+						height: 350px;
+					}
+				}				
+			}
+			.second{
+				p{
+					color: $dark_gray;
+					font-size: 30px;					
+					margin-bottom: 0px;
+				}
+			}
+		}
 	}
 
 	&.f-topbar-fixed{
