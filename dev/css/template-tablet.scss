@@ -1,6 +1,40 @@
 
 @media only screen and (min-width: 641px) and (max-width: 1023px) {
 	body{
+		&.not-found{
+			.content-not-found{
+				.first{
+					.text{
+						.face{
+							margin-right: 45%;
+						}
+						.oops{
+							p{
+								font-size: 70px;
+								margin-right: 30%;
+								span{
+									font-size: 75px;
+								}
+							}
+							span{	
+								font-size: 65px;
+							}
+						}
+					}
+					.image{
+						img{
+							height: auto;
+							width: 100%;
+						}
+					}
+				}
+				.second{
+					p{
+						font-size: 25px;
+					}
+				}
+			}
+		}
 		.cd-top {
 			height: 60px;
 			width: 60px;

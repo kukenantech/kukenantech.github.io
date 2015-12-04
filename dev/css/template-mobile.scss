@@ -1,6 +1,49 @@
 
 @media only screen and (max-width: 640px) {
 	body{
+		&.not-found{
+			.content-not-found{
+				.first{
+					.text{
+						.face{
+							margin-right: 50%;
+							img{
+								height: 80px;
+							}
+						}
+						.oops{
+							p{
+								font-size: 55px;
+								margin-right: 35%;
+								span{
+									font-size: 60px;
+									margin-right: 2%;
+								}
+							}
+							span{	
+								margin-right: 5%;
+								font-size: 55px;
+							}
+						}
+					}
+					.image{
+						text-align: center;
+						img{
+							height: 100px;
+							width: auto;
+						}
+					}
+				}
+				.second{
+					margin-bottom: 2%;
+					p{
+						font-size: 25px;
+						padding-left: 3%;
+						padding-right: 3%;
+					}
+				}
+			}
+		}
 		p{
 			font-size: 18px;
 		}
