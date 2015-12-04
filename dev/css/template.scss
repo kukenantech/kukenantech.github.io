@@ -218,6 +218,11 @@ body{
 		}
 	}
 
+	&.not-found{
+		background-color: $white !important;
+		min-height: 500px;
+	}
+
 	&.f-topbar-fixed{
 		background-color: $palleteLightBlue;
 	
