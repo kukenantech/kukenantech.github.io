@@ -521,6 +521,39 @@ body{
 			height: auto;
 			position: relative;
 
+			h2{
+				font-size: 40px;
+
+				&.idea{
+					&:before{
+						font-family: "FontAwesome";
+						content: "\f0eb";
+						margin-right: 10px;
+						font-size: 25px;
+						vertical-align: middle;
+					}
+				}
+				&.team{
+					&:before{
+						font-family: "FontAwesome";
+						content: "\f0c0";
+						font-size: 25px;
+						margin-right: 10px;
+						vertical-align: middle;
+					}
+				}
+				&.news{
+					&:before{
+						font-family: "FontAwesome";
+						content: "\f006";
+						font-size: 25px;
+						margin-right: 10px;
+						vertical-align: middle;
+					}
+				}
+
+			}
+
 			.content{
 				background: url('../img/fondo-section1.png') repeat;
 				background-position: 50% 0px;				
@@ -531,6 +564,8 @@ body{
     			.text{
     				margin-top: 5%;
     				margin-bottom: 5%;
+    				padding-left: 2%;
+    				padding-right: 2%;
 
     				h2{
     					margin-bottom: 5%;
