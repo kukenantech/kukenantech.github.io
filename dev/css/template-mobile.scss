@@ -1,0 +1,435 @@
+
+@media only screen and (max-width: 640px) {
+	body{
+		p{
+			font-size: 18px;
+		}
+		.cd-top {
+		  right: 20px;
+		  bottom: 20px;
+		}
+		h2{
+			font-size: 40px;
+		}
+		&.f-topbar-fixed{
+			.row{
+				.top-bar-animated{
+					.title-area{
+						height: 65px;
+
+						li{
+							display: inline-block;
+							width: 49%;
+
+							&.toggle-topbar{
+								float: right;
+								height: 65px;
+								line-height: 65px;
+								margin-top: 0px;								
+								position: relative;
+								text-align: right;
+								top: 0;
+								vertical-align: top;
+								width: 35%;		
+								a{
+									font-family: "Lato";
+									line-height: 65px;
+									height: 65px;
+									overflow: hidden;
+									position: relative;
+									overflow:hidden;
+
+									span{
+										&.ink{
+											&:after{
+												box-shadow: none;
+											}
+										}
+									}
+								}						
+							}
+						}
+					}
+					.top-bar-section{
+						ul{
+							&.right{
+								li{
+									min-height: 20px;
+									&:not(.has-form){
+										&.active{
+											a:not(.button){
+												line-height: 20px;
+											}
+										}
+										a:not(.button){
+											line-height: 20px;
+										}
+									}								
+								}
+							}
+						}
+					}
+					.name{
+						position: absolute;
+						h1{
+							background: url("../img/mobile/Kukenan-Logo-sticky.png") center no-repeat;
+							background-size: auto 50px;
+							margin-top: 0px;
+							height: 65px;
+						}
+					}
+				}
+			}
+		}
+		.top-bar{
+			&.expanded{
+				.title-area{
+					background-color: transparent;
+				}
+			}
+			.title-area{
+				height: 85px;
+
+				li{
+					display: inline-block;
+					width: 49%;
+
+					&.toggle-topbar{
+						float: right;
+						height: 85px;
+						line-height: 85px;
+						margin-top: 0px;
+						position: absolute;
+						text-align: right;
+						top: 0;
+						vertical-align: top;
+						width: 35%;		
+						a{
+							font-family: "Lato";
+							line-height: 85px;
+							height: 85px;
+							overflow:hidden;
+
+							span{
+								&.ink{
+									&:after{
+										box-shadow: none;
+									}
+								}
+							}
+						}						
+					}
+				}
+			}
+			.top-bar-section{
+				ul{
+					&.right{
+						width: 100%;
+						li{
+							min-height: 20px;
+							text-align: left;
+							width: 99%;
+							&:not(.has-form){
+								&.active{
+									a:not(.button){
+										line-height: 20px;
+										&:after{
+											border: none;
+										}
+									}
+								}
+								a:not(.button){
+									line-height: 20px;
+									&:hover:after{
+										border: none;
+									}
+								}
+							}
+						}
+					}
+				}				
+			}
+			.name{
+				position: absolute;
+				h1{
+					background: url("../img/mobile/Kukenan-Logo-White-Letters.png") center no-repeat;
+					background-size: auto 65px;
+					height: 86px;
+					margin-top: 0px;
+				}
+			}
+		}
+		.row{
+			.sticky-custom{
+				box-shadow:rgba(0, 0, 0, 0.3) 0 1px 10px 0;
+				-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 1px 10px 0;
+				-moz-box-shadow:rgba(0, 0, 0, 0.3) 0 1px 10px 0;
+			}
+			.page-sizer{
+				width: 90%;
+			}
+			.page-sizer-section{
+				width: 95%;
+			}
+			&.first-section{
+				height: 430px;
+
+				.columns{
+					background: url('../img/mobile/fondo-section1.png') repeat;
+					background-position: 50% 0px;
+					-webkit-background-size: cover;
+			        -moz-background-size: cover;
+			        -o-background-size: cover;
+			        background-size: cover;
+
+			        .left{
+	    				background: url('../img/mobile/section1-1.png') left bottom no-repeat;
+	    				background-size: 100% auto;
+    				}
+    				.right{
+	    				background: url('../img/mobile/section1-2.png') right bottom no-repeat;
+	    				background-size: 100% auto;
+    				}
+				}
+				.content{
+					min-height: 450px;
+
+					p{						
+						&.slogan{
+							font-size: 37px;
+							span{
+								display: inline-block;
+								line-height: 60px;
+								height: 60px;
+								vertical-align: top;
+								width: auto;
+								span{
+									height: auto;
+									line-height: auto;
+								}
+
+								&.text-change{
+									display: block;
+									height: 60px;
+									font-size: 40px;
+									margin: 0 auto;
+									text-align: center;
+									width: 100%;
+
+									span{
+										&.text-1{										
+											text-align: center;
+											min-width: 260px;
+											width: 100%;
+										}
+										&.text-2{
+											width: 216px;
+										}
+									}
+								}
+							}
+														
+						}
+						&.brief{
+							font-size: 23px;
+							line-height: 30px;
+
+							.question{
+								font-size: 26px;
+							}
+						}
+					}
+				}
+			}
+			&.second-section{
+				padding-top: 3%;
+				.content{					
+					background: url('../img/mobile/fondo-section1.png') repeat;
+					background-position: 50% 0px;
+					-webkit-background-size: auto;
+			        -moz-background-size: auto;
+			        -o-background-size: auto;
+			        background-size: auto;	
+			        margin: 0 auto;		        
+
+					.text{
+						float: none;
+						margin-top: 0px;
+					}
+					.image{
+						line-height: 100px;
+						margin-bottom: 5%;
+						img{
+							height: 200px;
+						}
+					}
+				}				
+			}
+			&.third-section{
+				height: 130px;
+			}
+			&.fourth-section{
+				.row{
+					.content{
+						min-height: auto;
+					}
+					&.stage-3{
+						.line{
+							min-height: 50px;
+						}
+					}
+					&.line{
+						min-height: 50px;
+						height: 50px;
+						margin-top: 5%;
+						margin-bottom: 0px;
+						.columns{
+							img{
+								height: 50px;
+								width: 5px;
+							}
+						}
+					}
+					.column{
+						&.image{
+							background-size: auto 100%;
+							height: 100px !important; 
+						}
+						&.dotted{
+							text-align: center;
+						}
+					}
+				}
+				.initial-contact{
+					background: url('../img/mobile/Initial-Contact.png') no-repeat center center;
+				}
+				.development {
+					background: url('../img/mobile/Development.png') no-repeat center center;
+				}
+				.delivery {
+					background: url('../img/mobile/Delivery.png') no-repeat center center;
+				}
+				.r-gathering{
+					background: url('../img/mobile/Meeting.png') no-repeat center center;
+				}
+				.testing {
+					background: url('../img/mobile/Testing.png') no-repeat center center;
+				}
+				.loe-generation {
+					background: url('../img/mobile/LOE.png') no-repeat center center;
+				}
+			}
+			&.five-section{	
+				min-height: 430px;
+				height: auto;	
+				.icons{
+					background: url('../img/mobile/icons-background-contact-us.png') 100% auto repeat;	
+					background-position: 50% 0px;
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					max-height: 100%;
+					overflow: hidden;
+				}	
+				.contact_copy {
+				    font-family: Lato;
+				    font-size: 23px;
+				}			
+				form{
+					&.contact_form{
+						.wrapper_left{
+							width: 99%;
+						    padding: 1%;
+						    display: inline-block;
+						    vertical-align: top;
+						    float: left;
+						}
+						.wrapper_right{
+							width: 99%;
+						    padding: 1%;
+						    display: inline-block;
+						    vertical-align: top;
+						    float: left;
+						}
+						select{
+						&.input-group{
+								margin-bottom: 20px;								
+							}
+						}
+						textarea{
+							min-height: 125px;
+						}
+						.final_section {
+						    .g-recaptcha {
+							    width: 100%;
+							    padding-right: 0px;
+							    float: left;
+							    text-align: left;
+							    position: relative;
+							    div{
+							    	float: none;
+							    	margin: 0 auto;
+							    }
+							}
+							.wrapper_button {
+
+							    margin: 0 auto;
+							    text-align: center;
+							    float: left;
+							    width: 100%;
+							    padding: 0px;
+							    padding-top: 15px;
+							    button{
+									&.send-btn {
+										margin-left: 0px; 
+									}
+								}
+							}					
+							
+						}
+					}
+				}
+			}
+			&.six-section, .footer{
+				ul.links_site {
+				    display: inline-block;
+				    width: 100%;
+				    margin: 0px;
+				    font-size: 18px;
+				    color: white;
+				    list-style: none;
+				    padding-top: 20px;
+				    position: relative;
+				    float: none;	
+				    text-align: center;			    
+				}
+				ul.social_media {
+				        display: block;
+					    width: 220px;
+					    font-size: 18px;
+					    color: white;
+					    list-style: none;
+					    padding-top: 35px;
+					    position: relative;
+					    float: none;
+					    margin: 0 auto;
+				}
+				.logo_footer {
+				    margin-top: 10px;
+				    a.logohome {
+					    display: inline-block;
+					    width: 100%;
+					    height: 100%;
+					    color: transparent;
+					    text-indent: -999999px;
+					}
+				}
+				.copyright {
+				    font-size: 14px;
+				    color: gray;
+				    text-align: center;
+				}
+			}
+		}
+	}
+}
