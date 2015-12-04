@@ -522,12 +522,13 @@ body{
 			position: relative;
 
 			h2{
+				color: $palleteDarkBlue;
 				font-size: 40px;
 
 				&.idea{
 					&:before{
 						font-family: "FontAwesome";
-						content: "\f0eb";
+						content: "\f27b";
 						margin-right: 10px;
 						font-size: 25px;
 						vertical-align: middle;
@@ -545,7 +546,7 @@ body{
 				&.news{
 					&:before{
 						font-family: "FontAwesome";
-						content: "\f006";
+						content: "\f0a1";
 						font-size: 25px;
 						margin-right: 10px;
 						vertical-align: middle;

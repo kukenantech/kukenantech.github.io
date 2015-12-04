@@ -327,10 +327,11 @@ body {
       height: auto;
       position: relative; }
       body .row.second-section h2 {
+        color: #003459;
         font-size: 40px; }
         body .row.second-section h2.idea:before {
           font-family: "FontAwesome";
-          content: "\f0eb";
+          content: "\f27b";
           margin-right: 10px;
           font-size: 25px;
           vertical-align: middle; }
@@ -342,7 +343,7 @@ body {
           vertical-align: middle; }
         body .row.second-section h2.news:before {
           font-family: "FontAwesome";
-          content: "\f006";
+          content: "\f0a1";
           font-size: 25px;
           margin-right: 10px;
           vertical-align: middle; }
