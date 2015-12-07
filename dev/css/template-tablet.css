@@ -1,3 +1,10 @@
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  body.not-found .content-not-found .first .text .face {
+    margin-right: 43%; }
+  body.not-found .content-not-found .first .text .oops p {
+    margin-right: 30%; }
+  body.not-found .content-not-found .first .text .oops span {
+    font-size: 110px; } }
 @media only screen and (min-width: 641px) and (max-width: 1023px) {
   body.not-found .content-not-found .first .text .face {
     margin-right: 50%; }
