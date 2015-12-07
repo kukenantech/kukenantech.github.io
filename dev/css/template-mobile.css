@@ -1,30 +1,32 @@
 @media only screen and (max-width: 640px) {
-  body.not-found .content-not-found .first .text .face {
-    margin-right: 0;
-    text-align: center;
-    width: 100%; }
-    body.not-found .content-not-found .first .text .face img {
-      height: 80px; }
-  body.not-found .content-not-found .first .text .oops p {
-    font-size: 70px;
-    margin-right: 43%; }
-    body.not-found .content-not-found .first .text .oops p span {
-      font-size: 80px;
-      margin-right: 2%; }
-  body.not-found .content-not-found .first .text .oops span {
-    margin-right: 7%;
-    font-size: 70px; }
-  body.not-found .content-not-found .first .image {
-    text-align: center; }
-    body.not-found .content-not-found .first .image img {
-      height: 100px;
-      width: auto; }
-  body.not-found .content-not-found .second {
-    margin-bottom: 2%; }
-    body.not-found .content-not-found .second p {
-      font-size: 25px;
-      padding-left: 3%;
-      padding-right: 3%; }
+  body.not-found {
+    background: url("../img/mobile/background404.png") repeat; }
+    body.not-found .content-not-found .first .text .face {
+      margin-right: 0;
+      text-align: center;
+      width: 100%; }
+      body.not-found .content-not-found .first .text .face img {
+        height: 80px; }
+    body.not-found .content-not-found .first .text .oops p {
+      font-size: 70px;
+      margin-right: 43%; }
+      body.not-found .content-not-found .first .text .oops p span {
+        font-size: 80px;
+        margin-right: 2%; }
+    body.not-found .content-not-found .first .text .oops span {
+      margin-right: 7%;
+      font-size: 70px; }
+    body.not-found .content-not-found .first .image {
+      text-align: center; }
+      body.not-found .content-not-found .first .image img {
+        height: 100px;
+        width: auto; }
+    body.not-found .content-not-found .second {
+      margin-bottom: 2%; }
+      body.not-found .content-not-found .second p {
+        font-size: 25px;
+        padding-left: 3%;
+        padding-right: 3%; }
   body p {
     font-size: 18px; }
   body .cd-top {
