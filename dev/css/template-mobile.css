@@ -1,6 +1,8 @@
 @media only screen and (max-width: 640px) {
   body.not-found .content-not-found .first .text .face {
-    margin-right: 60%; }
+    margin-right: 0;
+    text-align: center;
+    width: 100%; }
     body.not-found .content-not-found .first .text .face img {
       height: 80px; }
   body.not-found .content-not-found .first .text .oops p {
