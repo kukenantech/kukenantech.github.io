@@ -294,6 +294,7 @@ body{
 					margin-bottom: 0px;
 
 					&.goback{
+						margin-top: 2%;
 						.ghost-button{
 							@include ghost-button($white, $dark_gray, $dark_gray);
 						}

@@ -62,6 +62,7 @@ function height_not_found(){
 
 		if(heightWindow < 700){
 			$("section.content-not-found .first").css({"margin-top": "0%", "margin-bottom": "0%"});
+			$("section.content-not-found .second p.goback").css({"margin-top": "0%"});
 
 			//Align vertical the image
 			$("section.content-not-found .first .columns.image").css("line-height", "400px");
