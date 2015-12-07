@@ -5,6 +5,12 @@
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: 'norwester';
+  src: url("../fonts/norwester/norwester.eot");
+  src: url("../fonts/norwester/norwester.eot?#iefix") format("embedded-opentype"), url("../fonts/norwester/norwester.woff2") format("woff2"), url("../fonts/norwester/norwester.woff") format("woff"), url("../fonts/norwester/norwester.ttf") format("truetype"), url("../fonts/norwester/norwester.svg#abeezeeregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: 'FontAwesome';
   src: url("../fonts/fonts-awesome/fontawesome-webfont.eot?v=4.4.0");
   src: url("../fonts/fonts-awesome/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("../fonts/fonts-awesome/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("../fonts/fonts-awesome/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("../fonts/fonts-awesome/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("../fonts/fonts-awesome/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
@@ -98,7 +104,14 @@ body {
     margin: 0px; }
   body.not-found {
     background-color: #FFFFFF !important;
-    min-height: 500px; }
+    min-height: 500px;
+    background: url("../img/background404.png") repeat;
+    background-position: 50% 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%; }
     body.not-found .content-not-found {
       text-align: center; }
       body.not-found .content-not-found .first {
@@ -113,14 +126,15 @@ body {
             position: relative; }
             body.not-found .content-not-found .first .text .oops p {
               color: #717275;
-              font-family: 'Lato';
-              font-size: 100px;
+              font-family: 'norwester';
+              font-size: 125px;
               margin-right: 25%; }
               body.not-found .content-not-found .first .text .oops p span {
-                font-size: 110px; }
+                font-size: 145px; }
             body.not-found .content-not-found .first .text .oops span {
-              font-size: 100px; }
+              font-size: 115px; }
               body.not-found .content-not-found .first .text .oops span.text-404 {
+                font-family: 'norwester';
                 right: 0;
                 position: absolute;
                 top: 30%; }
