@@ -405,13 +405,13 @@ body {
         width: 100%; }
         body .row.second-section .content .text {
           margin-top: 5%;
-          margin-bottom: 5%;
+          margin-bottom: 3%;
           padding-left: 2%;
           padding-right: 2%; }
           body .row.second-section .content .text h2 {
             margin-bottom: 5%; }
         body .row.second-section .content .image {
-          line-height: 700px;
+          line-height: 550px;
           text-align: center; }
           body .row.second-section .content .image img {
             height: 400px;
