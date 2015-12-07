@@ -13,6 +13,7 @@ $lightBlue: #effafe;
 $lightBlue2: #afcad4;
 $lightGreen: #2eaba3;
 $footer_color: #001a23;
+$dark_gray: #717275;
 
 @font-face {
     font-family: 'abeezeeregular';
@@ -22,6 +23,18 @@ $footer_color: #001a23;
          url('../fonts/abeezee/abeezee-regular-webfont.woff') format('woff'),
          url('../fonts/abeezee/abeezeeno-regular-webfont.ttf') format('truetype'),
          url('../fonts/abeezee/abeezee-regular-webfont.svg#abeezeeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'norwester';
+    src: url('../fonts/norwester/norwester.eot');
+    src: url('../fonts/norwester/norwester.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/norwester/norwester.woff2') format('woff2'),
+         url('../fonts/norwester/norwester.woff') format('woff'),
+         url('../fonts/norwester/norwester.ttf') format('truetype'),
+         url('../fonts/norwester/norwester.svg#abeezeeregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -215,6 +228,72 @@ body{
 		fieldset{
 			padding: 0px;
 			margin: 0px;
+		}
+	}
+
+	&.not-found{
+		background-color: $white !important;
+		min-height: 500px;
+		background: url('../img/background404.png') repeat;
+		background-position: 50% 0px;
+		-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+		height: 100%;
+
+		.content-not-found{			
+			text-align: center;
+
+			.first{
+				margin-top: 4%;
+				margin-bottom: 4%;
+
+				.text{
+					text-align: right;
+					.face{
+						margin-right: 36%;
+						padding-top: 5%;
+					}
+					.oops{
+						position: relative;
+
+						p{
+							color: $dark_gray;
+							font-family: 'norwester';
+							font-size: 125px;	
+							margin-right: 25%;	
+							span{
+								font-size: 145px;
+							}					
+						}
+						span{
+							font-size: 115px;
+
+							&.text-404{
+								font-family: 'norwester';
+								right: 0;
+								position: absolute;
+								top: 30%;								    
+							}
+						}
+
+					}
+				}
+				.image{
+					text-align: left;
+					img{
+						height: 350px;
+					}
+				}				
+			}
+			.second{
+				p{
+					color: $dark_gray;
+					font-size: 30px;					
+					margin-bottom: 0px;
+				}
+			}
 		}
 	}
 
@@ -521,6 +600,40 @@ body{
 			height: auto;
 			position: relative;
 
+			h2{
+				color: $palleteDarkBlue;
+				font-size: 40px;
+
+				&.idea{
+					&:before{
+						font-family: "FontAwesome";
+						content: "\f27b";
+						margin-right: 10px;
+						font-size: 25px;
+						vertical-align: middle;
+					}
+				}
+				&.team{
+					&:before{
+						font-family: "FontAwesome";
+						content: "\f0c0";
+						font-size: 25px;
+						margin-right: 10px;
+						vertical-align: middle;
+					}
+				}
+				&.news{
+					&:before{
+						font-family: "FontAwesome";
+						content: "\f0a1";
+						font-size: 25px;
+						margin-right: 10px;
+						vertical-align: middle;
+					}
+				}
+
+			}
+
 			.content{
 				background: url('../img/fondo-section1.png') repeat;
 				background-position: 50% 0px;				
@@ -530,14 +643,16 @@ body{
 
     			.text{
     				margin-top: 5%;
-    				margin-bottom: 5%;
+    				margin-bottom: 3%;
+    				padding-left: 2%;
+    				padding-right: 2%;
 
     				h2{
     					margin-bottom: 5%;
     				}
     			}
     			.image{
-    				line-height: 700px;
+    				line-height: 550px;
     				text-align: center;
 
     				img{

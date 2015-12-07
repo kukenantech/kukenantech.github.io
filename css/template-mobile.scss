@@ -1,6 +1,52 @@
 
 @media only screen and (max-width: 640px) {
 	body{
+		&.not-found{
+			background: url('../img/mobile/background404.png') repeat;
+			.content-not-found{				
+				.first{
+					.text{
+						.face{
+							margin-right: 0;
+							text-align: center;
+							width: 100%;							
+							img{
+								height: 80px;
+							}
+						}
+						.oops{
+							p{
+								font-size: 70px;
+								margin-right: 43%;
+								span{
+									font-size: 80px;
+									margin-right: 2%;
+								}
+							}
+							span{	
+								margin-right: 7%;
+								font-size: 70px;
+							}
+						}
+					}
+					.image{
+						text-align: center;
+						img{
+							height: 100px;
+							width: auto;
+						}
+					}
+				}
+				.second{
+					margin-bottom: 2%;
+					p{
+						font-size: 25px;
+						padding-left: 3%;
+						padding-right: 3%;
+					}
+				}
+			}
+		}
 		p{
 			font-size: 18px;
 		}

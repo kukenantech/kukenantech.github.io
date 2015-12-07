@@ -28,7 +28,7 @@ $(document).ready(function(){
 	validate_contact_form();
 
 	//Post contact form ajax
-	submit_contact_form_ajax();
+	submit_contact_form_ajax();	
 
 	//Only apply effects to desktop version	
 	if($(window.top).width() > 1024){
@@ -44,6 +44,9 @@ $(document).ready(function(){
 
 		//Method to fade in hww images on scroll down
 		hww_content_scroll_fade_in();
+
+		//Fix height not found page
+		height_not_found();
 	}
 	else if($(window.top).width() < 640){
 
@@ -51,6 +54,20 @@ $(document).ready(function(){
 		event_menu_icon();
 	}
 });
+
+function height_not_found(){
+
+	if($("body.not-found").length != 0){
+		var heightWindow = $(window.top).height();
+
+		if(heightWindow < 700){
+			$("section.content-not-found .first").css({"margin-top": "0%", "margin-bottom": "0%"});
+
+			//Align vertical the image
+			$("section.content-not-found .first .columns.image").css("line-height", "400px");
+		}
+	}	
+}
 
 function go_top_link(){
 	// browser window scroll (in pixels) after which the "back to top" link is shown
@@ -120,46 +137,48 @@ function move_image_how_we_work(){
 }
 
 function change_text_slogan(){
-	var rText = 0;
-	var rColors = 1;
-	var container = $(".first-section .slogan .text-change");
-	var element = $(".first-section .slogan .text-change span");
-	var colors = ["#F6CA5C", "#c8f70c", "#f0e807"];
-	var _width = 0;
+	if($("body.not-found").length == 0){
+		var rText = 0;
+		var rColors = 1;
+		var container = $(".first-section .slogan .text-change");
+		var element = $(".first-section .slogan .text-change span");
+		var colors = ["#F6CA5C", "#c8f70c", "#f0e807"];
+		var _width = 0;
 
-	//Replace each 3 seconds
-	window.setInterval(function(){
+		//Replace each 3 seconds
+		window.setInterval(function(){
 
-		element.eq(rText).removeClass("show-el"),
-		rText=(rText+1)%element.length;
+			element.eq(rText).removeClass("show-el"),
+			rText=(rText+1)%element.length;
 
-		if(element.eq(rText).text() == "Web Solutions"){
-			if($(window.top).width() < 1024){
-				_width = 260;
+			if(element.eq(rText).text() == "Web Solutions"){
+				if($(window.top).width() < 1024){
+					_width = 260;
+				}
+				else{
+					_width = 370;
+				}			
+			}
+			else if(element.eq(rText).text() == "Web Design"){
+				if($(window.top).width() < 1024){
+					_width = 216;
+				}
+				else{
+					_width = 315;
+				}			
 			}
 			else{
-				_width = 370;
-			}			
-		}
-		else if(element.eq(rText).text() == "Web Design"){
-			if($(window.top).width() < 1024){
-				_width = 216;
+				_width = element.eq(rText)[0].scrollWidth;
 			}
-			else{
-				_width = 315;
-			}			
-		}
-		else{
-			_width = element.eq(rText)[0].scrollWidth;
-		}
 
-		container.css({width:_width});
+			container.css({width:_width});
 
-		var newColor=colors[rColors];
-		rColors=(rColors+1)%colors.length;
-		element.eq(rText).css({color:newColor}).addClass("show-el");
+			var newColor=colors[rColors];
+			rColors=(rColors+1)%colors.length;
+			element.eq(rText).css({color:newColor}).addClass("show-el");
 
-	}, 2e3);
+		}, 2e3);
+	}
 }
 
 function animation_active_class_menu_links(){
@@ -173,35 +192,36 @@ function animation_active_class_menu_links(){
 }
 
 function add_active_class_menu_links(){
-	var topAboutUs = $("#about-us").offset().top - 200;
-	var topHowWeWorks = $("#how-we-works").offset().top - 200;
-	var topContact = $("#contact").offset().top - 200;
+	if($("body.not-found").length == 0){
+		var topAboutUs = $("#about-us").offset().top - 200;
+		var topHowWeWorks = $("#how-we-works").offset().top - 200;
+		var topContact = $("#contact").offset().top - 200;
 
-	var topBody = $(window).scrollTop();
+		var topBody = $(window).scrollTop();
 
-	if(topBody < topAboutUs){
-		//Remove all li
-		$("nav.top-bar ul.right li").removeClass("active");
+		if(topBody < topAboutUs){
+			//Remove all li
+			$("nav.top-bar ul.right li").removeClass("active");
+		}
+		else if(topBody >= topAboutUs && topBody < topHowWeWorks){
+			//Remove all li
+			$("nav.top-bar ul.right li").removeClass("active");
+			//Add about us
+			$("nav.top-bar ul.right li.about-us").addClass("active");
+		}
+		else if(topBody >= topHowWeWorks && topBody < topContact){
+			//Remove all li
+			$("nav.top-bar ul.right li").removeClass("active");
+			//Add about us
+			$("nav.top-bar ul.right li.how-we-works").addClass("active");
+		}
+		else if(topBody >= topContact){
+			//Remove all li
+			$("nav.top-bar ul.right li").removeClass("active");
+			//Add about us
+			$("nav.top-bar ul.right li.contact-us").addClass("active");
+		}
 	}
-	else if(topBody >= topAboutUs && topBody < topHowWeWorks){
-		//Remove all li
-		$("nav.top-bar ul.right li").removeClass("active");
-		//Add about us
-		$("nav.top-bar ul.right li.about-us").addClass("active");
-	}
-	else if(topBody >= topHowWeWorks && topBody < topContact){
-		//Remove all li
-		$("nav.top-bar ul.right li").removeClass("active");
-		//Add about us
-		$("nav.top-bar ul.right li.how-we-works").addClass("active");
-	}
-	else if(topBody >= topContact){
-		//Remove all li
-		$("nav.top-bar ul.right li").removeClass("active");
-		//Add about us
-		$("nav.top-bar ul.right li.contact-us").addClass("active");
-	}
-
 }
 
 function effect_menu_link(){
@@ -471,53 +491,55 @@ function hww_hide_images(){
 }
 
 function hww_content_scroll_fade_in_effects(){
-	var docScroll = $(this).scrollTop(), 
-        stageOneOffset = $(".stage-1").offset().top - ($(window).height() - 250),
-        stageTwoOffset = $(".stage-2").offset().top - ($(window).height() - 250)
-        stageThreeOffset = $(".stage-3").offset().top - ($(window).height() - 250)
-        stageFourOffset = $(".stage-4").offset().top - ($(window).height() - 250)
-        stageFiveOffset = $(".stage-5").offset().top - ($(window).height() - 250)
-        stageSixOffset = $(".stage-6").offset().top - ($(window).height() - 250)
-        dotted_1_2_Offset = $(".dotted-1-2").offset().top - ($(window).height() - 150)
-        dotted_2_3_Offset = $(".dotted-2-3").offset().top - ($(window).height() - 150)
-        dotted_3_4_Offset = $(".dotted-3-4").offset().top - ($(window).height() - 150)
-        dotted_4_5_Offset = $(".dotted-4-5").offset().top - ($(window).height() - 150)
-        dotted_5_6_Offset = $(".dotted-5-6").offset().top - ($(window).height() - 150);
-    
-    if(docScroll >= stageOneOffset) {
-    	$("#contact-image").fadeIn(500);
-    }
-    if(docScroll >= stageTwoOffset) {
-    	$("#requirements-image").fadeIn(500);
-    }
-    if(docScroll >= stageThreeOffset) {
-    	$("#loe-image").fadeIn(500);
-    }
-    if(docScroll >= stageFourOffset) {
-    	$("#dev-image").fadeIn(500);
-    }
-    if(docScroll >= stageFiveOffset) {
-    	$("#testing-image").fadeIn(500);
-    }
-    if(docScroll >= stageSixOffset) {
-    	$("#delivery-image").fadeIn(500);
-    }
+	if($("body.not-found").length == 0){
+		var docScroll = $(this).scrollTop(), 
+	        stageOneOffset = $(".stage-1").offset().top - ($(window).height() - 250),
+	        stageTwoOffset = $(".stage-2").offset().top - ($(window).height() - 250)
+	        stageThreeOffset = $(".stage-3").offset().top - ($(window).height() - 250)
+	        stageFourOffset = $(".stage-4").offset().top - ($(window).height() - 250)
+	        stageFiveOffset = $(".stage-5").offset().top - ($(window).height() - 250)
+	        stageSixOffset = $(".stage-6").offset().top - ($(window).height() - 250)
+	        dotted_1_2_Offset = $(".dotted-1-2").offset().top - ($(window).height() - 150)
+	        dotted_2_3_Offset = $(".dotted-2-3").offset().top - ($(window).height() - 150)
+	        dotted_3_4_Offset = $(".dotted-3-4").offset().top - ($(window).height() - 150)
+	        dotted_4_5_Offset = $(".dotted-4-5").offset().top - ($(window).height() - 150)
+	        dotted_5_6_Offset = $(".dotted-5-6").offset().top - ($(window).height() - 150);
+	    
+	    if(docScroll >= stageOneOffset) {
+	    	$("#contact-image").fadeIn(500);
+	    }
+	    if(docScroll >= stageTwoOffset) {
+	    	$("#requirements-image").fadeIn(500);
+	    }
+	    if(docScroll >= stageThreeOffset) {
+	    	$("#loe-image").fadeIn(500);
+	    }
+	    if(docScroll >= stageFourOffset) {
+	    	$("#dev-image").fadeIn(500);
+	    }
+	    if(docScroll >= stageFiveOffset) {
+	    	$("#testing-image").fadeIn(500);
+	    }
+	    if(docScroll >= stageSixOffset) {
+	    	$("#delivery-image").fadeIn(500);
+	    }
 
-    if(docScroll >= dotted_1_2_Offset) {
-    	$("#dotted-1-2").fadeIn(200);
-    }
-    if(docScroll >= dotted_2_3_Offset) {
-    	$("#dotted-2-3").fadeIn(200);
-    }
-    if(docScroll >= dotted_3_4_Offset) {
-    	$("#dotted-3-4").fadeIn(200);
-    }
-    if(docScroll >= dotted_4_5_Offset) {
-    	$("#dotted-4-5").fadeIn(200);
-    }
-    if(docScroll >= dotted_5_6_Offset) {
-    	$("#dotted-5-6").fadeIn(200);
-    }
+	    if(docScroll >= dotted_1_2_Offset) {
+	    	$("#dotted-1-2").fadeIn(200);
+	    }
+	    if(docScroll >= dotted_2_3_Offset) {
+	    	$("#dotted-2-3").fadeIn(200);
+	    }
+	    if(docScroll >= dotted_3_4_Offset) {
+	    	$("#dotted-3-4").fadeIn(200);
+	    }
+	    if(docScroll >= dotted_4_5_Offset) {
+	    	$("#dotted-4-5").fadeIn(200);
+	    }
+	    if(docScroll >= dotted_5_6_Offset) {
+	    	$("#dotted-5-6").fadeIn(200);
+	    }
+	}
 }
 
 function hww_content_scroll_fade_in(){
