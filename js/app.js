@@ -600,7 +600,7 @@ function validate_contact_form() {
 		}		
 	});
 
-	$("#contact_form").attr('action', '//formspree.io/' + 'kukenantech' + '@' + 'gmail' + '.' + 'com');
+	$("#contact_form").attr('action', '//formspree.io/' + 'info' + '@' + 'kukenan' + '.' + 'tech');
 	$("#_cc").val("juanj" + "." + "gonzalezp" + "@" + "gmail" + ".com");
 }
 
@@ -610,7 +610,7 @@ function submit_contact_form_ajax(){
 		if(contactForm.valid()){
 			e.preventDefault();
 			$.ajax({
-				url: '//formspree.io/kukenantech@gmail.com',
+				url: '//formspree.io/info@kukenan.tech',
 				method: 'POST',
 				data: $(this).serialize(),
 				dataType: 'json',
