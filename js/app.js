@@ -601,7 +601,6 @@ function validate_contact_form() {
 	});
 
 	$("#contact_form").attr('action', '//formspree.io/' + 'info' + '@' + 'kukenan' + '.' + 'tech');
-	$("#_cc").val("juanj" + "." + "gonzalezp" + "@" + "gmail" + ".com");
 }
 
 function submit_contact_form_ajax(){
