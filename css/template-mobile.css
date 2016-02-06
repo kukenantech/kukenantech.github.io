@@ -280,14 +280,15 @@
     text-align: center; }
   body .row.six-section ul.social_media, body .row .footer ul.social_media {
     display: block;
-    width: 220px;
+    width: 280px;
     font-size: 18px;
     color: white;
     list-style: none;
     padding-top: 35px;
     position: relative;
     float: none;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: center; }
   body .row.six-section .logo_footer, body .row .footer .logo_footer {
     margin-top: 10px; }
     body .row.six-section .logo_footer a.logohome, body .row .footer .logo_footer a.logohome {

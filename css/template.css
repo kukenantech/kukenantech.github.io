@@ -717,7 +717,7 @@ body {
               text-decoration: underline; }
       body .row.six-section ul.social_media, body .row .footer ul.social_media {
         display: inline-block;
-        width: 220px;
+        width: 200px;
         margin: 0px;
         font-size: 18px;
         color: white;
@@ -753,6 +753,9 @@ body {
               body .row.six-section ul.social_media li a:hover.gplus, body .row .footer ul.social_media li a:hover.gplus {
                 background: url("../img/social-media-sprite-normal.png") no-repeat;
                 background-position: -250px 0px; }
+              body .row.six-section ul.social_media li a:hover.github, body .row .footer ul.social_media li a:hover.github {
+                background: url("../img/social-media-sprite-normal.png") no-repeat;
+                background-position: -304px 0px; }
             body .row.six-section ul.social_media li a.mail, body .row .footer ul.social_media li a.mail {
               background: url("../img/social-media-sprite-light.png") no-repeat; }
             body .row.six-section ul.social_media li a.linkedin, body .row .footer ul.social_media li a.linkedin {
@@ -770,6 +773,9 @@ body {
             body .row.six-section ul.social_media li a.gplus, body .row .footer ul.social_media li a.gplus {
               background: url("../img/social-media-sprite-light.png") no-repeat;
               background-position: -250px 0px; }
+            body .row.six-section ul.social_media li a.github, body .row .footer ul.social_media li a.github {
+              background: url("../img/social-media-sprite-light.png") no-repeat;
+              background-position: -304px 0px; }
       body .row.six-section .logo_footer, body .row .footer .logo_footer {
         background: url("../img/Kukenan-cube-footer.png") no-repeat;
         width: 183px;

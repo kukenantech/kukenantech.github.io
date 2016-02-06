@@ -980,7 +980,7 @@ body{
 			}
 			ul.social_media {
 			    display: inline-block;
-			    width: 220px;
+			    width: 200px;
 			    margin: 0px;
 			    font-size: 18px;
 			    color: white;
@@ -1022,6 +1022,10 @@ body{
 				    			background: url('../img/social-media-sprite-normal.png') no-repeat;	
 				    			background-position: -250px 0px;	
 				    		}
+				    		&.github{
+				    			background: url('../img/social-media-sprite-normal.png') no-repeat;	
+				    			background-position: -304px 0px;	
+				    		}
 			    		}
 			    		&.mail{
 			    			background: url('../img/social-media-sprite-light.png') no-repeat;			    				
@@ -1045,6 +1049,10 @@ body{
 			    		&.gplus{
 			    			background: url('../img/social-media-sprite-light.png') no-repeat;	
 			    			background-position: -250px 0px;	
+			    		}
+			    		&.github{
+			    			background: url('../img/social-media-sprite-light.png') no-repeat;	
+			    			background-position: -304px 0px;
 			    		}
 			    	}
 			    }
