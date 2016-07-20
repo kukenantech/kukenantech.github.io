@@ -402,6 +402,101 @@ body {
       color: #FFFFFF;
       height: auto;
       position: relative; }
+      body .row.second-section .ourteam {
+        margin-top: 5px !important; }
+        body .row.second-section .ourteam h2 {
+          font-size: 40px;
+          margin-bottom: 1%; }
+        body .row.second-section .ourteam .profile {
+          padding-left: 20px;
+          padding-right: 20px;
+          text-align: center;
+          margin-bottom: 15px; }
+          body .row.second-section .ourteam .profile h3 {
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            font-size: 16.0px;
+            text-transform: uppercase;
+            text-align: center; }
+          body .row.second-section .ourteam .profile .profile-img {
+            position: relative;
+            top: -10px;
+            margin-bottom: 15px; }
+          body .row.second-section .ourteam .profile ul.social_media {
+            display: inline-block;
+            width: 100%;
+            margin: 0 auto;
+            font-size: 18px;
+            color: white;
+            list-style: none;
+            padding-top: 0px;
+            position: relative;
+            text-align: center; }
+            body .row.second-section .ourteam .profile ul.social_media li {
+              color: white;
+              display: inline-block; }
+              body .row.second-section .ourteam .profile ul.social_media li a {
+                color: transparent;
+                display: inline-block;
+                width: 35px;
+                height: 35px;
+                overflow: hidden; }
+                body .row.second-section .ourteam .profile ul.social_media li a:hover {
+                  text-decoration: none; }
+                  body .row.second-section .ourteam .profile ul.social_media li a:hover.mail {
+                    background: url("../img/social-media-sprite-light.png") no-repeat;
+                    background-size: 260px auto; }
+                  body .row.second-section .ourteam .profile ul.social_media li a:hover.linkedin {
+                    background: url("../img/social-media-sprite-light.png") no-repeat;
+                    background-position: -35px 0px;
+                    background-size: 260px auto; }
+                  body .row.second-section .ourteam .profile ul.social_media li a:hover.skype {
+                    background: url("../img/social-media-sprite-light.png") no-repeat;
+                    background-position: -72px 0px;
+                    background-size: 260px auto; }
+                  body .row.second-section .ourteam .profile ul.social_media li a:hover.facebook {
+                    background: url("../img/social-media-sprite-light.png") no-repeat;
+                    background-position: -111px 0px;
+                    background-size: 260px auto; }
+                  body .row.second-section .ourteam .profile ul.social_media li a:hover.twitter {
+                    background: url("../img/social-media-sprite-light.png") no-repeat;
+                    background-position: -148px 0px;
+                    background-size: 260px auto; }
+                  body .row.second-section .ourteam .profile ul.social_media li a:hover.gplus {
+                    background: url("../img/social-media-sprite-light.png") no-repeat;
+                    background-position: -185px -1px;
+                    background-size: 260px auto; }
+                  body .row.second-section .ourteam .profile ul.social_media li a:hover.github {
+                    background: url("../img/social-media-sprite-light.png") no-repeat;
+                    background-position: -224px -1px;
+                    background-size: 260px auto; }
+                body .row.second-section .ourteam .profile ul.social_media li a.mail {
+                  background: url("../img/social-media-sprite-normal.png") no-repeat;
+                  background-size: 260px auto; }
+                body .row.second-section .ourteam .profile ul.social_media li a.linkedin {
+                  background: url("../img/social-media-sprite-normal.png") no-repeat;
+                  background-position: -35px 0px;
+                  background-size: 260px auto; }
+                body .row.second-section .ourteam .profile ul.social_media li a.skype {
+                  background: url("../img/social-media-sprite-normal.png") no-repeat;
+                  background-position: -72px 0px;
+                  background-size: 260px auto; }
+                body .row.second-section .ourteam .profile ul.social_media li a.facebook {
+                  background: url("../img/social-media-sprite-normal.png") no-repeat;
+                  background-position: -111px 0px;
+                  background-size: 260px auto; }
+                body .row.second-section .ourteam .profile ul.social_media li a.twitter {
+                  background: url("../img/social-media-sprite-normal.png") no-repeat;
+                  background-position: -148px 0px;
+                  background-size: 260px auto; }
+                body .row.second-section .ourteam .profile ul.social_media li a.gplus {
+                  background: url("../img/social-media-sprite-normal.png") no-repeat;
+                  background-position: -185px -1px;
+                  background-size: 260px auto; }
+                body .row.second-section .ourteam .profile ul.social_media li a.github {
+                  background: url("../img/social-media-sprite-normal.png") no-repeat;
+                  background-position: -224px -1px;
+                  background-size: 260px auto; }
       body .row.second-section h2 {
         color: #003459;
         font-size: 40px; }
@@ -435,7 +530,7 @@ body {
           padding-left: 2%;
           padding-right: 2%; }
           body .row.second-section .content .text h2 {
-            margin-bottom: 5%; }
+            margin-bottom: 3%; }
         body .row.second-section .content .image {
           line-height: 550px;
           text-align: center; }

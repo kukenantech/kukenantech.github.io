@@ -130,6 +130,7 @@ body{
 	.clear{
 		clear: both;
 	}
+	
 	h2{
 		font-family: 'Lato', sans-serif;
 		font-size: 50px;
@@ -606,7 +607,125 @@ body{
 			color: $white;	
 			height: auto;
 			position: relative;
-
+			.ourteam{
+				margin-top: 5px!important;
+				h2{
+					font-size: 40px;
+					margin-bottom: 1%;
+				}
+				.profile{
+					padding-left: 20px;
+					padding-right: 20px;
+					text-align: center;
+					margin-bottom: 15px;
+					h3{
+						font-family: 'Lato', sans-serif;
+					    font-weight: bold;
+					    font-size: 16.0px;
+					    text-transform: uppercase;
+					    text-align: center;
+					}
+					.profile-img{
+						position: relative;
+    					top: -10px;
+    					margin-bottom: 15px;
+					}
+					ul.social_media {
+					    display: inline-block;
+					    width: 100%;
+					    margin: 0 auto;
+					    font-size: 18px;
+					    color: white;
+					    list-style: none;
+					    padding-top: 0px;
+					    position: relative;
+					    text-align: center;
+					    li{
+					    	color: white;
+					    	display: inline-block;
+					    	a{
+					    		color: transparent;
+							    display: inline-block;
+							    width: 35px;
+							    height: 35px;
+							    overflow: hidden;
+					    		&:hover{
+					    			text-decoration: none;
+					    			&.mail{
+					    			background: url('../img/social-media-sprite-light.png') no-repeat;
+					    			background-size: 260px auto;				    				
+						    		}
+						    		&.linkedin{
+						    			background: url('../img/social-media-sprite-light.png') no-repeat;	
+						    			background-position: -35px 0px;	
+						    			background-size: 260px auto;	
+						    		}
+						    		&.skype{
+						    			background: url('../img/social-media-sprite-light.png') no-repeat;	
+						    			background-position: -72px 0px;	
+						    			background-size: 260px auto;	
+						    		}
+						    		&.facebook{
+						    			background: url('../img/social-media-sprite-light.png') no-repeat;	
+						    			background-position: -111px 0px;
+						    			background-size: 260px auto;		
+						    		}
+						    		&.twitter{
+						    			background: url('../img/social-media-sprite-light.png') no-repeat;	
+						    			background-position: -148px 0px;
+						    			background-size: 260px auto;		
+						    		}
+						    		&.gplus{
+						    			background: url('../img/social-media-sprite-light.png') no-repeat;	
+						    			background-position: -185px -1px;
+						    			background-size: 260px auto;		
+						    		}
+						    		&.github{
+						    			background: url('../img/social-media-sprite-light.png') no-repeat;	
+						    			background-position: -224px -1px;
+						    			background-size: 260px auto;	
+						    		}
+					    			
+					    		}
+					    		&.mail{
+				    				background: url('../img/social-media-sprite-normal.png') no-repeat;	
+				    				background-size: 260px auto;		    				
+					    		}
+					    		&.linkedin{
+					    			background: url('../img/social-media-sprite-normal.png') no-repeat;	
+					    			background-position: -35px 0px;	
+					    			background-size: 260px auto;
+					    		}
+					    		&.skype{
+					    			background: url('../img/social-media-sprite-normal.png') no-repeat;	
+					    			background-position: -72px 0px;	
+					    			background-size: 260px auto;
+					    		}
+					    		&.facebook{
+					    			background: url('../img/social-media-sprite-normal.png') no-repeat;	
+					    			background-position: -111px 0px;	
+					    			background-size: 260px auto;
+					    		}
+					    		&.twitter{
+					    			background: url('../img/social-media-sprite-normal.png') no-repeat;	
+					    			background-position: -148px 0px;
+					    			background-size: 260px auto;	
+					    		}
+					    		&.gplus{
+					    			background: url('../img/social-media-sprite-normal.png') no-repeat;	
+					    			background-position: -185px -1px;
+					    			background-size: 260px auto;	
+					    		}
+					    		&.github{
+					    			background: url('../img/social-media-sprite-normal.png') no-repeat;	
+					    			background-position: -224px -1px;
+					    			background-size: 260px auto;	
+					    		}
+					    	}
+					    }
+					}
+				}
+			}
 			h2{
 				color: $palleteDarkBlue;
 				font-size: 40px;
@@ -655,7 +774,7 @@ body{
     				padding-right: 2%;
 
     				h2{
-    					margin-bottom: 5%;
+    					margin-bottom: 3%;
     				}
     			}
     			.image{
