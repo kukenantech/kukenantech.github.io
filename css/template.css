@@ -413,9 +413,16 @@ body {
           text-align: center;
           margin-bottom: 15px; }
           body .row.second-section .ourteam .profile h3 {
+            color: #FFFFFF;
             font-family: 'Lato', sans-serif;
             font-weight: bold;
             font-size: 16.0px;
+            text-transform: uppercase;
+            text-align: center; }
+          body .row.second-section .ourteam .profile h4 {
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            font-size: 17px;
             text-transform: uppercase;
             text-align: center; }
           body .row.second-section .ourteam .profile .profile-img {
